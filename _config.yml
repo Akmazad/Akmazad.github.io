@@ -87,7 +87,7 @@ analytics:
 author:
   name             : "A K M Azad"
   avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  bio              : "Lecturer, Swinburne University of Technology Sydney"
   location         : "NSW, Australia"
   employer         :
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=akm+azad"
@@ -260,7 +260,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Australia/Sydney # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
