@@ -11,6 +11,7 @@ title                    : "A K M Azad / Welcome"
 title_separator          : "-"
 name                     : &name "A K M AZAD"
 description              : &description "personal description"
+email                    : azad_du28@yahoo.com
 url                      : https://akmazad.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Akmazad/Akmazad.github.io"
