@@ -129,7 +129,7 @@ include:
   - _layouts
   - _data
   - _software
-  - papers
+
 
 exclude:
   - "*.sublime-project"
