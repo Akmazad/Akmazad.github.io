@@ -125,8 +125,10 @@ author:
 # Reading Files
 include:
   - .htaccess
-  - _pages
+  - software
   - files
+  
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
