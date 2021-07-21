@@ -126,7 +126,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - software
   - files
   
 
