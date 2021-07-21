@@ -127,8 +127,8 @@ include:
   - .htaccess
   - _pages
   - files
-  - software
-  
+  - _layouts
+  - _data
 
 exclude:
   - "*.sublime-project"
