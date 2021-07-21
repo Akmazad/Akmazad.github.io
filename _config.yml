@@ -126,10 +126,10 @@ author:
 include:
   - .htaccess
   - _pages
-  - files
   - _layouts
   - _data
   - _software
+  - papers
 
 exclude:
   - "*.sublime-project"
