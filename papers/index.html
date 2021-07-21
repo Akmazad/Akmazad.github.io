@@ -1,0 +1,36 @@
+---
+layout: default
+title: papers
+categories: 
+ - papers
+---
+
+{% for paper in site.categories.papers %}
+	{% cycle 'add row' : '<div class="row">', '' %}
+    	<div class="col-md-6 box">
+    		<a href="{{ paper.url }}">
+    		<div class="media paper">
+				<div class="media-left pull-left">
+					{% if paper.image %} 
+					<img src="{{ paper.image }}" class="media-object" style="width:60px" alt="">
+					{% endif %}
+				</div>
+				<div class="media-body">
+					<h1 class="media-heading">{{ paper.title }}</h1>
+					<p class="details">
+						{% if paper.authors.size == 1 %}
+						{{ paper.authors[0] }}.
+						{% elsif paper.authors.size == 2 %}
+						{{ paper.authors[0] }} & {{ paper.authors[1] }}.
+						{% else %}
+						{{ paper.authors[0] }} et al.
+						{% endif %}
+						{{ paper.year }}. <i>{{ paper.journal }}</i>.
+					</p>
+				</div>
+			</div>
+    		</a>
+    	</div>
+    {% cycle 'end row' : '', '</div>' %}
+{% endfor %}
+{% cycle 'end row' : '', '</div>' %}
