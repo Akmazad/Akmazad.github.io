@@ -6,7 +6,7 @@ layout: default
 
   {{ content }}
 
-  <h1 class="page-heading">Latest posts</h1>
+  {% comment %} <h1 class="page-heading">Latest posts</h1>
   {% for opening in site.categories.openings limit:5 %}
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     <a href="{{ opening.url | relative_url }}">
@@ -22,7 +22,7 @@ layout: default
 		</div>
       </div>
     </a>
-  {% endfor %}
+  {% endfor %} {% endcomment %}
   
   <h1 class="page-heading">Latest papers</h1>
   
