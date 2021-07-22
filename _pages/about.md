@@ -3,7 +3,6 @@ permalink: /
 title: "A K M Azad | Welcome to my webpage"
 excerpt: "About me"
 author_profile: true
-layout: default
 redirect_from: 
   - /about/
   - /about.html
