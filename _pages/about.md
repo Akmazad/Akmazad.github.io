@@ -15,7 +15,7 @@ redirect_from:
   <h1 class="page-heading">Latest papers</h1>
   
   <ul class="post-list">
-    {% for paper in site.categories.papers limit:5 %}
+    {% for paper in site.categories.publications limit:5 %}
       <li>
         {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
         <span class="post-meta">{{ paper.date | date: date_format }}</span>
