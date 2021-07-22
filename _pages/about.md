@@ -13,26 +13,6 @@ redirect_from:
 
 <!-- <div class="home"> -->
 
-  {{ content }}
-
-  {% comment %} <h1 class="page-heading">Latest posts</h1>
-  {% for opening in site.categories.openings limit:5 %}
-  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-    <a href="{{ opening.url | relative_url }}">
-	  <div class="media home">
-		<div class="media-body">
-        <h1 class="media-heading">
-          {{ opening.title | escape }}
-          {% if opening.filled %}
-          <b>FILLED</b>
-          {% endif %}
-        </h1>
-		<span class="post-meta">{{ opening.date | date: date_format }}</span>
-		</div>
-      </div>
-    </a>
-  {% endfor %} {% endcomment %}
-  
   <h1 class="page-heading">Latest papers</h1>
   
 <!--   <ul class="post-list"> -->
