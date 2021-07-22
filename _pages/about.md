@@ -3,6 +3,7 @@ permalink: /
 title: "A K M Azad | Welcome to my webpage"
 excerpt: "About me"
 author_profile: true
+layout: default
 redirect_from: 
   - /about/
   - /about.html
@@ -10,11 +11,32 @@ redirect_from:
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
-Latest Publications
-======
-{{ content }}
+<!-- <div class="home"> -->
 
-    {% for paper in site.publications limit:5 %}
+  {{ content }}
+
+  {% comment %} <h1 class="page-heading">Latest posts</h1>
+  {% for opening in site.categories.openings limit:5 %}
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+    <a href="{{ opening.url | relative_url }}">
+	  <div class="media home">
+		<div class="media-body">
+        <h1 class="media-heading">
+          {{ opening.title | escape }}
+          {% if opening.filled %}
+          <b>FILLED</b>
+          {% endif %}
+        </h1>
+		<span class="post-meta">{{ opening.date | date: date_format }}</span>
+		</div>
+      </div>
+    </a>
+  {% endfor %} {% endcomment %}
+  
+  <h1 class="page-heading">Latest papers</h1>
+  
+<!--   <ul class="post-list"> -->
+    {% for paper in site.categories.papers limit:5 %}
 <!--       <li> -->
         {% assign date_format = site.minima.date_format | default: "%-d %b %Y" %}
 <!--         <span class="post-meta">{{ paper.date | date: date_format }}</span> -->
@@ -40,6 +62,11 @@ Latest Publications
 		</a>
 <!--       </li> -->
     {% endfor %}
+<!--   </ul> -->
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+<!-- </div> -->
 
 <!-- Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
 
