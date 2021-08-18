@@ -129,6 +129,7 @@ include:
   - _layouts
   - _data
   - _software
+  - _blogs
 
 
 exclude:
