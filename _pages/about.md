@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "A K M Azad | Welcome to my webpage"
+title: "e-Health & Bayesian Intelligence Lab | Welcome"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
