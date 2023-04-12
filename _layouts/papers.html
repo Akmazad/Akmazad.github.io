@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="row">
+	<div class="col-md-4">
+		{% if page.image %}
+		<img class="media-object" src="{{ page.image }}" style="height:250px;margin-bottom:20px">
+		{% else %}
+		<div style="margin-bottom:270px"></div>
+		{% endif %}
+			
+			{% if page.doi %}
+			Journal
+			<div style="margin-bottom:20px">
+				<i class="fa fa-external-link fa-fw" style="margin-top:5px"></i>
+				<a href="http://dx.doi.org/{{ page.doi }}" style="color:inherit">{{ page.doi }}</a>
+			</div>
+			{% endif %}
+			{% if page.preprint %}
+			Preprint
+			<div style="margin-bottom:20px">
+				<i class="fa fa-external-link fa-fw" style="margin-top:5px"></i>
+				{% if page.preprint contains "http" %}
+				<a class="off" href="{{ page.preprint }}" style="color:inherit">
+					{{ page.preprint | remove_first: 'http://' | remove: 'https://' }}
+				</a>
+				{% else %}
+				<a class="off" href="http://dx.doi.org/{{ page.preprint }}" style="color:inherit">{{ page.preprint }}</a>
+				{% endif %}
+			</div>
+			{% endif %}
+			{% if page.github %}
+			GitHub
+			<div style="margin-bottom:20px">
+				<i class="fa fa-github-alt fa-fw" style="margin-top:5px"></i>
+				<a class="off" href="{{ page.github }}" style="color:inherit">{{ page.github | remove: 'http://github.com/' | remove: 'https://github.com/' }}</a>
+			</div>
+			{% endif %}
+	</div>
+	<div class="col-md-8">
+		<h2>{{ page.title }}</h2>
+		{{page.authors | join: ', '}}.
+		{{ page.year }}.
+		<i>{{ page.journal }}</i>.
+		<div class="post">
+			{{ content }}
+		</div>
+	</div>
+</div>

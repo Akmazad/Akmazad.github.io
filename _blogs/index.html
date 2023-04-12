@@ -1,0 +1,23 @@
+---
+layout: default
+title: blogs
+categories: 
+ - blogs
+---
+
+{% for project in site.categories.blogs %}
+	{% cycle 'add row' : '<div class="row">', '' %}
+    	<div class="col-md-6">
+    		<a href="{{ project.page }}">
+				<section class="project">
+					<h1>{{ project.title }}</h1>
+					<p class="details">
+					{{project.description}}
+					</p>
+		
+				</section>
+    		</a>
+    	</div>
+    {% cycle 'end row' : '', '</div>' %}
+{% endfor %}
+{% cycle 'end row' : '', '</div>' %}
