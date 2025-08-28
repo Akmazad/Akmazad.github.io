@@ -110,9 +110,9 @@ DrugSimDB addresses three critical gaps in existing drug similarity resources:
 ![Scale-free network plot](/images/drugsimdb_network.png)  
 *Figure: DrugSimDB similarity network follows a scale-free distribution, with hub drugs highly connected to others.* -->
 
-- **Scale-free topology**: A few hub drugs link the network, enabling powerful diffusion-based repositioning methods.  (![see validation](/images/drugSimDB_scalefree.png))
-- **Reduced data sparsity**: Multi-source integration fills gaps where single data types are missing.  (![see validation](/images/drugSimDB_reducedDataSparsity.png)) 
-- **Improved repositioning performance**: Multi-modal scores outperform individual similarity metrics.  (![see validation](/images/drugSimDB_improvedPerformace.png)). 
+- **Scale-free topology**: A few hub drugs link the network, enabling powerful diffusion-based repositioning methods.  ![see validation](/images/drugSimDB_scalefree.png)
+- **Reduced data sparsity**: Multi-source integration fills gaps where single data types are missing.  ![see validation](/images/drugSimDB_reducedDataSparsity.png)
+- **Improved repositioning performance**: Multi-modal scores outperform individual similarity metrics.  ![see validation](/images/drugSimDB_improvedPerformace.png). 
 Also the ROC plot for the further validation.
 ![ROC plot of repositioning validation](/images/drugSimDB_auc.png)  
 *Figure: ROC analysis shows DrugSimDB’s integrated similarity scores outperform single-source measures.*
@@ -145,10 +145,17 @@ DrugSimDB is designed to be **flexible and extendable**. Future updates may incl
 - Network-based AI applications (e.g., graph neural networks for drug repositioning).  
 
 By serving as a **foundational drug similarity knowledgebase**, DrugSimDB can fuel discoveries in:  
-- Rare disease therapeutics  
-- Cancer precision medicine  
-- Drug–nutrient and drug–microbiome interactions  
-- Systems pharmacology models  
+### 🧬 Rare Disease Therapeutics
+Rare diseases often lack effective treatments because traditional drug discovery pipelines are not economically attractive for small patient populations. DrugSimDB offers a **shortcut** by enabling systematic searches for existing drugs with similar molecular profiles to those used in rare conditions. For example, if an experimental compound shows promise in a rare neurodegenerative disorder, DrugSimDB can help identify already-approved drugs with **overlapping targets, pathways, or functional signatures**. This could accelerate access to therapies for underserved patient groups while reducing development costs.
+
+### 🎯 Cancer Precision Medicine
+Cancer therapy increasingly relies on precision medicine, where treatments are tailored to the molecular characteristics of a patient’s tumor. DrugSimDB’s integration of **target sequence, pathway, and functional similarities** makes it a valuable tool for uncovering **alternative therapeutic options** when resistance develops. For instance, if a cancer drug fails due to acquired resistance, its similarity neighbors in DrugSimDB may reveal **backup candidates** that act on convergent pathways. This could guide oncologists in designing **drug substitution or combination strategies** based on molecular evidence.
+
+### 🥗 Drug–Nutrient and Drug–Microbiome Interactions
+The emerging fields of **nutritional pharmacology** and **microbiome research** highlight how diet and gut bacteria influence drug efficacy and safety. By extending DrugSimDB’s similarity framework, researchers could explore how drugs with **shared metabolic or functional pathways** might interact with nutrients or microbial metabolites. This opens doors to predicting **nutrient–drug interactions** (e.g., supplements that enhance or interfere with drug action) and **drug–microbiome crosstalk** (e.g., antibiotics altering microbiome-driven drug metabolism). Such insights could contribute to more holistic, personalized treatment plans.
+
+### 🌐 Systems Pharmacology Models
+Systems pharmacology seeks to understand drug effects at the **network level**, integrating multi-omics data, signaling pathways, and phenotypic responses. Because DrugSimDB itself is a **scale-free drug similarity network**, it naturally lends itself to **graph-based modeling**. Researchers can overlay gene expression, metabolomic, or clinical data onto DrugSimDB to perform **network diffusion, community detection, and multi-layer modeling**. This would support the development of computational pipelines that simulate how drugs perturb biological systems, guiding both **mechanism-of-action studies** and **rational polypharmacy design**.
 
 ---
 
