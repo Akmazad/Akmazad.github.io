@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 title: DrugSimDB
 description: A comprehensive and Multi-modal drug similarity database
 page: https://unsw-data-analytics.shinyapps.io/DrugRepo/
