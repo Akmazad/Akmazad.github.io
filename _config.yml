@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "e-Health & Bayesian Intelligence Lab / Welcome"
+title                    : "Advanced Data & Network Science Lab / ADNS Lab"
 title_separator          : "-"
-name                     : &name "e-Health & Bayesian Intelligence Lab"
+name                     : &name "Advanced Data & Network Science Lab"
 description              : &description "Lab description"
 email                    : azad_du28@yahoo.com
 url                      : https://akmazad.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -88,13 +88,13 @@ analytics:
 author:
   name             : "A K M Azad"
   avatar           : "profile.png"
-  bio              : "Assistant Professor, Imam Mohammad Ibn Saud Islamic University"
+  bio              : "Associate Professor, Imam Mohammad Ibn Saud Islamic University (IMSIU)"
   location         : "Riyadh, Saudi Arabia"
   employer         :
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=akm+azad"
   googlescholar    : "https://scholar.google.com.au/citations?user=p-Rne_wAAAAJ&hl=en"
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     :  "https://www.researchgate.net/profile/Akm-Azad-4?ev=hdr_xprf"
   uri              :
   bitbucket        :
   codepen          :
@@ -108,7 +108,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/a-k-m-azad-6039931a/"
   orcid            : "https://orcid.org/0000-0002-5251-2214"
   pinterest        :
   soundcloud       :
