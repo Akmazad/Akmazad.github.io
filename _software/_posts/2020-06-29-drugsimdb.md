@@ -17,7 +17,7 @@ header:
   caption: "DrugSimDB – published in Briefings in Bioinformatics"
 toc: true
 toc_sticky: true
-
+author_profile: false
 # citation: 2020-06-29-drugsimdb
 ---
 
