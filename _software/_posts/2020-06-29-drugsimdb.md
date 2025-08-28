@@ -106,9 +106,9 @@ DrugSimDB addresses three critical gaps in existing drug similarity resources:
 ---
 
 ## Key Results
-
+<!-- 
 ![Scale-free network plot](/images/drugsimdb_network.png)  
-*Figure: DrugSimDB similarity network follows a scale-free distribution, with hub drugs highly connected to others.*
+*Figure: DrugSimDB similarity network follows a scale-free distribution, with hub drugs highly connected to others.* -->
 
 - **Scale-free topology**: A few hub drugs link the network, enabling powerful diffusion-based repositioning methods.  (![see validation](/images/drugSimDB_scalefree.png))
 - **Reduced data sparsity**: Multi-source integration fills gaps where single data types are missing.  (![see validation](/images/drugSimDB_reducedDataSparsity.png)) 
