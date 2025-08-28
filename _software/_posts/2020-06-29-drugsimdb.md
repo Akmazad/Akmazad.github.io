@@ -1,9 +1,24 @@
 ---
+title: "DrugSimDB: A Comprehensive and Multi-modal Drug Similarity Database"
+excerpt: "An integrated multi-modal drug similarity resource for in-silico drug repositioning and beyond."
+author: "AKM Azad"
+date: 2020-06-29
 layout: single
-title: DrugSimDB
+classes: wide
 description: A comprehensive and Multi-modal drug similarity database
 page: https://unsw-data-analytics.shinyapps.io/DrugRepo/
-citation: 2020-06-29-drugsimdb
+tags:
+  - drug discovery
+  - bioinformatics
+  - drug repositioning
+header:
+  overlay_image: /images/drugsimdb_banner.png
+  overlay_filter: 0.5
+  caption: "DrugSimDB – published in Briefings in Bioinformatics"
+toc: true
+toc_sticky: true
+
+# citation: 2020-06-29-drugsimdb
 ---
 
 # DrugSimDB: A Comprehensive Resource for Drug Similarity and Repositioning
@@ -58,15 +73,19 @@ By aggregating these diverse signals, DrugSimDB delivers **robust, multi-modal s
 ![DrugSimDB Interactive web server](/images/drugsimdb_webserver.png)  
 *Figure: Web server*
 The **interactive web app** (built with R Shiny) allows users to:  
-- Search a drug and inspect its side-effects (from SIDER) (![Example](/images/drugSimDB_search_pan.png)) and explore its similarity network (![Network-View Example](/images/drugSimDB_search_NetworkView.png)) and (![Tabular-View Example](/images/drugSimDB_search_tableView.png)).  
+- Search a drug and inspect its side-effects (from SIDER) ![Example](/images/drugSimDB_search_pan.png)
 
-- Extract a drug information by just hovering your mouse on the drug node (![Example](/images/drugSimDB_node_hover.png)). 
+- Explore its similarity network ![Network-View Example](/images/drugSimDB_search_NetworkView.png) 
 
-- Retrieve PubMed evidence for drug-pair associations by just clicking/tapping on an edge (![Example](/images/drugSimDB_pubmedSearch.png)). 
+- See the tabular view ![Tabular-View Example](/images/drugSimDB_search_tableView.png).  
 
-- Visualize 3D chemical structures (![Example](/images/drugSimDB_visualizedrug3D.png)).  
-- Browse physiochemical & pharmacological properties (![Example](/images/drugSimDB_physio_pharmaco_table.png)).  
+- Extract a drug information by just hovering your mouse on the drug node ![Example](/images/drugSimDB_node_hover.png). 
 
+- Retrieve PubMed evidence for drug-pair associations by just clicking/tapping on an edge ![Example](/images/drugSimDB_pubmedSearch.png). 
+
+- Visualize 3D chemical structures ![Example](/images/drugSimDB_visualizedrug3D.png).  
+
+- Browse physiochemical & pharmacological properties ![Example](/images/drugSimDB_physio_pharmaco_table.png).  
 
 ---
 
@@ -75,7 +94,7 @@ The **interactive web app** (built with R Shiny) allows users to:
 DrugSimDB addresses three critical gaps in existing drug similarity resources:
 
 1. **Coverage**  
-   - Over 10,000 small-molecule drugs, covering both **approved** and **experimental** compounds.  (![see coverage](/images/drugSimDB_statistics.png))
+   - Over 10,000 small-molecule drugs, covering both **approved** and **experimental** compounds.  ![see coverage](/images/drugSimDB_statistics.png)
 
 2. **Integration**  
    - Combines chemical, target, functional, and pathway evidence, ensuring **better coverage of sparsely annotated drugs**.  
@@ -101,7 +120,7 @@ Also the ROC plot for the further validation.
 ---
 
 ## Usage Examples
-DrugSimDB is very easy to use. (![see in brief](/images/drugsimdb_webserver.png))
+DrugSimDB is very easy to use. ![see in brief](/images/drugsimdb_webserver.png)
 1. **Drug repositioning**  
    - Identify candidate drugs for new indications by querying similarity to known therapeutics.  
 
