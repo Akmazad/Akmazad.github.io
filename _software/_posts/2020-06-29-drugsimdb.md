@@ -25,7 +25,7 @@ author_profile: false
 
 *Published in Briefings in Bioinformatics (2021)*  
 *[Read the paper here](https://doi.org/10.1093/bib/bbaa126)*
-
+*[Download full database](https://figshare.com/articles/dataset/DrugSimDB/11948904)*
 ---
 
 ## Why Drug Similarity Matters
