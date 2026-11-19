@@ -1,0 +1,11 @@
+<dialog class="bib-modal" id="bib-modal" aria-labelledby="bib-modal-h">
+  <div class="bib-modal-head">
+    <h2 id="bib-modal-h">BibTeX</h2>
+    <button class="icon-btn" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <pre><code id="bib-modal-code"></code></pre>
+  <div class="bib-modal-foot">
+    <button class="btn btn-primary" type="button" id="bib-copy"><i class="fa-regular fa-copy"></i> Copy</button>
+    <a class="btn btn-ghost" href="{{ '/files/adns-publications.bib' | relative_url }}" download>All references (.bib)</a>
+  </div>
+</dialog>

@@ -1,0 +1,30 @@
+---
+layout: null
+permalink: /files/adns-publications.bib
+sitemap: false
+---
+% ADNS Lab / AKM Azad: complete publication list ({{ site.data.publications.size }} entries)
+% Generated automatically from _data/publications.yml on {{ site.time | date: '%-d %B %Y' }}.
+{% assign lb = '{' %}{% assign rb = '}' %}
+{% for p in site.data.publications %}
+{%- case p.type -%}
+  {%- when 'journal' -%}{%- assign bt = 'article' -%}{%- assign vf = 'journal' -%}
+  {%- when 'preprint' -%}{%- assign bt = 'article' -%}{%- assign vf = 'journal' -%}
+  {%- when 'conference' -%}{%- assign bt = 'inproceedings' -%}{%- assign vf = 'booktitle' -%}
+  {%- when 'abstract' -%}{%- assign bt = 'inproceedings' -%}{%- assign vf = 'booktitle' -%}
+  {%- when 'chapter' -%}{%- assign bt = 'incollection' -%}{%- assign vf = 'booktitle' -%}
+  {%- when 'thesis' -%}{%- assign bt = 'phdthesis' -%}{%- assign vf = 'school' -%}
+  {%- else -%}{%- assign bt = 'misc' -%}{%- assign vf = 'howpublished' -%}
+{%- endcase -%}
+{%- assign au = p.authors | replace: ', et al.', ' and others' | replace: ', ', ' and ' -%}
+{%- assign t = p.title | replace: '&', '\&' | replace: '%', '\%' -%}
+{%- assign v = p.venue | replace: '&', '\&' -%}
+@{{ bt }}{{ lb }}{{ p.bibkey }},
+  title     = {{ lb }}{{ lb }}{{ t }}{{ rb }}{{ rb }},
+  author    = {{ lb }}{{ au | replace: '&', '\&' }}{{ rb }},
+  {{ vf }} = {{ lb }}{{ v }}{{ rb }},
+  year      = {{ lb }}{{ p.year }}{{ rb }}{% if p.doi and p.doi != '' %},
+  doi       = {{ lb }}{{ p.doi }}{{ rb }},
+  url       = {{ lb }}https://doi.org/{{ p.doi }}{{ rb }}{% endif %}
+{{ rb }}
+{% endfor %}

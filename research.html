@@ -1,0 +1,51 @@
+---
+title: Research
+permalink: /research/
+eyebrow: "Research themes"
+lead: "Our shared core is probabilistic and network modelling: inferring structure from noisy data, quantifying uncertainty, and reading mechanism from topology. We apply it across biomedicine, global health and beyond."
+nav_section: Research
+redirect_from:
+  - /portfolio/
+---
+{%- assign pubs = site.data.publications -%}
+<nav class="subnav" aria-label="Themes" style="margin:-8px 0 40px">
+  {% for t in site.data.research %}<a class="btn-chip" href="#{{ t.id }}"><i class="fa-solid {{ t.icon }}"></i> {{ t.title }}</a>{% endfor %}
+</nav>
+
+{% for t in site.data.research %}
+  {%- assign tp = pubs | where_exp: "p", "p.topics contains t.id" -%}
+  {%- assign tp_sorted = tp | sort: "citations" | reverse -%}
+  {%- assign posts = site.posts | where: "theme", t.id -%}
+  <section class="page-section reveal" id="{{ t.id }}">
+    <div class="card" style="padding:32px">
+      <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+        <div class="ic-bubble" style="margin:0"><i class="fa-solid {{ t.icon }}"></i></div>
+        <div style="flex:1;min-width:260px">
+          <h2 style="margin-bottom:6px">{{ t.title }}</h2>
+          <p class="muted" style="margin-bottom:14px">{{ t.short }}</p>
+          <p>{{ t.body }}</p>
+          {% if t.questions %}
+            <h3 style="font-size:.95rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-top:22px">Questions we ask</h3>
+            <ul>{% for q in t.questions %}<li>{{ q }}</li>{% endfor %}</ul>
+          {% endif %}
+          <div class="pub-actions" style="margin-top:16px">
+            <a class="btn-chip btn-chip-accent" href="{{ '/publications/?topic=' | append: t.id | relative_url }}#all"><i class="fa-regular fa-file-lines"></i> All {{ tp.size }} publications</a>
+            {% for sid in t.tools %}{% assign s = site.data.software | where: "id", sid | first %}{% if s %}<a class="btn-chip" href="{{ '/software/#' | append: s.id | relative_url }}"><i class="fa-solid fa-cube"></i> {{ s.name }}</a>{% endif %}{% endfor %}
+          </div>
+        </div>
+      </div>
+      {% if posts.size > 0 %}
+        <h3 style="margin-top:28px">Methods from this theme</h3>
+        <div class="mini-grid" style="margin-bottom:8px">
+          {% for r in posts limit: 6 %}<a class="mini-card" href="{{ r.url | relative_url }}"><span class="mini-kicker">{{ r.date | date: '%Y' }}{% if r.method %} · {{ r.method }}{% endif %}</span><strong>{{ r.title }}</strong></a>{% endfor %}
+        </div>
+      {% endif %}
+      <h3 style="margin-top:24px">Most-cited papers in this theme</h3>
+      <ol class="pub-list compact">
+        {%- assign shown = 0 -%}
+        {%- for p in tp_sorted -%}{%- if shown < 4 -%}{%- assign shown = shown | plus: 1 -%}{% include pub.html p=p prefix=t.id %}{%- endif -%}{%- endfor -%}
+      </ol>
+    </div>
+  </section>
+{% endfor %}
+{% include bib-modal.html %}

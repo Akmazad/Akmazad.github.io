@@ -1,0 +1,63 @@
+---
+title: People
+permalink: /people/
+eyebrow: "The team"
+lead: "A small, international, computational group, with trainees co-supervised across Saudi Arabia, Australia and Bangladesh and collaborators from IHME to UNSW Sydney."
+nav_section: People
+subnav:
+  - { title: "Principal investigator", url: "#pi" }
+  - { title: "Researchers & trainees", url: "#team" }
+  - { title: "Alumni", url: "#alumni" }
+  - { title: "Collaborators", url: "#collaborators" }
+---
+{%- assign pi = site.data.people.pi -%}
+<section class="page-section" id="pi">
+  <div class="pi-card reveal">
+    <img class="pi-photo" src="{{ pi.photo | relative_url }}" alt="Portrait of {{ pi.short }}" width="240" height="300">
+    <div>
+      <h2>{{ pi.name }}</h2>
+      <p class="pi-role">{{ pi.role }}</p>
+      <p class="pi-aff">{{ pi.affiliation }}</p>
+      <p>{{ pi.bio }}</p>
+      <ul class="pill-list">{% for h in pi.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+      <div class="social-inline">
+        <a class="btn btn-primary" href="mailto:{{ pi.email }}"><i class="fa-regular fa-envelope"></i> Email</a>
+        <a class="btn btn-ghost" href="{{ '/cv/' | relative_url }}"><i class="fa-regular fa-id-card"></i> CV</a>
+        <a class="btn btn-ghost" href="{{ '/assets/pdfs/AKM-Azad-CV.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> CV (PDF)</a>
+        <a class="btn btn-ghost" href="{{ site.social.scholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Scholar</a>
+        <a class="btn btn-ghost" href="{{ site.social.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid"></i> ORCID</a>
+        <a class="btn btn-ghost" href="{{ site.social.github }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a class="btn btn-ghost" href="{{ site.social.linkedin }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section" id="team">
+  <h2>Researchers &amp; trainees</h2>
+  <div class="grid grid-3">
+    {% for m in site.data.people.team %}
+      {% include member.html m=m %}
+    {% endfor %}
+    <a class="card member-card hoverable reveal" href="{{ '/join/' | relative_url }}" style="border-style:dashed">
+      <div class="avatar" style="background:var(--surface-2);color:var(--accent)"><i class="fa-solid fa-plus"></i></div>
+      <div><h3>This could be you</h3><p class="aff">PhD, MSc, undergraduate and visiting positions in data science, bioinformatics and AI.</p><span class="link-arrow">How to join →</span></div>
+    </a>
+  </div>
+</section>
+
+<section class="page-section" id="alumni">
+  <h2>Alumni &amp; past mentees</h2>
+  <div class="grid grid-2">
+    {% for m in site.data.people.alumni %}{% include member.html m=m %}{% endfor %}
+  </div>
+</section>
+
+<section class="page-section" id="collaborators">
+  <h2>Collaborators</h2>
+  <ul class="collab-list">
+    {% for c in site.data.people.collaborators %}
+      <li class="reveal">{% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener"><strong>{{ c.name }}</strong></a>{% else %}<strong>{{ c.name }}</strong>{% endif %}<span>{{ c.detail }}</span></li>
+    {% endfor %}
+  </ul>
+</section>

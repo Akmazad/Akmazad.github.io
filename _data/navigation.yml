@@ -1,25 +1,29 @@
-# main links links
-main:
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Software"
-    url: /year-archive/
-
-  
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Talks"
-    url: /talks/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-
-    
-  # - title: "CV"
-  #   url: /cv/
-    
-  # - title: "Guide"
-  #   url: /markdown/
+# Top navigation. `children` render as a dropdown (desktop) / nested list (mobile).
+- title: Research
+  url: /research/
+  children:
+    - { title: "Research themes", url: "/research/" }
+    - { title: "Projects & funding", url: "/projects/" }
+    - { title: "Software & resources", url: "/software/" }
+- title: Publications
+  url: /publications/
+  children:
+    - { title: "All publications", url: "/publications/" }
+    - { title: "Selected papers", url: "/publications/#selected" }
+    - { title: "Global Burden of Disease", url: "/publications/?gbd=only" }
+    - { title: "BibTeX (all)", url: "/files/adns-publications.bib" }
+- title: Blog
+  url: /blog/
+- title: People
+  url: /people/
+  children:
+    - { title: "Principal investigator", url: "/people/#pi" }
+    - { title: "Researchers & trainees", url: "/people/#team" }
+    - { title: "Collaborators", url: "/people/#collaborators" }
+    - { title: "CV", url: "/cv/" }
+- title: Teaching
+  url: /teaching/
+- title: News
+  url: /news/
+- title: Join us
+  url: /join/

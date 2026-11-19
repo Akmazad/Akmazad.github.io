@@ -1,0 +1,68 @@
+---
+title: "Curriculum vitae: AKM Azad, PhD"
+permalink: /cv/
+eyebrow: "Principal investigator"
+lead: "Associate Professor of Data Science, AI & Biostatistics, IMSIU · Senior Collaborator, Global Burden of Disease (IHME)"
+nav_section: People
+subnav:
+  - { title: "Education", url: "#education" }
+  - { title: "Appointments", url: "#appointments" }
+  - { title: "Funding", url: "/projects/" }
+  - { title: "Publications", url: "/publications/" }
+  - { title: "Service", url: "#service" }
+  - { title: "Awards", url: "#awards" }
+  - { title: "Talks", url: "#talks" }
+  - { title: "Skills", url: "#skills" }
+---
+{%- assign cv = site.data.cv -%}
+<p style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+  <a class="btn btn-primary" href="{{ '/assets/pdfs/AKM-Azad-CV.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> Download full CV (PDF)</a>
+  <span class="muted">Contact: <a href="mailto:{{ site.lab.email }}">{{ site.lab.email }}</a></span>
+</p>
+
+<section class="page-section" id="education">
+  <h2>Education</h2>
+  <ul class="cv-list">{% for e in cv.education %}<li><span class="yrs">{{ e.years }}</span><div><strong>{{ e.degree }}</strong><span class="place">{{ e.place }}</span>{% if e.note %}<div class="note">{{ e.note }}</div>{% endif %}</div></li>{% endfor %}</ul>
+</section>
+
+<section class="page-section" id="appointments">
+  <h2>Academic &amp; professional appointments</h2>
+  <ul class="cv-list">{% for a in cv.appointments %}<li><span class="yrs">{{ a.years }}</span><div><strong>{{ a.title }}</strong><span class="place">{{ a.place }}</span></div></li>{% endfor %}</ul>
+</section>
+
+<section class="page-section">
+  <h2>Research summary</h2>
+  {%- assign m = site.data.metrics -%}
+  <div class="kpi-row">
+    <div class="kpi"><b>{{ site.data.publications.size }}</b><span>Publications</span></div>
+    <div class="kpi"><b>{{ m.citations }}</b><span>Citations ({{ m.source }})</span></div>
+    <div class="kpi"><b>{{ m.h_index }}</b><span>h-index</span></div>
+    <div class="kpi"><b>{{ m.q1_share }}%</b><span>Q1 journals (10 y)</span></div>
+  </div>
+  <p>Funding: 565K SAR awarded and 6.5M SAR under review (<a href="{{ '/projects/' | relative_url }}">details</a>). Supervision: 2 PhD candidates (co-supervised, Charles Sturt University), 8 IMSIU postgraduate and undergraduate researchers, and earlier research associates, honours, SVRP and MS students at UNSW Sydney and Monash (<a href="{{ '/people/#team' | relative_url }}">details</a>).</p>
+</section>
+
+<section class="page-section" id="service">
+  <h2>Editorial &amp; professional service</h2>
+  <ul>{% for s in cv.service %}<li>{{ s }}</li>{% endfor %}</ul>
+</section>
+
+<section class="page-section" id="awards">
+  <h2>Awards &amp; recognition</h2>
+  <ul class="cv-list">{% for a in cv.awards %}<li><span class="yrs">{{ a.year }}</span><div>{{ a.title }}</div></li>{% endfor %}</ul>
+</section>
+
+<section class="page-section" id="talks">
+  <h2>Presentations &amp; invited talks</h2>
+  <ul class="cv-list">{% for t in cv.talks %}<li><span class="yrs">{{ t.year }}</span><div><strong>{{ t.title }}</strong><span class="place">{{ t.venue }}</span></div></li>{% endfor %}</ul>
+</section>
+
+<section class="page-section" id="skills">
+  <h2>Technical skills</h2>
+  <ul class="cv-list">{% for s in cv.skills %}<li><span class="yrs">{{ s.area }}</span><div>{{ s.items }}</div></li>{% endfor %}</ul>
+</section>
+
+<section class="page-section">
+  <h2>Teaching</h2>
+  <p>See the <a href="{{ '/teaching/' | relative_url }}">teaching page</a> for 16 courses taught at IMSIU, Swinburne, Monash and RMIT, and for programme development work.</p>
+</section>

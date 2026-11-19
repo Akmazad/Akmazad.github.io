@@ -1,0 +1,52 @@
+# Structured CV of the PI (rendered on /cv/).
+education:
+  - { years: "2013 – 2017", degree: "PhD in Biostatistics & Artificial Intelligence", place: "School of Mathematical Sciences, Monash University, Australia", note: "Thesis: Computational modelling and characterisation of cell signalling cross-talks in acquired drug resistance. Examiners: Prof. Michael Stumpf (Imperial College London) and Prof. Edmund Crampin (University of Melbourne)." }
+  - { years: "2010 – 2012", degree: "MS in Data Mining & Computational Biology", place: "Dept. of Information & Communications, Gwangju Institute of Science & Technology (GIST), South Korea" }
+  - { years: "2003 – 2008", degree: "BSc in Computer Science & Engineering", place: "University of Dhaka, Bangladesh" }
+
+appointments:
+  - { years: "2022 – present", title: "Associate Professor (Data Science, AI & Biostatistics)", place: "Department of Mathematics & Statistics and Deanship of Scientific Research, IMSIU, Riyadh" }
+  - { years: "2025 – present", title: "Senior Collaborator, Global Burden of Disease (GBD Tier-2)", place: "Institute for Health Metrics and Evaluation, University of Washington, USA" }
+  - { years: "2019 – 2024", title: "Lecturer, Level B (≈ Assistant Professor)", place: "Faculty of Science & Technology, Swinburne University of Technology, Sydney" }
+  - { years: "2021 – 2022", title: "Senior Research Officer (Data Scientist), ProCan Cancer Data Science Group", place: "Children's Medical Research Institute, Westmead, Australia" }
+  - { years: "2020 – 2021", title: "Research Fellow (AI, deep learning, phylogenetics)", place: "iThree Institute, University of Technology Sydney" }
+  - { years: "2019 – 2020", title: "Bioinformatician, Bill Walsh Lab", place: "Kolling Institute of Medical Research, University of Sydney" }
+  - { years: "2018 – 2020", title: "Postdoctoral Research Associate (AI, deep learning, bioinformatics)", place: "School of BABS, UNSW Sydney" }
+  - { years: "2019", title: "Online Facilitator", place: "RMIT Online, Australia" }
+  - { years: "2017 – 2018", title: "Postdoctoral Research Fellow (AI & natural language generation, BARD project)", place: "Monash University, Clayton" }
+  - { years: "2014 – 2018", title: "Teaching Associate", place: "Faculty of IT, Monash University" }
+  - { years: "2010 – 2013", title: "Researcher & Research Assistant, Bioinformatics", place: "Gwangju Institute of Science & Technology, South Korea" }
+  - { years: "2008 – 2010", title: "Software engineer (Software Architect; Senior .NET Programmer)", place: "BDCOM, QusarBD and SGCsoft.NET, Dhaka, Bangladesh" }
+
+service:
+  - "Guest Editor, Diagnostics (MDPI)"
+  - "Senior Collaborator, Global Burden of Disease, IHME"
+  - "COVID-19 Expert, Australian Academy of Science"
+  - "Bioinformatics Editor, WebmedCentral (UK)"
+  - "Reviewer: Briefings in Bioinformatics, PLOS ONE, Artificial Intelligence Review, BMC Bioinformatics, BMC Supplements"
+
+awards:   # awards & recognition
+  - { year: 2025, title: "Editor's Choice article, Diagnostics (Explainable federated learning for ECG diagnosis)" }
+  - { year: 2021, title: "Recognition of Teaching Excellence, Swinburne University of Technology" }
+  - { year: 2017, title: "Post Publication Award, Monash University" }
+  - { year: 2016, title: "Algorithm for causal network inference featured on the Monash University website" }
+  - { year: 2015, title: "Editors' pick, BMC Systems Biology (drug-resistant cross-talk prediction)" }
+  - { year: 2013, title: "Monash International Postgraduate Research Scholarship, Monash Graduate Scholarship and departmental top-up scholarship" }
+  - { year: 2010, title: "GIST research assistantship, tuition and stipend" }
+  - { year: "1998 – 2003", title: "Bangladesh Government scholarships for outstanding results in JSC, SSC and HSC" }
+
+talks:
+  - { year: 2024, title: "Data Science Fundamentals in R (training for students and faculty)", venue: "Deanship of Scientific Research, IMSIU, Riyadh" }
+  - { year: "2021 – 2022", title: "Seminars on upstream and downstream analyses of DIA-MS proteomics, genomics, transcriptomics and interactomics data", venue: "Children's Medical Research Institute, Sydney" }
+  - { year: 2019, title: "Deep learning-based functional effect prediction of brain-specific non-coding variants", venue: "School of Biotechnology & Biomolecular Sciences, UNSW Sydney" }
+  - { year: 2017, title: "Computational modelling and characterisation of signalling cross-talks in acquired drug resistance", venue: "Monash Bioinformatics Platform, Monash University" }
+  - { year: 2014, title: "Poster", venue: "ICSB 2014, 15th International Conference on Systems Biology, Melbourne" }
+  - { year: 2011, title: "Poster", venue: "GIW 2011, 22nd International Conference on Genome Informatics, Busan" }
+
+skills:
+  - { area: "Programming", items: "R, Python, C#/.NET, Java/J2EE, MATLAB, shell" }
+  - { area: "AI & data science", items: "Deep learning (PyTorch, Keras), transformers & foundation models, LLMs/generative AI, federated, transfer, contrastive and few/zero-shot learning, causal network inference, survival analysis" }
+  - { area: "Bioinformatics", items: "Multi-omics integration (RNA-seq, scRNA-seq, ATAC-seq, ChIP-seq, DIA-MS, PPI), biomarker discovery, differential, network and enrichment analysis, Bioconductor" }
+  - { area: "Statistics", items: "Bayesian modelling, Bayesian networks, MCMC and variational inference, WinBUGS, Stan" }
+  - { area: "Computing", items: "Google Cloud, NCI Gadi, Katana (UNSW), UTS HPCC, multi-GPU training, Nextflow, Docker" }
+  - { area: "Visualisation & web", items: "R Shiny, Power BI, ggplot2, plotly, visNetwork, D3.js, vis.js, Leaflet" }

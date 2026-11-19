@@ -1,0 +1,39 @@
+{%- assign p = include.p -%}
+{%- capture searchtext -%}{{ p.title }} {{ p.authors }} {{ p.venue }} {{ p.year }} {{ p.topics | join: ' ' }}{%- endcapture -%}
+<li class="pub" id="{{ include.prefix | default: 'pub-' }}{{ p.id }}"
+    data-year="{{ p.year }}" data-type="{{ p.type }}" data-topics="{{ p.topics | join: ' ' }}"
+    data-role="{{ p.role }}" data-gbd="{% if p.gbd %}1{% else %}0{% endif %}" data-cites="{{ p.citations }}"
+    data-featured="{% if p.featured %}1{% else %}0{% endif %}"
+    data-search="{{ searchtext | downcase | strip_html | escape }}"
+    data-bib='{"key":{{ p.bibkey | jsonify | escape }},"title":{{ p.title | jsonify | escape }},"authors":{{ p.authors | jsonify | escape }},"venue":{{ p.venue | jsonify | escape }},"year":{{ p.year }},"doi":{{ p.doi | default: "" | jsonify | escape }},"type":{{ p.type | jsonify }}}'>
+  <div class="pub-body">
+    <h3 class="pub-title">
+      {%- if p.doi -%}<a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{{ p.title | escape }}</a>
+      {%- elsif p.preprint -%}<a href="{{ p.preprint }}" target="_blank" rel="noopener">{{ p.title | escape }}</a>
+      {%- else -%}{{ p.title | escape }}{%- endif -%}
+    </h3>
+    <p class="pub-authors">{{ p.authors | escape | replace: 'AKM Azad', '<strong class="me">AKM Azad</strong>' }}</p>
+    <p class="pub-venue">{% if p.venue != '' %}<em>{{ p.venue | escape }}</em> · {% endif %}{{ p.year }}</p>
+    <div class="pub-meta">
+      {%- if p.type != 'journal' -%}<span class="badge badge-type">{{ p.type | capitalize }}</span>{%- endif -%}
+      {%- if p.quartile != nil and p.quartile != '' -%}<span class="badge badge-q">{{ p.quartile }}</span>{%- endif -%}
+      {%- if p.role == 'first' -%}<span class="badge badge-role">First author</span>
+      {%- elsif p.role == 'senior' -%}<span class="badge badge-role">Senior author</span>
+      {%- elsif p.role == 'sole' -%}<span class="badge badge-role">Sole author</span>
+      {%- elsif p.role == 'consortium' -%}<span class="badge badge-gbd">GBD Collaborator</span>{%- endif -%}
+      {%- if p.open_access -%}<span class="badge badge-oa" title="Open access"><i class="ai ai-open-access"></i> OA</span>{%- endif -%}
+      {%- if p.note -%}<span class="badge badge-note"><i class="fa-solid fa-award"></i> {{ p.note }}</span>{%- endif -%}
+      {%- if p.citations > 0 -%}<span class="cites" title="Citations (Google Scholar)"><i class="fa-solid fa-quote-right"></i> {{ p.citations }}</span>{%- endif -%}
+    </div>
+    <div class="pub-actions">
+      {%- if p.pdf -%}<a class="btn-chip" href="{{ p.pdf | relative_url }}" target="_blank" rel="noopener"><i class="fa-regular fa-file-pdf"></i> PDF</a>{%- endif -%}
+      {%- if p.doi -%}<a class="btn-chip" href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener"><i class="ai ai-doi"></i> DOI</a>{%- endif -%}
+      {%- if p.preprint -%}<a class="btn-chip" href="{{ p.preprint }}" target="_blank" rel="noopener"><i class="fa-regular fa-file-lines"></i> Preprint</a>{%- endif -%}
+      {%- if p.code -%}<a class="btn-chip" href="{{ p.code }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>{%- endif -%}
+      {%- if p.web -%}<a class="btn-chip" href="{{ p.web }}" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i> Web app</a>{%- endif -%}
+      {%- if p.data -%}<a class="btn-chip" href="{{ p.data }}" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> Data</a>{%- endif -%}
+      {%- if p.blog -%}<a class="btn-chip btn-chip-accent" href="{{ p.blog | relative_url }}"><i class="fa-solid fa-pen-nib"></i> Blog</a>{%- endif -%}
+      <button class="btn-chip js-bib" type="button"><i class="fa-solid fa-quote-left"></i> BibTeX</button>
+    </div>
+  </div>
+</li>

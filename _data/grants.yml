@@ -1,0 +1,80 @@
+# Research funding (from CV). status: awarded | completed | under review | submitted
+# amount_sar is numeric so totals are computed on the page.
+- title: "Onco-CDR: A Multi-Omics and Network Medicine Platform for Next-Generation Cancer Combination Therapy Discovery"
+  funder: "Research, Development and Innovation Authority (RDIA)"
+  role: Principal Investigator
+  amount_sar: 2000000
+  status: under review
+  theme: drugs
+- title: "FoodCert.ai: AI-Empowered Video Surveillance for Automated Health Certificate Management in the Food Industry"
+  funder: "Riyadh Municipality"
+  role: Principal Investigator
+  amount_sar: 2500000
+  status: submitted
+  theme: ai
+- title: "NovexSyn.ai: An End-to-End, Explainable, Multi-modal Deep Learning Framework for Synergistic Antiviral Prioritization Against Novel SARS-CoV-2 Variants"
+  funder: "Saudi National Institute of Health (SNIH)"
+  role: Principal Investigator
+  amount_sar: 960000
+  status: under review
+  theme: drugs
+- title: "AI-Driven Disruption of Extracellular Vesicle-Mediated Viral Tropism: A Deep Learning Framework for Predicting and Targeting Alternate SARS-CoV-2 Entry Pathways"
+  funder: "Saudi National Institute of Health (SNIH)"
+  role: Co-Principal Investigator
+  amount_sar: 923000
+  status: under review
+  theme: drugs
+- title: "A Topological Mapper Agent for Survey Operations Quality Assurance: Detecting Illogical Survey Responses as Topological Discontinuities"
+  funder: "General Authority for Statistics (GASTAT)"
+  role: Principal Investigator
+  amount_sar: 120000
+  status: submitted
+  theme: ai
+- title: "Disability Research Grant (KSRG-2024-089)"
+  funder: "King Salman Center for Disability Research"
+  role: Principal Investigator
+  amount_sar: 150000
+  status: completed
+  theme: medai
+- title: "Disability Research Grant (KSRG-2023-253)"
+  funder: "King Salman Center for Disability Research"
+  role: Principal Investigator
+  amount_sar: 150000
+  status: completed
+  theme: medai
+- title: "Research Partnership Program (IMSIU-RP23004)"
+  funder: "Deanship of Scientific Research, IMSIU"
+  role: Principal Investigator
+  amount_sar: 120000
+  status: completed
+  theme: medai
+- title: "AI-driven crowd-hotspot prediction in Jamarat"
+  funder: "Imam Mohammad Ibn Saud Islamic University (IMSIU)"
+  role: Principal Investigator
+  amount_sar: 37000
+  status: completed
+  theme: ai
+- title: "Bayesian methods in causal model-based cancer biomarker discovery (19-12-12-024)"
+  funder: "Deanship of Scientific Research, IMSIU"
+  role: Co-Principal Investigator
+  amount_sar: 18000
+  status: completed
+  theme: bayes
+- title: "Multi-modal similarity-based in silico combination-therapy prioritization for COVID-19 drugs (21-13-18-008)"
+  funder: "Deanship of Scientific Research, IMSIU"
+  role: Co-Principal Investigator
+  amount_sar: 30000
+  status: completed
+  theme: drugs
+- title: "Stem cell therapies and benefaction of somatic cell nuclear transfer cloning in the COVID-19 era (21-13-18-029)"
+  funder: "Deanship of Scientific Research, IMSIU"
+  role: Co-Principal Investigator
+  amount_sar: 30000
+  status: completed
+  theme: health
+- title: "Improving health outcomes of people with cardiovascular diseases using artificial intelligence and digital health technologies"
+  funder: "Deanship of Scientific Research, IMSIU"
+  role: Co-Principal Investigator
+  amount_sar: 30000
+  status: completed
+  theme: medai

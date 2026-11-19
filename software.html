@@ -1,0 +1,52 @@
+---
+title: Software, web servers & data
+permalink: /software/
+eyebrow: "Open science"
+lead: "Tools, databases and web servers we have built and released openly so that others can reproduce, reuse and extend our methods."
+nav_section: Research
+redirect_from:
+  - /year-archive/
+  - /software/index.html
+---
+{%- assign sw = site.data.software -%}
+<div class="blog-filters" data-filter-group="#sw-grid" role="group" aria-label="Filter by theme">
+  <button type="button" class="chip" data-value="all" aria-pressed="true">All <span class="n">{{ sw.size }}</span></button>
+  {% for t in site.data.research %}{% assign n = sw | where: "theme", t.id %}{% if n.size > 0 %}
+  <button type="button" class="chip" data-value="{{ t.id }}" aria-pressed="false"><i class="fa-solid {{ t.icon }}"></i> {{ t.title }} <span class="n">{{ n.size }}</span></button>
+  {% endif %}{% endfor %}
+</div>
+
+<div class="grid grid-3" id="sw-grid">
+  {% for s in sw %}
+  <article class="card sw-card hoverable reveal" id="{{ s.id }}" data-tags="{{ s.theme }}">
+    <div class="sw-head">
+      <div><h3>{{ s.name }}</h3><span class="sw-kind">{{ s.kind }} · {{ s.year }}</span></div>
+      <span class="status status-{{ s.status | replace: ' ', '-' }}">{{ s.status }}</span>
+    </div>
+    <p>{{ s.summary }}</p>
+    <div class="sw-lang">{% for l in s.lang %}<span>{{ l }}</span>{% endfor %}</div>
+    <div class="sw-links">
+      {% for l in s.links %}
+        {%- case l.icon -%}
+          {%- when 'github' -%}{%- assign ic = 'fa-brands fa-github' -%}
+          {%- when 'web' -%}{%- assign ic = 'fa-solid fa-globe' -%}
+          {%- when 'data' -%}{%- assign ic = 'fa-solid fa-database' -%}
+          {%- when 'download' -%}{%- assign ic = 'fa-solid fa-download' -%}
+          {%- else -%}{%- assign ic = 'fa-regular fa-file-lines' -%}
+        {%- endcase -%}
+        <a class="btn-chip" href="{{ l.url }}" target="_blank" rel="noopener"><i class="{{ ic }}"></i> {{ l.label }}</a>
+      {% endfor %}
+      {% if s.blog %}<a class="btn-chip btn-chip-accent" href="{{ s.blog | relative_url }}"><i class="fa-solid fa-pen-nib"></i> How it works</a>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>
+
+<section class="page-section" style="margin-top:56px">
+  <div class="callout">
+    <strong>Using our tools?</strong>
+    Please cite the corresponding paper (each card links to it), and tell us about bugs or feature requests on GitHub or by
+    <a href="mailto:{{ site.lab.email }}">email</a>. Some legacy web servers (COVID-CDR, COVIDSpread) were hosted by former
+    host institutions and may be offline; their code and data remain available through the linked papers.
+  </div>
+</section>

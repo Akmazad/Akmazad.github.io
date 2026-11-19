@@ -1,0 +1,98 @@
+# Research themes. `id` is referenced by publication `topics` and drives filtering.
+- id: bayes
+  title: Bayesian & Network Inference
+  icon: fa-diagram-project
+  short: Probabilistic graphical models, MCMC samplers and causal network learning for noisy, high-dimensional data.
+  body: >-
+    Our methodological core. We design Markov chain Monte Carlo samplers that escape local optima when
+    learning Bayesian-network structure (the Neighbourhood and Hit-and-Run samplers, released in BNMCMC),
+    fit exponential random graph models such as the p<sub>1</sub>-model to quantify how likely each
+    interaction is in a condition-specific network, and build structured elicitation techniques (BARD) for
+    reasoning under uncertainty.
+  questions:
+    - How can we learn causal structure from small-sample omics data without getting trapped in local optima?
+    - Which network motifs (for example, V-structures) reveal a switch from targeted to bypass signalling?
+  tools: [bnmcmc, pathturber]
+
+- id: cancer
+  title: Cancer Systems Biology & Drug Resistance
+  icon: fa-ribbon
+  short: Modelling how signalling pathways rewire and cross-talk when tumours escape targeted therapy.
+  body: >-
+    Tumours that initially respond to targeted inhibitors such as lapatinib or dasatinib often relapse
+    because signalling is reprogrammed. We model this rewiring with data-driven cross-talk networks,
+    define formal categories of pathway cross-talk (Type-I/Type-II, XDaMoSiN), and prioritise perturbation
+    drivers and prognostic biomarkers in breast, pancreatic, liver and lung cancers, validated against
+    TCGA, CPTAC and proteomic cohorts.
+  questions:
+    - Which compensatory pathways cross-talk with the drug target as resistance is acquired?
+    - Can the topology of a perturbation network nominate the next therapeutic target?
+  tools: [rxtalkviz, xtalkiis, pathturber, kpgminer]
+
+- id: drugs
+  title: Drug Repositioning & Network Medicine
+  icon: fa-capsules
+  short: Multi-modal drug similarity, interactome proximity and combination-therapy prioritisation.
+  body: >-
+    We integrate chemical, target, functional and pathway evidence into multi-modal drug–drug similarity
+    networks (DrugSimDB, more than 238,000 significant drug pairs across 10,000+ small molecules), and use
+    network-proximity and separation measures on the human interactome to prioritise synergistic drug
+    combinations, as in the COVID-CDR platform and the cyclosporine–selinexor combination for SARS-CoV-2.
+  questions:
+    - Which drug pairs act on complementary, non-overlapping neighbourhoods of a disease module?
+    - How can heterogeneous drug evidence be fused into a single, extensible similarity network?
+  tools: [drugsimdb, covidcdr]
+
+- id: omics
+  title: Multi-omics & Single-cell Bioinformatics
+  icon: fa-dna
+  short: Biomarker discovery from bulk, single-cell and spatial omics with statistical and deep learning.
+  body: >-
+    From promoter prediction and copy-number–expression integration to single-cell and single-nucleus
+    RNA-seq, proteomics (DIA-MS) and dual RNA-seq of host–pathogen systems, we develop pipelines that turn
+    high-throughput molecular data into interpretable biomarkers, regulatory footprints and candidate
+    therapeutics in cancer, neurodevelopment and Parkinson's disease.
+  questions:
+    - Which cell-type-specific drivers are shared across neurodegenerative conditions?
+    - How do host and pathogen transcriptional programmes co-evolve over the course of infection?
+  tools: [kpgminer, xtalkiis]
+
+- id: medai
+  title: Trustworthy Medical AI
+  icon: fa-heart-pulse
+  short: Explainable, federated and efficient deep learning for imaging, physiological signals and clinical data.
+  body: >-
+    We build AI systems that clinicians can trust and deploy: explainable models (SHAP, LIME, attention)
+    for chronic kidney disease, thyroid, diabetes and heart failure; federated and graph-federated learning
+    for privacy-preserving ECG diagnosis; and transformer and CNN architectures for MRI, CT, X-ray,
+    ultrasound, EEG and wearable-sensor data, often in support of people living with disability.
+  questions:
+    - How do we keep accuracy while making models auditable, private and lightweight enough for the point of care?
+  tools: []
+
+- id: health
+  title: Global Health & Epidemiology
+  icon: fa-earth-asia
+  short: Population-scale burden estimation and real-time epidemic analytics.
+  body: >-
+    As a Senior Collaborator of the Global Burden of Disease (GBD) study at the Institute for Health
+    Metrics and Evaluation (IHME), we contribute to the analyses that underpin global health policy, from cancers and
+    cardiovascular disease to infections and maternal health. We also build real-time
+    forecasting tools (COVIDSpread) and machine-learning analyses of COVID-19 severity, mortality and
+    vaccine reactogenicity.
+  questions:
+    - How can forecasting and burden estimates be made transparent and actionable for policy makers?
+  tools: [covidspread]
+
+- id: ai
+  title: AI Foundations & Applied AI
+  icon: fa-microchip
+  short: New optimisers and loss functions, vision-language agents and physics-informed learning.
+  body: >-
+    Methods that generalise beyond biomedicine: the SPARK optimiser and the AGL loss for more stable
+    training; VLM-Nav for mapless UAV navigation with vision-language models; physics-informed surrogates
+    for polymer composites and concrete; and applied systems for agriculture (PlantCareNet), land-value
+    analytics with differential privacy (LandSin), astronomy, cyber-security and smart-city sensing.
+  questions:
+    - Can feedback from the loss trajectory make optimisation robust to the choice of learning rate?
+  tools: [landsin]

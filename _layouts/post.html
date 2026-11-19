@@ -1,0 +1,65 @@
+---
+layout: default
+---
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign minutes = words | divided_by: 200 | plus: 1 -%}
+{%- assign theme = site.data.research | where: "id", page.theme | first -%}
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-hero">
+    <canvas class="net-canvas" aria-hidden="true"></canvas>
+    <div class="container post-hero-inner">
+      <p class="eyebrow">
+        <a href="{{ '/blog/' | relative_url }}"><i class="fa-solid fa-arrow-left"></i> Methods blog</a>
+        {% if theme %}<span class="dot">·</span><a href="{{ '/research/#' | append: theme.id | relative_url }}"><i class="fa-solid {{ theme.icon }}"></i> {{ theme.title }}</a>{% endif %}
+      </p>
+      {% if page.method %}<span class="method-pill">{{ page.method }}</span>{% endif %}
+      <h1 itemprop="headline">{{ page.title }}</h1>
+      {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: '%-d %B %Y' }}</time>
+        <span class="dot">·</span>{{ minutes }} min read
+        <span class="dot">·</span><span itemprop="author">{{ page.author | default: 'ADNS Lab' }}</span>
+      </p>
+      {% if page.tags.size > 0 %}<p class="tag-row">{% for t in page.tags %}<span class="tag">#{{ t }}</span>{% endfor %}</p>{% endif %}
+    </div>
+  </header>
+
+  <div class="container post-layout">
+    <aside class="toc-wrap" aria-label="Table of contents">
+      <nav class="toc" id="toc"><p class="toc-title">On this page</p></nav>
+    </aside>
+    <div class="prose" id="post-content" itemprop="articleBody">
+      {{ content }}
+
+      {% if page.paper %}
+        {% assign paper_ids = page.paper | split: "," %}
+        <section class="paper-card" aria-labelledby="paper-card-h">
+          <h2 id="paper-card-h">Read the paper{% if paper_ids.size > 1 %}s{% endif %}</h2>
+          <ol class="pub-list compact">
+            {% for pid in paper_ids %}
+              {% assign pid_s = pid | strip %}
+              {% assign pp = site.data.publications | where: "id", pid_s | first %}
+              {% if pp %}{% include pub.html p=pp %}{% endif %}
+            {% endfor %}
+          </ol>
+        </section>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="container post-footer">
+    {% assign related = site.posts | where: "theme", page.theme %}
+    {% assign shown = 0 %}
+    {% capture rel %}
+      {% for r in related %}{% if r.url != page.url and shown < 3 %}{% assign shown = shown | plus: 1 %}
+        <a class="mini-card" href="{{ r.url | relative_url }}"><span class="mini-kicker">{{ r.date | date: '%Y' }}{% if r.method %} · {{ r.method }}{% endif %}</span><strong>{{ r.title }}</strong></a>
+      {% endif %}{% endfor %}
+    {% endcapture %}
+    {% if shown > 0 %}<h2 class="section-h small">More on {{ theme.title | default: 'this theme' }}</h2><div class="mini-grid">{{ rel }}</div>{% endif %}
+    <nav class="post-nav" aria-label="Adjacent posts">
+      {% if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}"><span>← Older</span><strong>{{ page.previous.title }}</strong></a>{% else %}<span></span>{% endif %}
+      {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer →</span><strong>{{ page.next.title }}</strong></a>{% endif %}
+    </nav>
+  </div>
+</article>
+{% include bib-modal.html %}

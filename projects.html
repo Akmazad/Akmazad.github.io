@@ -1,0 +1,42 @@
+---
+title: Projects & funding
+permalink: /projects/
+eyebrow: "Research funding"
+lead: "Competitive grants that support the lab's work in network medicine, disability-focused AI and public-sector analytics."
+nav_section: Research
+---
+{%- assign awarded = 0 -%}{%- assign pending = 0 -%}{%- assign n_pi = 0 -%}
+{%- for g in site.data.grants -%}
+  {%- if g.status == 'completed' or g.status == 'awarded' -%}{%- assign awarded = awarded | plus: g.amount_sar -%}{%- else -%}{%- assign pending = pending | plus: g.amount_sar -%}{%- endif -%}
+  {%- if g.role == 'Principal Investigator' -%}{%- assign n_pi = n_pi | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+<div class="kpi-row reveal">
+  <div class="kpi"><b>{{ awarded | divided_by: 1000 }}K</b><span>SAR awarded</span></div>
+  <div class="kpi"><b>{{ pending | divided_by: 100000 | divided_by: 10.0 }}M</b><span>SAR under review</span></div>
+  <div class="kpi"><b>{{ site.data.grants.size }}</b><span>Grants &amp; proposals</span></div>
+  <div class="kpi"><b>{{ n_pi }}</b><span>As principal investigator</span></div>
+</div>
+
+{%- assign groups = "under review,submitted,awarded,completed" | split: "," -%}
+<section class="page-section">
+  <h2>Proposals under review</h2>
+  <div class="card">
+    {% for g in site.data.grants %}{% if g.status == 'under review' or g.status == 'submitted' %}{% include grant.html g=g %}{% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="page-section">
+  <h2>Funded projects</h2>
+  <div class="card">
+    {% for g in site.data.grants %}{% if g.status == 'completed' or g.status == 'awarded' %}{% include grant.html g=g %}{% endif %}{% endfor %}
+  </div>
+</section>
+
+<section class="page-section">
+  <h2>Flagship directions</h2>
+  <div class="grid grid-3">
+    <div class="card reveal"><div class="ic-bubble"><i class="fa-solid fa-capsules"></i></div><h3>Onco-CDR</h3><p class="muted">A multi-omics and network-medicine platform for next-generation cancer combination therapy, building on DrugSimDB and COVID-CDR.</p></div>
+    <div class="card reveal"><div class="ic-bubble"><i class="fa-solid fa-universal-access"></i></div><h3>AI for disability</h3><p class="muted">Two King Salman Center for Disability Research grants supporting HAR, autism, Alzheimer's and lung-disease models, plus multilingual 3D Braille generation.</p></div>
+    <div class="card reveal"><div class="ic-bubble"><i class="fa-solid fa-city"></i></div><h3>Public-sector analytics</h3><p class="muted">Crowd-hotspot prediction at Jamarat, food-safety certification with video AI, and topological quality assurance for national surveys.</p></div>
+  </div>
+</section>

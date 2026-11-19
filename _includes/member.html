@@ -1,0 +1,17 @@
+{%- assign m = include.m -%}
+{%- if m.name -%}
+  {%- assign parts = m.name | split: " " -%}
+  {%- capture initials -%}{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}{%- endcapture -%}
+{%- else -%}
+  {%- assign initials = '<i class="fa-solid fa-user-graduate"></i>' -%}
+{%- endif -%}
+<article class="card member-card reveal">
+  {% if m.photo %}<img class="avatar" src="{{ m.photo | relative_url }}" alt="{{ m.name }}" width="56" height="56" style="object-fit:cover">{% else %}<div class="avatar" aria-hidden="true">{{ initials }}</div>{% endif %}
+  <div>
+    <h3>{% if m.name %}{{ m.name }}{% else %}{{ m.role }}{% endif %}</h3>
+    {% if m.name %}<p class="aff" style="margin-bottom:2px"><strong>{{ m.role }}</strong></p>{% endif %}
+    <p class="aff">{{ m.affiliation }}</p>
+    {% if m.topics %}<ul>{% for t in m.topics %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+    {% if m.links %}<div class="pub-actions" style="margin-top:10px">{% for l in m.links %}<a class="btn-chip" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}</div>{% endif %}
+  </div>
+</article>

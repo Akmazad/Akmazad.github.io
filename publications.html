@@ -1,0 +1,116 @@
+---
+title: Publications
+permalink: /publications/
+eyebrow: "Research output"
+lead: "Peer-reviewed articles, preprints, book chapters and datasets from the ADNS Lab and its PI, from Bayesian network inference to Global Burden of Disease analyses. Search, filter by theme, or click a year."
+nav_section: Publications
+scripts: [/assets/js/publications.js]
+redirect_from:
+  - /papers/
+  - /year-archive/publications/
+subnav:
+  - { title: "Selected papers", url: "#selected" }
+  - { title: "All publications", url: "#all" }
+  - { title: "Download BibTeX", url: "/files/adns-publications.bib" }
+---
+{%- assign pubs = site.data.publications -%}
+{%- assign m = site.data.metrics -%}
+{%- assign lead_n = 0 -%}{%- assign pdf_n = 0 -%}
+{%- for p in pubs -%}
+  {%- if p.role == 'first' or p.role == 'senior' or p.role == 'sole' -%}{%- assign lead_n = lead_n | plus: 1 -%}{%- endif -%}
+  {%- if p.pdf -%}{%- assign pdf_n = pdf_n | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+
+<div class="kpi-row reveal">
+  <div class="kpi"><b>{{ pubs.size }}</b><span>Publications</span></div>
+  <div class="kpi"><b>{{ m.citations | default: 0 }}</b><span>Citations</span></div>
+  <div class="kpi"><b>{{ m.h_index }}</b><span>h-index · i10 {{ m.i10_index }}</span></div>
+  <div class="kpi"><b>{{ pdf_n }}</b><span>Open PDFs hosted</span></div>
+</div>
+<p class="muted" style="font-size:.85rem;margin-top:-14px">Citation metrics from <a href="{{ site.social.scholar }}" target="_blank" rel="noopener">Google Scholar</a>, {{ m.as_of }}. <strong>AKM Azad</strong> is underlined in author lists; {{ lead_n }} papers are first-, senior- or sole-authored.</p>
+
+<section class="page-section" id="selected">
+  <h2>Selected papers</h2>
+  <ol class="pub-list">
+    {% for p in pubs %}{% if p.featured %}{% include pub.html p=p prefix="sel-" %}{% endif %}{% endfor %}
+  </ol>
+</section>
+
+<section class="page-section" id="all">
+  <h2>All publications</h2>
+  <div id="pub-explorer">
+    <div class="pub-toolbar" role="search">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <label class="sr-only" for="pub-q">Search publications</label>
+        <input id="pub-q" type="search" placeholder="Search title, author, venue or keyword (press / to focus)" autocomplete="off">
+      </div>
+      <div class="filter-row" data-facet="topic">
+        <span class="filter-label">Theme</span>
+        <button type="button" class="chip" data-value="all" aria-pressed="true">All</button>
+        {% for t in site.data.research %}
+          {%- assign n = pubs | where_exp: "p", "p.topics contains t.id" -%}
+          <button type="button" class="chip" data-value="{{ t.id }}" aria-pressed="false"><i class="fa-solid {{ t.icon }}"></i> {{ t.title }} <span class="n">{{ n.size }}</span></button>
+        {% endfor %}
+      </div>
+      <div class="filter-row" data-facet="type">
+        <span class="filter-label">Type</span>
+        <button type="button" class="chip" data-value="all" aria-pressed="true">All</button>
+        {%- assign nj = pubs | where: "type", "journal" -%}{%- assign nc = pubs | where: "type", "conference" -%}{%- assign np = pubs | where: "type", "preprint" -%}
+        <button type="button" class="chip" data-value="journal" aria-pressed="false">Journal <span class="n">{{ nj.size }}</span></button>
+        <button type="button" class="chip" data-value="conference" aria-pressed="false">Conference <span class="n">{{ nc.size }}</span></button>
+        <button type="button" class="chip" data-value="preprint" aria-pressed="false">Preprint <span class="n">{{ np.size }}</span></button>
+        <button type="button" class="chip" data-value="other" aria-pressed="false">Chapter, thesis &amp; data <span class="n">{{ pubs.size | minus: nj.size | minus: nc.size | minus: np.size }}</span></button>
+      </div>
+      <div class="filter-row" data-facet="role">
+        <span class="filter-label">Show</span>
+        <button type="button" class="chip" data-value="all" aria-pressed="true">Everything</button>
+        <button type="button" class="chip" data-value="lead" aria-pressed="false">First / senior / sole author <span class="n">{{ lead_n }}</span></button>
+        <button type="button" class="chip" data-value="featured" aria-pressed="false">Selected</button>
+      </div>
+      <div>
+        <div class="year-chart" id="year-chart" aria-label="Publications per year (click a bar to filter)"></div>
+      </div>
+      <div class="toolbar-foot">
+        <span><strong id="pub-count">{{ pubs.size }}</strong> publications shown · <button type="button" class="btn-chip" id="pub-reset"><i class="fa-solid fa-rotate-left"></i> Reset</button></span>
+        <span style="display:flex;gap:10px;flex-wrap:wrap">
+          <label>GBD papers
+            <select id="pub-gbd">
+              <option value="include">Include</option>
+              <option value="exclude">Hide</option>
+              <option value="only">Only GBD</option>
+            </select>
+          </label>
+          <label>Sort
+            <select id="pub-sort">
+              <option value="year">Newest first</option>
+              <option value="cites">Most cited</option>
+            </select>
+          </label>
+        </span>
+      </div>
+    </div>
+
+    {% assign by_year = pubs | group_by: "year" | sort: "name" | reverse %}
+    {% for g in by_year %}
+      <div class="year-group" id="y{{ g.name }}">
+        <div class="year-head"><h2>{{ g.name }}</h2><span class="year-n">{{ g.items.size }} {% if g.items.size == 1 %}paper{% else %}papers{% endif %}</span></div>
+        <ol class="pub-list">
+          {% for p in g.items %}{% include pub.html p=p %}{% endfor %}
+        </ol>
+      </div>
+    {% endfor %}
+    <div class="is-hidden"><ol class="pub-list" id="pub-flat"></ol></div>
+    <div class="no-results" id="pub-empty"><i class="fa-regular fa-face-meh" style="font-size:2rem"></i><p>No publications match these filters.</p></div>
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="callout teal">
+    <strong>About the PDFs</strong>
+    PDFs are hosted only for open-access articles published under Creative Commons licences and for the lab's own preprints.
+    For other papers, follow the DOI link or <a href="mailto:{{ site.lab.email }}?subject=Reprint%20request">email us for a reprint</a>.
+    Global Burden of Disease papers are open access on the publishers' websites.
+  </div>
+</section>
+{% include bib-modal.html %}

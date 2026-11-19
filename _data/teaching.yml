@@ -1,0 +1,48 @@
+# Teaching portfolio (from CV).
+development:
+  - title: "Executive Master's in Data Analytics"
+    detail: "Led the planning and development of the programme (NCAAA standard), Department of Mathematics & Statistics, IMSIU (under review)."
+  - title: "Data Science in Finance and Insurance (AFM 6111)"
+    detail: "Designed the postgraduate course specification and curriculum, IMSIU."
+  - title: "Actuarial Lab 2 (ACT 1453)"
+    detail: "Designed the laboratory curriculum, IMSIU."
+  - title: "Bachelor of Actuarial Science"
+    detail: "Course coordinator for data-science courses and laboratory curricula, IMSIU."
+
+workshops:
+  - title: "Data Science Fundamentals in R"
+    year: 2024
+    detail: "Training for all students and faculty members, organised by the Deanship of Scientific Research, IMSIU."
+    url: "https://github.com/Akmazad/Data-Science-Fundamentals-in-R"
+
+courses:
+  - institution: "Imam Mohammad Ibn Saud Islamic University, Riyadh"
+    period: "2022 – present"
+    items:
+      - { title: "Probability and Statistics for Engineers", level: UG, semesters: 7 }
+      - { title: "Introduction to Probability and Statistics", level: UG, semesters: 6 }
+      - { title: "Probability and Statistics (1)", level: UG, semesters: 4, url: "https://github.com/Akmazad/IMAMU_STA111_1444_S2" }
+      - { title: "Biostatistics", level: UG, semesters: 3 }
+      - { title: "Mathematical Statistics", level: UG, semesters: 2 }
+  - institution: "Swinburne University of Technology, Sydney"
+    period: "2019 – 2024"
+    items:
+      - { title: "Object Oriented Programming", level: PG, semesters: 6 }
+      - { title: "Database Management Systems in the Big Data Era", level: PG, semesters: 2 }
+      - { title: "Introduction to Data Science", level: PG, semesters: 1 }
+  - institution: "Monash University, Melbourne"
+    period: "2014 – 2018"
+    items:
+      - { title: "Discrete Mathematics for Computer Science", level: UG, semesters: 5 }
+      - { title: "Intelligent Systems", level: PG, semesters: 2 }
+      - { title: "Algorithmic Problem Solving", level: UG, semesters: 2 }
+      - { title: "Research Methods in Computer Science", level: "UG/PG", semesters: 1 }
+      - { title: "Introduction to Computer Science", level: UG, semesters: 1 }
+      - { title: "Algorithms and Programming", level: UG, semesters: 1 }
+      - { title: "Techniques for Modelling", level: UG, semesters: 1 }
+  - institution: "RMIT Online"
+    period: "2019"
+    items:
+      - { title: "Introduction to Programming (Python)", level: UG, semesters: 1 }
+
+platforms: ["Blackboard", "Canvas", "Moodle", "MS Teams", "Zoom"]

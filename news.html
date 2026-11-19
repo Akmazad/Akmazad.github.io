@@ -1,0 +1,32 @@
+---
+title: News
+permalink: /news/
+eyebrow: "Lab news"
+lead: "Papers, grants, recognition and milestones."
+nav_section: News
+redirect_from:
+  - /talks/
+---
+{%- assign by_year = site.data.news | group_by_exp: "n", "n.date | date: '%Y'" -%}
+<div class="blog-filters" data-filter-group="#news-list" role="group" aria-label="Filter news">
+  <button type="button" class="chip" data-value="all" aria-pressed="true">All</button>
+  <button type="button" class="chip" data-value="pub" aria-pressed="false"><i class="fa-regular fa-file-lines"></i> Publications</button>
+  <button type="button" class="chip" data-value="grant" aria-pressed="false"><i class="fa-solid fa-sack-dollar"></i> Grants</button>
+  <button type="button" class="chip" data-value="award" aria-pressed="false"><i class="fa-solid fa-award"></i> Awards</button>
+  <button type="button" class="chip" data-value="lab" aria-pressed="false"><i class="fa-solid fa-flask"></i> Lab</button>
+  <button type="button" class="chip" data-value="talk" aria-pressed="false"><i class="fa-solid fa-chalkboard-user"></i> Talks</button>
+</div>
+<div id="news-list" style="max-width:860px">
+  {% for y in by_year %}
+    <h2 style="margin-top:28px">{{ y.name }}</h2>
+    <ul class="timeline">
+      {% for n in y.items %}
+        <li class="k-{{ n.kind }} reveal" data-tags="{{ n.kind }}">
+          <time datetime="{{ n.date }}">{% if n.approx %}{{ n.date | date: '%Y' }}{% else %}{{ n.date | date: '%-d %b %Y' }}{% endif %}</time>
+          <span class="ntitle">{% if n.link %}<a href="{{ n.link | relative_url }}">{{ n.title }}</a>{% else %}{{ n.title }}{% endif %}</span><span class="news-kind">{{ n.kind }}</span>
+          {% if n.text %}<p>{{ n.text }}</p>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

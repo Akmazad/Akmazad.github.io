@@ -1,0 +1,180 @@
+# Software, web servers and data resources developed in the lab.
+# kind: web | package | tool | database ; status: active | archived | in development
+- id: drugsimdb
+  name: DrugSimDB
+  kind: database
+  status: active
+  year: 2020
+  lang: [R, Shiny]
+  theme: drugs
+  summary: >-
+    Multi-modal drug–drug similarity database: 10,367 small molecules and 238,635 significant drug pairs
+    integrating chemical, target-sequence, functional (GO/PPI) and pathway evidence, with an interactive
+    network explorer.
+  links:
+    - { label: "Web app", url: "https://unsw-data-analytics.shinyapps.io/DrugRepo/", icon: web }
+    - { label: "Code", url: "https://github.com/Akmazad/DrugSimDB", icon: github }
+    - { label: "Data", url: "https://figshare.com/articles/dataset/DrugSimDB/11948904", icon: data }
+    - { label: "Paper", url: "https://doi.org/10.1093/bib/bbaa126", icon: paper }
+  blog: /blog/2020/drugsimdb/
+
+- id: covidcdr
+  name: COVID-CDR
+  kind: web
+  status: archived
+  year: 2021
+  lang: [R, Shiny, visNetwork]
+  theme: drugs
+  summary: >-
+    Network-pharmacology platform to visualise and quantify how drug targets interact with the
+    SARS-CoV-2–host interactome and to prioritise synergistic drug combinations.
+  links:
+    - { label: "Web app", url: "https://unsw-data-analytics.shinyapps.io/COVID_CombTherap/", icon: web }
+    - { label: "Data (Dryad)", url: "https://doi.org/10.5061/dryad.905qfttjm", icon: data }
+    - { label: "Paper", url: "https://doi.org/10.1016/j.patter.2021.100325", icon: paper }
+  blog: /blog/2021/covid-cdr-combination-therapy/
+
+- id: covidspread
+  name: COVIDSpread
+  kind: web
+  status: archived
+  year: 2021
+  lang: [R, Shiny]
+  theme: health
+  summary: >-
+    Real-time visualisation and short-term forecasting of COVID-19 spread with customisable
+    time-series models (formerly "COVID-19 TS").
+  links:
+    - { label: "Paper", url: "https://doi.org/10.12688/f1000research.73969.1", icon: paper }
+  blog: /blog/2021/covidspread-time-series/
+
+- id: pathturber
+  name: PathTurbEr
+  kind: package
+  status: active
+  year: 2021
+  lang: [R]
+  theme: bayes
+  summary: >-
+    Pathway Perturbation Driver discovery: learns causal Bayesian networks of a perturbed signalling
+    pathway with Neighbourhood, Hit-and-Run and Metropolis–Hastings samplers and ranks driver genes
+    with the p<sub>1</sub>-model.
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/PathTurbEr", icon: github }
+    - { label: "Paper", url: "https://doi.org/10.1093/bib/bbab137", icon: paper }
+  blog: /blog/2021/pathturber-perturbation-drivers/
+
+- id: rxtalkviz
+  name: rXTalkViz
+  kind: package
+  status: active
+  year: 2024
+  lang: [R, ggplot2]
+  theme: cancer
+  summary: >-
+    R package that quantifies functional cross-talk between enriched pathways or terms and produces
+    publication-ready network visualisations.
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/rXTalkViz", icon: github }
+    - { label: "Paper", url: "https://doi.org/10.1016/j.simpa.2024.100708", icon: paper }
+  blog: /blog/2024/rxtalkviz/
+
+- id: bnmcmc
+  name: BNMCMC
+  kind: tool
+  status: archived
+  year: 2018
+  lang: [C#, ASP.NET, D3.js]
+  theme: bayes
+  summary: >-
+    Bayesian-network structure learning and visualisation with Neighbourhood, Hit-and-Run and
+    Metropolis–Hastings MCMC samplers for discrete data.
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/BNMCMC-Server", icon: github }
+    - { label: "Download", url: "https://sourceforge.net/projects/bnmcmc/", icon: download }
+    - { label: "Preprint", url: "https://doi.org/10.1101/414953", icon: paper }
+  blog: /blog/2018/bnmcmc-software/
+
+- id: xtalkiis
+  name: XTalkiiS
+  kind: tool
+  status: archived
+  year: 2018
+  lang: [C#]
+  theme: cancer
+  summary: >-
+    Predicts data-driven cross-talk between KEGG pathways within one organism or between two
+    organisms (for example host–parasite), with live KEGG retrieval.
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/XTalkiiS", icon: github }
+    - { label: "Download", url: "https://sourceforge.net/projects/xtalkiis/", icon: download }
+    - { label: "Preprint", url: "https://doi.org/10.1101/437541", icon: paper }
+  blog: /blog/2018/xtalkiis-inter-species-cross-talk/
+
+- id: kpgminer
+  name: KPGminer
+  kind: tool
+  status: archived
+  year: 2018
+  lang: [C#]
+  theme: omics
+  summary: >-
+    Retrieves and organises the constituent genes of KEGG pathways for any organism, in single or batch
+    mode, through the KEGG REST API.
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/KPGminer", icon: github }
+    - { label: "Download", url: "https://sourceforge.net/projects/kpgminer/", icon: download }
+    - { label: "Preprint", url: "https://doi.org/10.1101/416131", icon: paper }
+  blog: /blog/2018/kpgminer-kegg-pathway-genes/
+
+- id: landsin
+  name: LandSin
+  kind: web
+  status: active
+  year: 2024
+  lang: [Python, Google Maps API]
+  theme: ai
+  summary: >-
+    Web server for land-value estimation that combines polynomial regression with differential
+    privacy, plus habitability and terrain insights from Google Maps.
+  links:
+    - { label: "Paper", url: "https://doi.org/10.1016/j.simpa.2024.100718", icon: paper }
+  blog: /blog/2024/landsin-land-value/
+
+- id: oriental-braille
+  name: Oriental Braille
+  kind: tool
+  status: in development
+  year: 2026
+  lang: [Python]
+  theme: ai
+  summary: >-
+    AI-empowered, multi-lingual generator of 3D-printable Braille tactile models, developed under
+    the lab's disability-research programme.
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/Oriental-Braille-0.1.10", icon: github }
+
+- id: jamarat
+  name: Jamarat crowd-hotspot prediction
+  kind: tool
+  status: in development
+  year: 2025
+  lang: [Python]
+  theme: ai
+  summary: >-
+    AI-driven real-time prediction of crowd-surge hotspots at Jamarat during Hajj (IMSIU-funded project).
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/Hajj_Jamarat_Hotspot_prediction_Review", icon: github }
+
+- id: deeppsych
+  name: deepPsych
+  kind: tool
+  status: archived
+  year: 2019
+  lang: [Python, Keras]
+  theme: omics
+  summary: >-
+    Deep learning to predict the functional effects of non-coding variants in brain-specific disorders
+    by integrating RNA-seq, ATAC-seq and ChIP-seq (UNSW Sydney).
+  links:
+    - { label: "Code", url: "https://github.com/Akmazad/deepPsych", icon: github }

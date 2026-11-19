@@ -1,0 +1,12 @@
+{%- assign g = include.g -%}
+{%- assign th = site.data.research | where: "id", g.theme | first -%}
+<div class="grant">
+  <div>
+    <h3>{{ g.title }}</h3>
+    <div class="gmeta">{{ g.funder }} · <strong>{{ g.role }}</strong>{% if th %} · <a href="{{ '/research/#' | append: th.id | relative_url }}">{{ th.title }}</a>{% endif %}</div>
+  </div>
+  <div class="gamt">
+    {%- if g.amount_sar >= 1000000 -%}{{ g.amount_sar | divided_by: 100000 | divided_by: 10.0 }}M SAR{%- else -%}{{ g.amount_sar | divided_by: 1000 }}K SAR{%- endif -%}
+    <small><span class="status status-{{ g.status | replace: ' ', '-' }}">{{ g.status }}</span></small>
+  </div>
+</div>

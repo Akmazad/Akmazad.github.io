@@ -1,0 +1,160 @@
+---
+layout: default
+title: "ADNS Lab | Advanced Data & Network Science Lab"
+description: "The Advanced Data & Network Science (ADNS) Lab at IMSIU, Riyadh, develops Bayesian, network-science and AI methods for cancer systems biology, drug repositioning, trustworthy medical AI and global health."
+permalink: /
+redirect_from:
+  - /about/
+  - /about.html
+---
+{%- assign m = site.data.metrics -%}
+{%- assign pubs = site.data.publications -%}
+{%- assign pi = site.data.people.pi -%}
+<section class="hero">
+  <canvas class="net-canvas" aria-hidden="true"></canvas>
+  <div class="container hero-inner">
+    <div>
+      <p class="eyebrow">{{ site.lab.institution }} · {{ site.lab.city }}</p>
+      <h1>Advanced Data &amp; <span class="grad">Network Science</span> Lab</h1>
+      <p class="lead">We build Bayesian, network-science and AI methods that turn noisy, high-dimensional data into mechanistic insight, from drug-resistant cancer signalling and drug repositioning to trustworthy clinical AI and the Global Burden of Disease.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="{{ '/research/' | relative_url }}"><i class="fa-solid fa-diagram-project"></i> Explore our research</a>
+        <a class="btn btn-outline-light" href="{{ '/publications/' | relative_url }}">Publications</a>
+        <a class="btn btn-outline-light" href="{{ '/join/' | relative_url }}">Join us</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Lab at a glance">
+      <div class="hero-card-head">
+        <img src="{{ pi.photo | relative_url }}" alt="Portrait of {{ pi.short }}" width="72" height="72">
+        <div>
+          <h2>{{ pi.short }}</h2>
+          <p>Lab Director · Associate Professor</p>
+          <p>Data Science, AI &amp; Biostatistics</p>
+        </div>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><span class="stat-num" data-count="{{ m.citations }}">{{ m.citations }}</span><span class="stat-label">Citations</span></div>
+        <div class="stat"><span class="stat-num" data-count="{{ pubs.size }}">{{ pubs.size }}</span><span class="stat-label">Publications</span></div>
+        <div class="stat"><span class="stat-num" data-count="{{ m.h_index }}">{{ m.h_index }}</span><span class="stat-label">h-index</span></div>
+        <div class="stat"><span class="stat-num" data-count="{{ m.i10_index }}">{{ m.i10_index }}</span><span class="stat-label">i10-index</span></div>
+      </div>
+      <p class="src">Google Scholar, {{ m.as_of }} · <a href="{{ site.social.scholar }}" target="_blank" rel="noopener">profile <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:.7em"></i></a></p>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-kicker">What we do</span>
+        <h2 class="section-h">Seven connected research themes</h2>
+      </div>
+      <p>Methods developed for one domain, such as MCMC samplers for Bayesian networks or network-proximity scores, carry over to the next. That shared mathematical core is what links our work.</p>
+    </div>
+    <div class="grid grid-4">
+      {% for t in site.data.research %}
+        {%- assign n = pubs | where_exp: "p", "p.topics contains t.id" -%}
+        <a class="card theme-card reveal" href="{{ '/research/#' | append: t.id | relative_url }}">
+          <div class="ic"><i class="fa-solid {{ t.icon }}"></i></div>
+          <h3>{{ t.title }}</h3>
+          <p>{{ t.short }}</p>
+          <span class="meta">{{ n.size }} publications →</span>
+        </a>
+      {% endfor %}
+      <a class="card theme-card reveal" href="{{ '/blog/' | relative_url }}" style="background:linear-gradient(135deg,var(--accent-soft),var(--accent-2-soft))">
+        <div class="ic" style="background:var(--surface)"><i class="fa-solid fa-pen-nib"></i></div>
+        <h3>Methods blog</h3>
+        <p>Plain-language write-ups of every method the lab has proposed, each with the math, the results and links to code.</p>
+        <span class="meta">{{ site.posts.size }} posts →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container feature-split">
+    <div class="reveal">
+      <div class="section-head">
+        <div><span class="section-kicker">Recent work</span><h2 class="section-h">Latest publications</h2></div>
+        <a class="link-arrow" href="{{ '/publications/' | relative_url }}">All {{ pubs.size }} →</a>
+      </div>
+      <ol class="pub-list compact">
+        {%- assign shown = 0 -%}
+        {%- for p in pubs -%}
+          {%- if shown < 5 and p.gbd != true -%}
+            {%- assign shown = shown | plus: 1 -%}
+            {% include pub.html p=p prefix="home-" %}
+          {%- endif -%}
+        {%- endfor -%}
+      </ol>
+    </div>
+    <div class="reveal">
+      <div class="section-head">
+        <div><span class="section-kicker">Lab news</span><h2 class="section-h">What's new</h2></div>
+        <a class="link-arrow" href="{{ '/news/' | relative_url }}">All news →</a>
+      </div>
+      <ul class="timeline">
+        {% for n in site.data.news limit: 6 %}
+          <li class="k-{{ n.kind }}"><time datetime="{{ n.date }}">{% if n.approx %}{{ n.date | date: '%Y' }}{% else %}{{ n.date | date: '%b %Y' }}{% endif %}</time><span class="ntitle">{{ n.title }}</span>{% if n.text %}<p>{{ n.text }}</p>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="section-kicker">From the methods blog</span><h2 class="section-h">How our methods work</h2></div>
+      <a class="link-arrow" href="{{ '/blog/' | relative_url }}">All posts →</a>
+    </div>
+    <div class="post-grid">
+      {% for post in site.posts limit: 3 %}{% include post-card.html post=post %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><span class="section-kicker">Open science</span><h2 class="section-h">Software, web servers &amp; data</h2></div>
+      <a class="link-arrow" href="{{ '/software/' | relative_url }}">All resources →</a>
+    </div>
+    <div class="grid grid-4">
+      {% for s in site.data.software limit: 4 %}
+        <article class="card sw-card reveal">
+          <div class="sw-head"><h3>{{ s.name }}</h3><span class="sw-kind">{{ s.kind }}</span></div>
+          <p>{{ s.summary | truncatewords: 26 }}</p>
+          <div class="sw-links">{% for l in s.links limit: 2 %}<a class="btn-chip" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}{% if s.blog %}<a class="btn-chip btn-chip-accent" href="{{ s.blog | relative_url }}">Blog</a>{% endif %}</div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <p class="section-kicker" style="text-align:center">Where our team has trained and worked</p>
+    <div class="logo-strip reveal">
+      <span>IMSIU</span><span>IHME · Global Burden of Disease</span><span>Monash University</span><span>UNSW Sydney</span>
+      <span>University of Sydney</span><span>UTS</span><span>Children's Medical Research Institute</span><span>Swinburne</span><span>GIST Korea</span><span>University of Dhaka</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band reveal">
+      <canvas class="net-canvas" aria-hidden="true"></canvas>
+      <span class="section-kicker" style="color:#99f6e4">Opportunities</span>
+      <h2>Work with us</h2>
+      <p>We welcome motivated PhD, MSc and undergraduate researchers, visiting scholars and collaborators in bioinformatics, Bayesian statistics, network science and AI. Our projects are computational and our collaborations are international.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="{{ '/join/' | relative_url }}">How to join</a>
+        <a class="btn btn-outline-light" href="mailto:{{ site.lab.email }}"><i class="fa-regular fa-envelope"></i> {{ site.lab.email }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% include bib-modal.html %}

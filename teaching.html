@@ -1,0 +1,54 @@
+---
+title: Teaching
+permalink: /teaching/
+eyebrow: "Teaching & curriculum"
+lead: "Over twelve years of university teaching in statistics, data science and computer science across Saudi Arabia and Australia, including programme design to NCAAA standards."
+nav_section: Teaching
+subnav:
+  - { title: "Programme development", url: "#development" }
+  - { title: "Workshops", url: "#workshops" }
+  - { title: "Courses taught", url: "#courses" }
+---
+{%- assign T = site.data.teaching -%}
+{%- assign total_sem = 0 -%}{%- assign total_courses = 0 -%}
+{%- for inst in T.courses -%}{%- for c in inst.items -%}{%- assign total_sem = total_sem | plus: c.semesters -%}{%- assign total_courses = total_courses | plus: 1 -%}{%- endfor -%}{%- endfor -%}
+<div class="kpi-row reveal">
+  <div class="kpi"><b>12+</b><span>Years teaching</span></div>
+  <div class="kpi"><b>{{ total_courses }}</b><span>Distinct courses</span></div>
+  <div class="kpi"><b>{{ total_sem }}</b><span>Course-semesters</span></div>
+  <div class="kpi"><b>{{ T.courses.size }}</b><span>Universities</span></div>
+</div>
+
+<section class="page-section" id="development">
+  <h2>Programme &amp; course development</h2>
+  <div class="grid grid-2">
+    {% for d in T.development %}<div class="card reveal"><h3>{{ d.title }}</h3><p class="muted" style="margin:0">{{ d.detail }}</p></div>{% endfor %}
+  </div>
+</section>
+
+<section class="page-section" id="workshops">
+  <h2>Training &amp; workshops</h2>
+  {% for w in T.workshops %}
+    <div class="card reveal" style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap">
+      <div class="ic-bubble" style="margin:0"><i class="fa-brands fa-r-project"></i></div>
+      <div style="flex:1;min-width:240px"><h3>{{ w.title }} <span class="muted" style="font-weight:400">· {{ w.year }}</span></h3><p class="muted">{{ w.detail }}</p>{% if w.url %}<a class="btn-chip" href="{{ w.url }}" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Course materials</a>{% endif %}</div>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="page-section" id="courses">
+  <h2>Courses taught</h2>
+  {% for inst in T.courses %}
+    <div class="table-wrap reveal">
+      <h3>{{ inst.institution }}</h3>
+      <p class="period">{{ inst.period }}</p>
+      <table class="course-table">
+        <thead><tr><th scope="col">Course</th><th scope="col">Level</th><th scope="col">Semesters</th></tr></thead>
+        <tbody>
+          {% for c in inst.items %}<tr><td>{% if c.url %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</td><td>{{ c.level }}</td><td class="num">{{ c.semesters }}</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endfor %}
+  <p class="muted">Learning platforms: {{ T.platforms | join: ", " }}. Recognition of Teaching Excellence, Swinburne University of Technology (2021).</p>
+</section>

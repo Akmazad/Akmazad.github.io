@@ -1,0 +1,19 @@
+---
+title: Methods blog
+permalink: /blog/
+eyebrow: "How our methods work"
+lead: "One post per method the lab has proposed: the problem it solves, the key idea (with the math where it helps), what we found, and where to get the code and the paper."
+nav_section: Blog
+redirect_from:
+  - /blogs/
+---
+<div class="blog-filters" data-filter-group="#post-grid" role="group" aria-label="Filter posts by theme">
+  <button type="button" class="chip" data-value="all" aria-pressed="true">All <span class="n">{{ site.posts.size }}</span></button>
+  {% for t in site.data.research %}{% assign n = site.posts | where: "theme", t.id %}{% if n.size > 0 %}
+    <button type="button" class="chip" data-value="{{ t.id }}" aria-pressed="false"><i class="fa-solid {{ t.icon }}"></i> {{ t.title }} <span class="n">{{ n.size }}</span></button>
+  {% endif %}{% endfor %}
+</div>
+<div class="post-grid" id="post-grid">
+  {% for post in site.posts %}{% include post-card.html post=post %}{% endfor %}
+</div>
+<p class="muted" style="margin-top:32px"><i class="fa-solid fa-rss"></i> Subscribe via <a href="{{ '/blog/feed.xml' | relative_url }}">RSS/Atom</a>.</p>

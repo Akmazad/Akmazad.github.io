@@ -1,0 +1,78 @@
+# People. To add a member, copy a block under `team` and fill in name/photo/links.
+# Photos go in /images/people/ (square, ~600x600). Leave `photo` empty to show initials.
+
+pi:
+  name: "AKM Azad, PhD"
+  short: "Dr AKM Azad"
+  role: "Lab Director · Associate Professor of Data Science, AI & Biostatistics"
+  affiliation: "Department of Mathematics & Statistics, Faculty of Science, and Deanship of Scientific Research, Imam Mohammad Ibn Saud Islamic University (IMSIU), Riyadh"
+  photo: /images/profile.jpg
+  email: kazad@imamu.edu.sa
+  bio: >-
+    Dr Azad is an interdisciplinary data scientist with 12+ years of university teaching and research
+    across Saudi Arabia and Australia. He trained in computer science (BSc, University of Dhaka), data mining
+    and computational biology (MS, GIST, South Korea) and biostatistics and AI (PhD, Monash University),
+    then held research and academic posts at Monash University, UNSW Sydney, the University of Sydney,
+    the University of Technology Sydney, Children's Medical Research Institute (ProCan) and Swinburne
+    University of Technology before joining IMSIU in 2022. He is a Senior Collaborator of the Global
+    Burden of Disease study (IHME, University of Washington), Guest Editor for <em>Diagnostics</em> (MDPI),
+    and a reviewer for <em>Briefings in Bioinformatics</em>, <em>PLOS ONE</em>, <em>Artificial Intelligence Review</em>
+    and BMC journals.
+  highlights:
+    - "PhD (Biostatistics & AI), Monash University, 2017"
+    - "Senior Collaborator, Global Burden of Disease (IHME)"
+    - "Recognition of Teaching Excellence, Swinburne, 2021"
+    - "Australian Academy of Science COVID-19 expert"
+    - "Australian citizen · Saudi Premium Residency"
+
+team:
+  - role: "PhD candidates (co-supervised), 2"
+    affiliation: "Artificial Intelligence & Cyber Futures Institute / Rural Health Research Institute, Charles Sturt University, Australia"
+    topics:
+      - "Longitudinal and network-based analysis of maternal lipid metabolites in relation to early-pregnancy risk factors and birth outcomes"
+      - "Prediction of fetal growth trajectories"
+    status: current
+  - role: "Postgraduate & undergraduate researchers, 8"
+    affiliation: "Faculty of Science, IMSIU, Riyadh"
+    topics:
+      - "Python for data science, AI and development"
+      - "Machine learning with Python"
+      - "Data analysis with Python"
+    status: current
+  - role: "Research associates"
+    affiliation: "Department of Robotics & Mechatronics Engineering, University of Dhaka, Bangladesh"
+    topics:
+      - "Closed-loop optimiser algorithms for deep learning (SPARK, AGL loss)"
+      - "Vision-language models for UAV navigation (VLM-Nav)"
+    status: current
+
+alumni:
+  - role: "Research Associates (3)"
+    affiliation: "School of BABS, UNSW Sydney"
+    topics: ["Deep learning for brain-specific disorders", "Drug repositioning", "Biomarker discovery"]
+  - role: "Honours students (2)"
+    affiliation: "School of BABS, UNSW Sydney"
+    topics: ["Role of side-effects in drug repositioning", "Cross-species biomarker discovery from dual RNA-seq"]
+  - role: "SVRP summer scholars (2)"
+    affiliation: "School of BABS, UNSW Sydney"
+    topics: ["Cell-identity mapping from massive single-cell data with deep learning", "Deep learning for multi-omics integration"]
+  - role: "MS student"
+    affiliation: "Monash University"
+    topics: ["Systems-biology mechanisms of drug resistance in malaria"]
+
+collaborators:
+  - name: "Institute for Health Metrics and Evaluation (IHME)"
+    detail: "Global Burden of Disease study, University of Washington, USA"
+    url: "https://www.healthdata.org/research-analysis/gbd"
+  - name: "Mohammad Ali Moni"
+    detail: "AI & Cyber Futures Institute, Charles Sturt University, Australia"
+  - name: "Salem A. Alyami"
+    detail: "Department of Mathematics & Statistics, IMSIU, Saudi Arabia"
+  - name: "Fatemeh Vafaee"
+    detail: "School of Biotechnology & Biomolecular Sciences, UNSW Sydney, Australia"
+  - name: "Jonathan M. Keith"
+    detail: "School of Mathematics, Monash University, Australia"
+  - name: "Md Mehedi Hasan"
+    detail: "Department of Robotics & Mechatronics Engineering, University of Dhaka, Bangladesh"
+  - name: "Children's Medical Research Institute (ProCan)"
+    detail: "Cancer Data Science Group, Westmead, Australia"

@@ -1,0 +1,102 @@
+# Lab news, newest first. kind: lab | pub | grant | award | talk
+# Add new items at the TOP. Set `approx: true` to display only the year. `link` is optional (internal paths or full URLs).
+- date: 2026-11-19
+  kind: lab
+  title: "New ADNS Lab website"
+  text: "Our redesigned site brings together 113 publications, open-access PDFs and a methods blog with a post for every method we have proposed."
+  link: /blog/
+- date: 2026-11-14
+  kind: pub
+  title: "Systematic review of AI-driven software for cardiovascular disease detection"
+  text: "Published in Artificial Intelligence Review with collaborators at Charles Sturt University."
+  link: /publications/?q=cardiovascular
+- date: 2026-11-01
+  kind: pub
+  title: "GBD 2023: cervical cancer burden and forecasts to 2050 in Nature Medicine"
+  text: "One of a series of Global Burden of Disease 2023 papers this year, alongside measles (Nature Medicine), heart failure (JAMA Cardiology) and elevated LDL-C (JAMA)."
+  link: /publications/?gbd=only
+- date: 2026-10-28
+  kind: pub
+  title: "Physics-informed deep learning surrogate for polymer composites"
+  text: "A DBN-GJO-PI-RNN surrogate that cuts RMSE by 38% compared with the best data-driven baseline (Polymers)."
+  link: /publications/?q=polymer
+- date: 2026-10-06
+  kind: pub
+  title: "FedGNN for heterogeneous ECG classification in Expert Systems with Applications"
+  link: /publications/?q=fedgnn
+- date: 2026-07-09
+  kind: pub
+  title: "Annona muricata scaffolds as putative IDO1 modulators"
+  text: "Integrated pan-cancer systems biology and structure-based simulation (Computational Biology and Chemistry)."
+  link: /publications/?q=ido1
+- date: 2026-04-03
+  kind: pub
+  title: "VLM-Nav published in PLOS ONE"
+  text: "Mapless UAV navigation from a single camera using depth estimation and vision-language models."
+  link: /publications/?q=vlm-nav
+- date: 2026-03-01
+  kind: pub
+  title: "GBD 2023 breast cancer analysis in The Lancet Oncology"
+  link: /publications/?gbd=only
+- date: 2026-02-23
+  kind: pub
+  title: "Preprint: signalling cross-talk behind dasatinib resistance in pancreatic cancer"
+  text: "Network modelling points to p53 and FcεRI signalling, with BCL2L1 as a candidate target (bioRxiv)."
+  link: /blog/2026/dasatinib-resistance-cross-talk/
+- date: 2026-01-15
+  approx: true   # only the year is certain
+  kind: pub
+  title: "Two new optimisation preprints: the SPARK optimiser and the AGL loss"
+  link: /publications/?type=preprint
+- date: 2025-12-07
+  kind: award
+  title: "Editor's Choice in Diagnostics"
+  text: "Our explainable federated-learning model for multi-class heart-disease diagnosis from ECG fiducial features was selected as an Editor's Choice article."
+  link: /publications/?q=federated
+- date: 2025-09-26
+  kind: pub
+  title: "Proteomic landscape of pancreatic cancer in Cancer Research Communications"
+  text: "With the ProCan team at Children's Medical Research Institute."
+- date: 2025-07-01
+  approx: true   # only the year is certain
+  kind: lab
+  title: "Senior Collaborator, Global Burden of Disease"
+  text: "Dr Azad joined the GBD collaborator network (Tier 2) at IHME, University of Washington."
+- date: 2025-06-15
+  approx: true   # only the year is certain
+  kind: grant
+  title: "Grant proposals submitted to RDIA, SNIH, Riyadh Municipality and GASTAT"
+  text: "Onco-CDR, NovexSyn.ai, FoodCert.ai and a topological survey-QA agent (6.5M SAR in total under review)."
+  link: /projects/
+- date: 2025-04-22
+  kind: pub
+  title: "PlantCareNet in Plant Methods"
+  link: /blog/2025/plantcarenet/
+- date: 2024-11-01
+  kind: pub
+  title: "rXTalkViz and LandSin published in Software Impacts"
+  link: /software/
+- date: 2024-06-01
+  approx: true   # only the year is certain
+  kind: grant
+  title: "King Salman Center for Disability Research grant awarded (KSRG-2024-089)"
+  link: /projects/
+- date: 2024-03-27
+  kind: pub
+  title: "Single-cell RNA-seq of early brain development in Briefings in Bioinformatics"
+- date: 2024-02-01
+  approx: true   # only the year is certain
+  kind: talk
+  title: "Workshop: Data Science Fundamentals in R"
+  text: "Training for students and faculty, organised by the Deanship of Scientific Research, IMSIU."
+  link: /teaching/
+- date: 2023-06-01
+  approx: true   # only the year is certain
+  kind: grant
+  title: "King Salman Center for Disability Research grant awarded (KSRG-2023-253)"
+  link: /projects/
+- date: 2022-09-01
+  approx: true   # only the year is certain
+  kind: lab
+  title: "ADNS Lab established at IMSIU"
+  text: "Dr Azad joined Imam Mohammad Ibn Saud Islamic University as Associate Professor of Data Science, AI and Biostatistics."

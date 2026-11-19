@@ -1,24 +1,47 @@
-{% include base_path %}
-
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.twitter.username %}
-      <li><a href="https://twitter.com/{{ site.twitter.username }}"><i class="fab fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-    {% endif %}
-    {% if site.facebook.username %}
-      <li><a href="https://facebook.com/{{ site.facebook.username }}"><i class="fab fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="http://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
-</div>
-
-<div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="{{ '/' | relative_url }}">{% include logo.svg id="-f" %}<span class="brand-text"><strong>ADNS</strong><span>Lab</span></span></a>
+      <p>{{ site.lab.name }}<br>{{ site.lab.department }}<br>{{ site.lab.institution }}<br>{{ site.lab.city }}</p>
+      <p><a href="mailto:{{ site.lab.email }}"><i class="fa-regular fa-envelope"></i> {{ site.lab.email }}</a></p>
+    </div>
+    <div>
+      <h2 class="footer-h">Explore</h2>
+      <ul class="footer-links">
+        <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+        <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+        <li><a href="{{ '/software/' | relative_url }}">Software</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/projects/' | relative_url }}">Projects &amp; funding</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-h">Lab</h2>
+      <ul class="footer-links">
+        <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+        <li><a href="{{ '/teaching/' | relative_url }}">Teaching</a></li>
+        <li><a href="{{ '/news/' | relative_url }}">News</a></li>
+        <li><a href="{{ '/join/' | relative_url }}">Join us &amp; contact</a></li>
+        <li><a href="{{ '/cv/' | relative_url }}">PI CV</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-h">Elsewhere</h2>
+      <div class="social-row">
+        <a href="{{ site.social.scholar }}" aria-label="Google Scholar" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i></a>
+        <a href="{{ site.social.orcid }}" aria-label="ORCID" target="_blank" rel="noopener"><i class="ai ai-orcid"></i></a>
+        <a href="{{ site.social.researchgate }}" aria-label="ResearchGate" target="_blank" rel="noopener"><i class="ai ai-researchgate"></i></a>
+        <a href="{{ site.social.pubmed }}" aria-label="PubMed" target="_blank" rel="noopener"><i class="ai ai-pubmed"></i></a>
+        <a href="{{ site.social.github }}" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="{{ site.social.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="{{ site.social.twitter }}" aria-label="X (Twitter)" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="{{ '/blog/feed.xml' | relative_url }}" aria-label="RSS feed"><i class="fa-solid fa-rss"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; {{ site.time | date: '%Y' }} {{ site.lab.name }}</span>
+    <span>Last updated {{ site.time | date: '%-d %B %Y' }}</span>
+  </div>
+</footer>
+<button class="to-top" id="to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>

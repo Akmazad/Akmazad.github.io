@@ -1,0 +1,1785 @@
+# Publications of the ADNS Lab / AKM Azad.
+# Generated from Google Scholar + CV + OpenAlex (Nov 2026). Edit freely; one entry per paper.
+# type: journal | conference | preprint | chapter | thesis | dataset | abstract
+# role: first | senior | sole | co | consortium     topics: see _data/research.yml ids
+
+- id: cvd-sw-review-2026
+  title: "Artificial intelligence driven software systems for cardiovascular disease detection using physiological signals: A systematic review"
+  authors: "MD Tasnim Alam, Abdullah Al-Mamun Bulbul, Md Ismail Hossen, AKM Azad, Asaduzzaman Khan, Mohammad Ali Moni"
+  venue: "Artificial Intelligence Review"
+  year: 2026
+  date: 2026-11-14
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1007/s10462-026-11756-7"
+  pdf: "/files/papers/cvd-sw-review-2026.pdf"
+  citations: 1
+  open_access: true
+  bibkey: Alam2026artificial
+
+- id: gbd-cervical-2026
+  title: "Global, regional and national burden of cervical cancer in 1990-2023 with forecasts to 2050: a Global Burden of Disease study"
+  authors: "GBD 2023 Cervical Cancer Collaborators"
+  venue: "Nature Medicine"
+  year: 2026
+  date: 2026-11-01
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1038/s41591-026-04729-4"
+  quartile: "Q1"
+  citations: 0
+  gbd: true
+  open_access: true
+  bibkey: GBD2026cervical
+
+- id: gbd-bone-2026
+  title: "Global, Regional, and National Burden of Bone Cancers, 1990 to 2023, With Forecasts to 2050: A Systematic Analysis for the Global Burden of Disease Study 2023"
+  authors: "GBD 2023 Bone Cancer Collaborators, C Monsereenusorn, C Bisignano, ML May, N Pritchett, et al."
+  venue: "JAMA Oncology"
+  year: 2026
+  date: 2026-10-29
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1001/jamaoncol.2026.4274"
+  quartile: "Q1"
+  citations: 0
+  gbd: true
+  open_access: true
+  bibkey: GBD2026bone
+
+- id: pinn-polymer-2026
+  title: "Physics-Informed Deep Learning Surrogate for Mechanical-Response Prediction and Failure Assessment of High-Performance Polymer Composites"
+  authors: "ME Haque, R Naidu, M Arifuzzaman, AE Alluqmani, MA Martuza, AKM Azad"
+  venue: "Polymers 18 (21), 2678"
+  year: 2026
+  date: 2026-10-28
+  type: journal
+  role: senior
+  topics: [ai]
+  doi: "10.3390/polym18212678"
+  pdf: "/files/papers/pinn-polymer-2026.pdf"
+  quartile: "Q1"
+  citations: 0
+  open_access: true
+  bibkey: Haque2026physicsinformed
+
+- id: gbd-measles-2026
+  title: "Global and regional burden of measles and vaccine coverage among children under 5 years, 1990-2023: a Global Burden of Disease Study"
+  authors: "GBD 2023 Measles Collaborators"
+  venue: "Nature Medicine"
+  year: 2026
+  date: 2026-10-21
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1038/s41591-026-04661-7"
+  quartile: "Q1"
+  citations: 2
+  gbd: true
+  open_access: true
+  bibkey: GBD2026measles
+
+- id: fedgnn-2026
+  title: "FedGNN: Decentralized federated GNN with gradient masking and dynamic feature pruning for heterogeneous ECG classification"
+  authors: "N. M. Istiak Chowdhury, Tanvir Mahtab Tapu, Md. Shahriar Shakil, Md. Zahid Hasan, Sheak Rashed Haider Noori, AKM Azad, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "Expert Systems with Applications, 134644"
+  year: 2026
+  date: 2026-10-06
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.eswa.2026.134644"
+  quartile: "Q1"
+  citations: 0
+  open_access: true
+  bibkey: Chowdhury2026fedgnn
+
+- id: gbd-amr-wpr-2026
+  title: "The burden of bacterial antimicrobial resistance in the WHO Western Pacific Region 1990-2021: a cross-country systematic analysis with forecasts to 2050"
+  authors: "T Mestrovic, GR Aguilar, ND Weaver, DT Araki, AG Hayoon, AP Gray, et al."
+  venue: "The Lancet Regional Health - Western Pacific 75"
+  year: 2026
+  date: 2026-10-01
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/j.lanwpc.2026.101997"
+  quartile: "Q1"
+  citations: 0
+  gbd: true
+  open_access: true
+  bibkey: GBD2026amr
+
+- id: gbd-heartfailure-2026
+  title: "Global, regional, and national burden of heart failure, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "GBD 2023 Heart Failure Collaborators, CO Johnson, M Abbasi, et al."
+  venue: "JAMA Cardiology"
+  year: 2026
+  date: 2026-09-30
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1001/jamacardio.2026.4068"
+  quartile: "Q1"
+  citations: 5
+  gbd: true
+  open_access: true
+  bibkey: GBD2026heartfailure
+
+- id: gbd-tetanus-2026
+  title: "Global, regional, and national burden of tetanus in 204 countries and territories, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "D Areda, H Kim, J Kang, N Shalev, I Poudyal, MS Kim, B Sartorius, et al."
+  venue: "eClinicalMedicine 100"
+  year: 2026
+  date: 2026-09-28
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/j.eclinm.2026.104202"
+  quartile: "Q1"
+  citations: 0
+  gbd: true
+  open_access: true
+  bibkey: GBD2026tetanus
+
+- id: gbd-adolescent-ap-2026
+  title: "Adolescent health across Asia Pacific, 2000-23: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "KI Cini, D Dumuid, I Abbsar, L Li, DA Priambodo, MA Abdullah, et al."
+  venue: "The Lancet Child & Adolescent Health 10 (10), 731-754"
+  year: 2026
+  date: 2026-09-01
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s2352-4642(26)00163-x"
+  quartile: "Q1"
+  citations: 2
+  gbd: true
+  open_access: true
+  bibkey: GBD2026adolescent
+
+- id: gbd-hrh-2026
+  title: "Measuring the composition and availability of human resources for health by sex in 204 countries and territories, 1990-2023, and workforce gaps for universal health coverage: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "M Knight, K Bienhoff, HS Ababneh, M Abbasi, ZA Dolatabadi, M Abbasifard, et al."
+  venue: "The Lancet Public Health 11 (9), e604-e629"
+  year: 2026
+  date: 2026-08-18
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s2468-2667(26)00145-3"
+  quartile: "Q1"
+  citations: 0
+  gbd: true
+  open_access: true
+  bibkey: GBD2026hrh
+
+- id: diabetes-mpa-2026
+  title: "An Optimized and Explainable Machine Learning Framework for Diabetes Prediction Using Marine Predators Algorithm and SHAP"
+  authors: "Alifa Nasrin, Muhammad Bin Asif, Ramasamy Srinivasagan, Afzal Haq Asif, Muhammad Shahzad Chohan, Gausal Azam Khan, Md Arifuzzaman, AKM Azad, Muhammad Ali Martuza"
+  venue: "Journal of Personalized Medicine 16 (8), 423"
+  year: 2026
+  date: 2026-08-10
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/jpm16080423"
+  pdf: "/files/papers/diabetes-mpa-2026.pdf"
+  quartile: "Q1"
+  citations: 1
+  open_access: true
+  bibkey: Nasrin2026optimized
+
+- id: gbd-ldl-2026
+  title: "Global Burden of Elevated LDL-C: Findings From the Global Burden of Disease Study 2023"
+  authors: "GBD 2023 LDL-C Collaborators, C Razo, NK DeCleene, CO Johnson, BA Stark, et al."
+  venue: "JAMA"
+  year: 2026
+  date: 2026-07-29
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1001/jama.2026.8628"
+  quartile: "Q1"
+  citations: 10
+  gbd: true
+  open_access: true
+  bibkey: GBD2026ldl
+
+- id: gbd-road-2026
+  title: "Global, regional, and national burden of road injuries 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "SCC Van Der Lubbe, ME Moberg, D Aluquin, Y Zhou, H Lenox, H Aalruz, et al."
+  venue: "The Lancet Public Health"
+  year: 2026
+  date: 2026-07-20
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s2468-2667(26)00141-6"
+  quartile: "Q1"
+  citations: 15
+  gbd: true
+  open_access: true
+  bibkey: GBD2026road
+
+- id: glaucoma-vit-2026
+  title: "A Lightweight Vision Transformer and Retinal Biomarker Fusion Framework for Early Glaucoma Detection: Toward Improved Clinical Screening"
+  authors: "Alifa Nasrin, Muhammad Bin Asif, Fatima Tuz Zahra, Afzal Haq Asif, Gausul Azam Khan, Md Arifuzzaman, Ramasamy Srinivasagan, AKM Azad, Muhammad Ali Martuza"
+  venue: "Journal of Clinical Medicine 15 (14), 5651"
+  year: 2026
+  date: 2026-07-18
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/jcm15145651"
+  pdf: "/files/papers/glaucoma-vit-2026.pdf"
+  quartile: "Q2"
+  citations: 0
+  open_access: true
+  bibkey: Nasrin2026lightweight
+
+- id: ido1-annona-2026
+  title: "Integrated Pan-Cancer Systems Biology and Structure-Based Simulation Identifies Annona muricata-Derived Natural Scaffolds as Putative IDO1 Modulators for Cancer Immunotherapy"
+  authors: "Takbir Hossain, Md. Yeakub Ali, Farzana Akter Riti, Apon Chandra Paul, Mohammad Abu Hena Mostofa Jamal, Umma Sumia Tohura, Tarek Hasan Al Mahmud, AKM Azad"
+  venue: "Computational Biology and Chemistry, 109234"
+  year: 2026
+  date: 2026-07-09
+  type: journal
+  role: senior
+  topics: [cancer, drugs]
+  doi: "10.1016/j.compbiolchem.2026.109234"
+  quartile: "Q2"
+  citations: 0
+  bibkey: Hossain2026integrated
+
+- id: gbd-tb-2026
+  title: "Global, regional, and national burden of tuberculosis and multidrug-resistant tuberculosis by HIV status, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "JR Ledesma, M Zhang, MF Liew, RMV Dominguez, SML Whikehart, et al."
+  venue: "The Lancet Infectious Diseases"
+  year: 2026
+  date: 2026-07-01
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s1473-3099(26)00295-1"
+  quartile: "Q1"
+  citations: 13
+  gbd: true
+  open_access: true
+  bibkey: GBD2026tb
+
+- id: ckd-xai-2026
+  title: "Toward explainable precision nephrology: machine learning-based chronic kidney disease prediction"
+  authors: "Moiz Qureshi, AKM Azad, Hasnain Iftikhar, Paulo Canas Rodrigues"
+  venue: "Biomedicines 14 (7), 1459"
+  year: 2026
+  date: 2026-06-27
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/biomedicines14071459"
+  pdf: "/files/papers/ckd-xai-2026.pdf"
+  quartile: "Q1"
+  citations: 5
+  open_access: true
+  bibkey: Qureshi2026toward
+
+- id: concrete-blocks-2026
+  title: "Predicting the strength of waste aggregate concrete blocks using novel hybrid machine learning models and graphical user interface deployment"
+  authors: "Md Arifuzzaman, S. M. Shishir Ahmed, Md. Abdul Khaled, Sameen Yasar Siddiq, Prajnat Barua, Sourov Paul, M Shihab Hasan, AKM Azad, Muhammad Ali Martuza, Ayed Eid Alluqmani"
+  venue: "Scientific Reports"
+  year: 2026
+  date: 2026-06-25
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1038/s41598-026-58662-0"
+  pdf: "/files/papers/concrete-blocks-2026.pdf"
+  quartile: "Q1"
+  citations: 1
+  open_access: true
+  bibkey: Arifuzzaman2026predicting
+
+- id: gbd-enteric-2026
+  title: "Global burden of enteric infectious diseases, diarrhoeal diseases, and corresponding aetiologies, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "A Vongpradith, RMV Dominguez, LT Car, A Movo, SM Ostroff, J He, et al."
+  venue: "The Lancet Infectious Diseases"
+  year: 2026
+  date: 2026-06-02
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s1473-3099(26)00194-5"
+  quartile: "Q1"
+  citations: 16
+  gbd: true
+  open_access: true
+  bibkey: GBD2026enteric
+
+- id: fewer-lead-ecg-2026
+  title: "AI-enabled clinically aligned fewer-lead ECG approaches for detecting cardiovascular diseases"
+  authors: "Tasriva Sikandar, Md. Tariq Hasan, AKM Azad, Asaduzzaman Khan, Mohammad Ali Moni"
+  venue: "Artificial Intelligence Review"
+  year: 2026
+  date: 2026-05-08
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1007/s10462-026-11577-8"
+  pdf: "/files/papers/fewer-lead-ecg-2026.pdf"
+  quartile: "Q1"
+  citations: 1
+  open_access: true
+  bibkey: Sikandar2026aienabled
+
+- id: vlm-nav-2026
+  title: "VLM-Nav: Mapless UAV navigation using monocular vision driven by vision-language models"
+  authors: "Gobinda Chandra Sarker, AKM Azad, Sejuti Rahman, Md Mehedi Hasan"
+  venue: "PLOS ONE 21 (4), e0345778"
+  year: 2026
+  date: 2026-04-03
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1371/journal.pone.0345778"
+  pdf: "/files/papers/vlm-nav-2026.pdf"
+  quartile: "Q1"
+  citations: 3
+  open_access: true
+  featured: true
+  bibkey: Sarker2026vlmnav
+
+- id: gi-transformer-2026
+  title: "A positional transformer-based encoder-decoder network for segmentation of the gastrointestinal tract"
+  authors: "S. M. Nuruzzaman Nobel, S M Masfequier Rahman Swapno, AKM Azad, Mohammad Ali Moni"
+  venue: "Expert Systems with Applications 322, 132260"
+  year: 2026
+  date: 2026-03-28
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.eswa.2026.132260"
+  quartile: "Q1"
+  citations: 3
+  open_access: true
+  bibkey: Nobel2026positional
+
+- id: gbd-maternal-2026
+  title: "Global, regional, and national levels and trends in maternal mortality, progress towards the Sustainable Development Goals, and mortality from COVID-19 infection in pregnant women, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "J Faith, I Martopullo, MB Arndt, ID Letourneau, H Aalruz, UO Abaraogu, et al."
+  venue: "The Lancet Obstetrics, Gynaecology, & Women's Health 2 (5), e375-e424"
+  year: 2026
+  date: 2026-03-27
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s3050-5038(26)00047-6"
+  citations: 15
+  gbd: true
+  open_access: true
+  bibkey: GBD2026maternal
+
+- id: gbd-meningitis-2026
+  title: "Global, regional, and national burden of meningitis, its risk factors, and aetiologies, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "GBD 2023 Meningitis Antimicrobial Resistance Collaborators"
+  venue: "The Lancet Neurology 25 (5), 451-468"
+  year: 2026
+  date: 2026-03-27
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/S1474-4422(26)00101-8"
+  quartile: "Q1"
+  citations: 0
+  gbd: true
+  open_access: true
+  bibkey: GBD2026meningitis
+
+- id: gbd-breast-2026
+  title: "Global, regional, and national burden of breast cancer among females, 1990-2023, with forecasts to 2050: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "K Bhangdia, ML May, JM Kocarnik, N Pritchett, A Crist, L Penberthy, et al."
+  venue: "The Lancet Oncology 27 (3), 302-326"
+  year: 2026
+  date: 2026-03-01
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s1470-2045(25)00730-2"
+  quartile: "Q1"
+  citations: 108
+  gbd: true
+  open_access: true
+  featured: true
+  bibkey: GBD2026breast
+
+- id: bdherbal-2026
+  title: "Transparent deep learning for medicinal plant recognition: A hybrid CNN-ViT approach with explainable AI on BDHerbalPlants"
+  authors: "Sunzil Khandaker, Md Mizanur Rahman, AKM Azad, Mohammad Ali Moni, Md. Ali Hossain"
+  venue: "Smart Agricultural Technology, 101862"
+  year: 2026
+  date: 2026-02-24
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1016/j.atech.2026.101862"
+  quartile: "Q1"
+  citations: 4
+  open_access: true
+  bibkey: Khandaker2026transparent
+
+- id: dasatinib-2026
+  title: "Global dissemination of FC-epsilon RI and p53 signalling perturbation contribute to Dasatinib resistance in Pancreatic Cancer Cell-lines"
+  authors: "AKM Azad, Muhammad J. A. Shiddiky, Mohammad Ali Moni"
+  venue: "bioRxiv 2026.02.22.707324"
+  year: 2026
+  date: 2026-02-23
+  type: preprint
+  role: first
+  topics: [cancer, omics]
+  doi: "10.64898/2026.02.22.707324"
+  pdf: "/files/papers/dasatinib-2026.pdf"
+  blog: "/blog/2026/dasatinib-resistance-cross-talk/"
+  citations: 0
+  open_access: true
+  featured: true
+  bibkey: Azad2026global
+
+- id: zeroday-review-2026
+  title: "Securing the Unseen: A Comprehensive Exploration Review of AI-Powered Models for Zero-Day Attack Detection"
+  authors: "Abdullah Al Siam, Nuruzzaman Faruqui, AKM Azad, Mohammad Ali Moni"
+  venue: "Expert Systems 43 (3), e70217"
+  year: 2026
+  date: 2026-01-28
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1111/exsy.70217"
+  quartile: "Q2"
+  citations: 22
+  open_access: true
+  bibkey: Siam2026securing
+
+- id: liver-cancer-2026
+  title: "Unraveling risk factors and transcriptomic signatures in liver cancer progression and mortality through machine learning and bioinformatics"
+  authors: "Tania Akter, Ali Hossain, Md. Shahjahan Ali, Md. Zulfiker Mahmud, AKM Azad, Mohammad Zahidur Rahman, Mohammad Ali Moni"
+  venue: "Briefings in Functional Genomics 25, elaf019"
+  year: 2026
+  date: 2026-01-09
+  type: journal
+  role: co
+  topics: [cancer, omics]
+  doi: "10.1093/bfgp/elaf019"
+  quartile: "Q2"
+  citations: 1
+  open_access: true
+  bibkey: Akter2026unraveling
+
+- id: gbd-hiv-2026
+  title: "Global, regional, and national burden of HIV/AIDS, 1990-2023, with the estimated burden attributable to intimate partner violence and forecasted impacts of funding cuts through 2030"
+  authors: "A Carter, M Zhang, BG Trejo, M Verma, ED Brewer, D Lasher, J He, et al."
+  venue: "The Lancet HIV"
+  year: 2026
+  date: 2026-01-01
+  type: journal
+  role: consortium
+  topics: [health]
+  preprint: "https://doi.org/10.2139/ssrn.5797088"
+  quartile: "Q1"
+  citations: 3
+  gbd: true
+  bibkey: GBD2026hiv
+
+- id: spark-2026
+  title: "SPARK: A Stochastic Optimizer for Fast Convergence in Neural Network"
+  authors: "Md. Mahmudul Hasan, AKM Azad, Md. Mehedi Hasan"
+  venue: "SSRN preprint 6556339"
+  year: 2026
+  date: 2026-01-01
+  type: preprint
+  role: co
+  topics: [ai]
+  doi: "10.2139/ssrn.6556339"
+  citations: 1
+  open_access: true
+  bibkey: Hasan2026spark
+
+- id: agl-loss-2026
+  title: "AGL Loss: Optimizing Binary Classification by Asymmetric Generalized Logarithmic Loss Function with Statistical Validation"
+  authors: "Md. Mahmudul Hasan, Md. Mehedi Hasan, Shifat E. Arman, AKM Azad"
+  venue: "Under review (IEEE Transactions on Neural Networks and Learning Systems)"
+  year: 2026
+  date: 2026-01-01
+  type: preprint
+  role: senior
+  topics: [ai]
+  doi: "10.2139/ssrn.6484120"
+  citations: 1
+  open_access: true
+  bibkey: Hasan2026agl
+
+- id: gbd-lri-2026
+  title: "Global burden of lower respiratory infections and aetiologies, 1990-2023: a systematic analysis for the Global Burden of Disease Study 2023"
+  authors: "SB Sirota, RG Bender, RMV Dominguez, A Movo, LR Swetschinski, et al."
+  venue: "The Lancet Infectious Diseases 26 (4), 343-361"
+  year: 2026
+  date: 2025-12-16
+  type: journal
+  role: consortium
+  topics: [health]
+  doi: "10.1016/s1473-3099(25)00689-9"
+  quartile: "Q1"
+  citations: 93
+  gbd: true
+  open_access: true
+  bibkey: GBD2026lri
+
+- id: celestial-2025
+  title: "Exploring celestial classification: Astrophysical features-guided machine learning for spectral and morphological analysis"
+  authors: "Md. Ali Siddiquee, Md Mehedi Hasan, Shifat E. Arman, Md. Shahedul Islam, AKM Azad"
+  venue: "Astronomy and Computing, 101048"
+  year: 2025
+  date: 2025-12-29
+  type: journal
+  role: senior
+  topics: [ai]
+  doi: "10.1016/j.ascom.2025.101048"
+  quartile: "Q2"
+  citations: 0
+  bibkey: Siddiquee2025exploring
+
+- id: spectranet-2025
+  title: "SpectraNet: a lightweight hybrid time-frequency deep learning framework for sustainable cloud workload forecasting"
+  authors: "Nahin F. Siddiqui, Zarif Safwan Hoque, Md. Ehsanul Haque, Abu Raihan Mostofa Kamal, AKM Azad, Salem A. Alyami, Md Azam Hossain"
+  venue: "Journal of Cloud Computing 14 (1), 75"
+  year: 2025
+  date: 2025-12-11
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1186/s13677-025-00815-z"
+  pdf: "/files/papers/spectranet-2025.pdf"
+  quartile: "Q1"
+  citations: 4
+  open_access: true
+  bibkey: Siddiqui2025spectranet
+
+- id: pd-netpharm-2025
+  title: "Multi-Transcriptome-Informed Network Pharmacology Reveals Novel Biomarkers and Therapeutic Candidates for Parkinson's Disease"
+  authors: "Md. Al Amin Pappu, Md. Alamin, Md Al Noman, Most. Humaira Sultana, Md. Foysal Ahmed, Md. Sanoar Hossain, Md. Abdul Latif, Md. Fahim Faysal, AKM Azad, Salem A. Alyami, Naif Alotaibi, Md. Nurul Haque Mollah"
+  venue: "Genes 16 (12), 1459"
+  year: 2025
+  date: 2025-12-07
+  type: journal
+  role: co
+  topics: [drugs, omics]
+  doi: "10.3390/genes16121459"
+  pdf: "/files/papers/pd-netpharm-2025.pdf"
+  quartile: "Q2"
+  citations: 1
+  open_access: true
+  bibkey: Pappu2025multitranscriptomeinformed
+
+- id: fedecg-2025
+  title: "Explainable Federated Learning for Multi-Class Heart Disease Diagnosis via ECG Fiducial Features"
+  authors: "Tanjila Alam Sathi, Rafsan Jany, AKM Azad, Salem A. Alyami, Naif Alotaibi, Iqram Hussain, Md Azam Hossain"
+  venue: "Diagnostics 15 (24), 3110"
+  year: 2025
+  date: 2025-12-07
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/diagnostics15243110"
+  pdf: "/files/papers/fedecg-2025.pdf"
+  note: "Editor's Choice, Diagnostics"
+  quartile: "Q2"
+  citations: 11
+  open_access: true
+  bibkey: Sathi2025explainable
+
+- id: basalt-concrete-2025
+  title: "Machine learning models for mechanical properties prediction of basalt fiber-reinforced concrete incorporating graphical user interface"
+  authors: "Md. Tamjidul Haque, Md Arifuzzaman, Kaffayatullah Khan, AKM Azad, Ayed Eid Alluqmani, Abul Kashem"
+  venue: "Scientific Reports 15 (1), 37029"
+  year: 2025
+  date: 2025-10-23
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1038/s41598-025-20304-2"
+  pdf: "/files/papers/basalt-concrete-2025.pdf"
+  quartile: "Q1"
+  citations: 15
+  open_access: true
+  bibkey: Haque2025machine
+
+- id: pdac-proteome-2025
+  title: "Mapping the proteomic landscape of pancreatic cancer: prognostic insights and subtype stratification"
+  authors: "AT Aref, J Grealey, M Pathan, Z Noor, A Anees, AKM Azad, DL Smith, et al."
+  venue: "Cancer Research Communications 5 (10), 1879-1893"
+  year: 2025
+  date: 2025-09-26
+  type: journal
+  role: co
+  topics: [cancer, omics]
+  doi: "10.1158/2767-9764.crc-25-0229"
+  quartile: "Q1"
+  citations: 6
+  open_access: true
+  bibkey: Aref2025mapping
+
+- id: alzheimer-mri-2025
+  title: "Novel deep learning for multi-class classification of Alzheimer's in disability using MRI datasets"
+  authors: "Sumaiya Binte Shahid, Maleeha Kaikaus, Md. Hasanul Kabir, Mohammad Yousuf, AKM Azad, Asmaa Soliman Al-Moisheer, Naif Alotaibi, Salem A. Alyami, Touhid Bhuiyan, Mohammad Ali Moni"
+  venue: "Frontiers in Bioinformatics 5"
+  year: 2025
+  date: 2025-08-20
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3389/fbinf.2025.1567219"
+  pdf: "/files/papers/alzheimer-mri-2025.pdf"
+  quartile: "Q1"
+  citations: 19
+  open_access: true
+  bibkey: Shahid2025novel
+
+- id: snrna-pd-2025
+  title: "Single nucleus RNA sequencing profile analysis to reveal cell type specific common molecular drivers of Parkinson's disease and therapeutic agents"
+  authors: "Md. Al Amin Pappu, Md. Alamin, Most. Humaira Sultana, AKM Azad, Md. Rabiul Auwul, Sabkat Mahmud, Alvira Ajadee, Arnob Sarker, Salem A. Alyami, Md. Nurul Haque Mollah"
+  venue: "Scientific Reports 15 (1), 27086"
+  year: 2025
+  date: 2025-07-25
+  type: journal
+  role: co
+  topics: [drugs, omics]
+  doi: "10.1038/s41598-025-09417-w"
+  pdf: "/files/papers/snrna-pd-2025.pdf"
+  quartile: "Q1"
+  citations: 8
+  open_access: true
+  bibkey: Pappu2025single
+
+- id: eeg-driving-2025
+  title: "An explainable machine learning framework for predicting driving states using electroencephalogram"
+  authors: "Iqram Hussain, Se-Jin Park, AKM Azad, Salem Ali Alyami"
+  venue: "Medical Engineering & Physics 140, 104355"
+  year: 2025
+  date: 2025-05-09
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.medengphy.2025.104355"
+  quartile: "Q3"
+  citations: 11
+  bibkey: Hussain2025explainable
+
+- id: stsa-brain-2025
+  title: "STSA-Based Early-Stage Detection of Small Brain Tumors Using Neural Network"
+  authors: "Nafiul Hasan, Md. Masud Rana, Md. Mahmudul Hasan, AKM Azad, Dil Afroz, Md Mostafizur Rahman Komol, Mousumi Aktar, Mohammad Ali Moni"
+  venue: "Engineering Reports 7 (5), e70135"
+  year: 2025
+  date: 2025-05-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1002/eng2.70135"
+  quartile: "Q2"
+  citations: 5
+  open_access: true
+  bibkey: Hasan2025stsabased
+
+- id: plantcarenet-2025
+  title: "PlantCareNet: an advanced system to recognize plant diseases with dual-mode recommendations for prevention"
+  authors: "Muhaiminul Islam, AKM Azad, Shifat E. Arman, Salem A. Alyami, Md Mehedi Hasan"
+  venue: "Plant Methods 21 (1), 52"
+  year: 2025
+  date: 2025-04-22
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1186/s13007-025-01366-9"
+  pdf: "/files/papers/plantcarenet-2025.pdf"
+  blog: "/blog/2025/plantcarenet/"
+  quartile: "Q1"
+  citations: 43
+  open_access: true
+  bibkey: Islam2025plantcarenet
+
+- id: lung-links-2025
+  title: "Genetic links between common lung diseases and lung cancer progression: bioinformatics and machine learning insights"
+  authors: "Md. Ali Hossain, Tania Akter, Md. Zulfiker Mahmud, AKM Azad, Mohammad Zahidur Rahman, Mohammad Ali Moni, Ahmed A. Moustafa"
+  venue: "Emerging Science Journal 9 (2), 916-937"
+  year: 2025
+  date: 2025-04-01
+  type: journal
+  role: co
+  topics: [cancer, omics]
+  doi: "10.28991/esj-2025-09-02-021"
+  pdf: "/files/papers/lung-links-2025.pdf"
+  quartile: "Q1"
+  citations: 11
+  open_access: true
+  bibkey: Hossain2025genetic
+
+- id: har-bilstm-2025
+  title: "A multi-agent and attention-aware enhanced CNN-BiLSTM model for human activity recognition for enhanced disability assistance"
+  authors: "Mst. Alema Khatun, Mohammad Abu Yousuf, Taskin Noor Turna, AKM Azad, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "Diagnostics 15 (5), 537"
+  year: 2025
+  date: 2025-02-22
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/diagnostics15050537"
+  pdf: "/files/papers/har-bilstm-2025.pdf"
+  quartile: "Q2"
+  citations: 15
+  open_access: true
+  bibkey: Khatun2025multiagent
+
+- id: voip-llm-2025
+  title: "Multilingual Low-latency Emergency VoIP System Using LLM for Speech Reconstruction and Blockchain for Secure Data Archiving"
+  authors: "Rahman A. Rafi, Shakil Ahmed, Danush Venkateshperumal, Ashfaq Khokhar, Md Arifuzzaman, AKM Azad, Salem A. Alyami"
+  venue: "IEEE Access 13, 150101-150122"
+  year: 2025
+  date: 2025-01-01
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1109/access.2025.3600364"
+  pdf: "/files/papers/voip-llm-2025.pdf"
+  quartile: "Q1"
+  citations: 6
+  open_access: true
+  bibkey: Rafi2025multilingual
+
+- id: adanet-2025
+  title: "Design and evaluation of AdaNet: A high-fidelity motion acquisition framework for assistive gesture-based interfaces"
+  authors: "Mohammad Rashedul Haque, Atique Tajwar, AKM Azad, Salem A. Alyami, Md. Mehedi Hasan"
+  venue: "IEEE Access 13, 133035-133052"
+  year: 2025
+  date: 2025-01-01
+  type: journal
+  role: co
+  topics: [medai, ai]
+  doi: "10.1109/access.2025.3592079"
+  pdf: "/files/papers/adanet-2025.pdf"
+  quartile: "Q1"
+  citations: 1
+  open_access: true
+  bibkey: Haque2025design
+
+- id: legalmind-2025
+  title: "LegalMind: Agentic AI-driven process optimization and cost reduction in legal services using DeepSeek"
+  authors: "Nidadavolu Venkat Durga Sai Siva Vara Prasad Raju, Nuruzzaman Faruqui, Nikhil Patel, Olivia-Roxana Alecsoiu, Priyabrata Thatoi, Salem A. Alyami, AKM Azad"
+  venue: "IEEE Access 13, 126981-126999"
+  year: 2025
+  date: 2025-01-01
+  type: journal
+  role: senior
+  topics: [ai]
+  doi: "10.1109/access.2025.3586781"
+  pdf: "/files/papers/legalmind-2025.pdf"
+  quartile: "Q1"
+  citations: 22
+  open_access: true
+  bibkey: Raju2025legalmind
+
+- id: covid-multimodal-review-2025
+  title: "Multimodal marvels of deep learning in medical diagnosis using image, speech, and text: A comprehensive review of COVID-19 detection"
+  authors: "Md. Shofiqul Islam, Khondokar Fida Hasan, Hasibul Hossain Shajeeb, Humayan Kabir Rana, Md. Saifur Rahman, Md. Munirul Hasan, AKM Azad, Ibrahim Abdullah, Mohammad Ali Moni"
+  venue: "AI Open 6, 12-44"
+  year: 2025
+  date: 2025-01-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.aiopen.2025.01.003"
+  pdf: "/files/papers/covid-multimodal-review-2025.pdf"
+  quartile: "Q1"
+  citations: 7
+  open_access: true
+  bibkey: Islam2025multimodal
+
+- id: glioma-mct-2025
+  title: "A novel mixed convolution transformer model for the fast and accurate diagnosis of glioma subtypes"
+  authors: "S. M. Nuruzzaman Nobel, S M Masfequier Rahman Swapno, Md Babul Islam, AKM Azad, Salem A. Alyami, Md Alamin, Píetro Lió, Mohammad Ali Moni"
+  venue: "Advanced Intelligent Systems 7 (5), 2400566"
+  year: 2025
+  date: 2024-11-28
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1002/aisy.202400566"
+  pdf: "/files/papers/glioma-mct-2025.pdf"
+  quartile: "Q1"
+  citations: 50
+  open_access: true
+  bibkey: Nobel2025novel
+
+- id: hcc-framework-2024
+  title: "An Integrated Framework to Identify Prognostic Biomarkers and Novel Therapeutic Targets in Hepatocellular Carcinoma-Based Disabilities"
+  authors: "Md. Okibur Rahman, Asim Das, Nazratun Naeem, Jabeen-E-Tahnim, Md. Ali Hossain, Md Nur Alam, AKM Azad, Salem A. Alyami, Naif Alotaibi, Asmaa Soliman Al-Moisheer, Mohammad Ali Moni"
+  venue: "Biology 13 (12), 966"
+  year: 2024
+  date: 2024-11-24
+  type: journal
+  role: co
+  topics: [cancer, omics]
+  doi: "10.3390/biology13120966"
+  pdf: "/files/papers/hcc-framework-2024.pdf"
+  quartile: "Q1"
+  citations: 5
+  open_access: true
+  bibkey: Rahman2024integrated
+
+- id: ecg-arrhythmia-2024
+  title: "An interpretable electrocardiogram-based model for predicting arrhythmia and ischemia in cardiovascular disease"
+  authors: "Tanjila Alam Sathi, Rafsan Jany, Razia Zaman Ela, AKM Azad, Salem Ali Alyami, Md Azam Hossain, Iqram Hussain"
+  venue: "Results in Engineering 24, 103381"
+  year: 2024
+  date: 2024-11-08
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.rineng.2024.103381"
+  quartile: "Q1"
+  citations: 52
+  open_access: true
+  bibkey: Sathi2024interpretable
+
+- id: landsin-2024
+  title: "LandSin: A differential ML and Google API-enabled web server for real-time land insights and beyond"
+  authors: "Alauddin Sabari, Imran Hasan, Salem A. Alyami, Píetro Lió, Md. Sadek Ali, Mohammad Ali Moni, AKM Azad"
+  venue: "Software Impacts 22, 100718"
+  year: 2024
+  date: 2024-11-01
+  type: journal
+  role: senior
+  topics: [ai]
+  doi: "10.1016/j.simpa.2024.100718"
+  blog: "/blog/2024/landsin-land-value/"
+  quartile: "Q3"
+  citations: 3
+  open_access: true
+  bibkey: Sabari2024landsin
+
+- id: lung-msa-2024
+  title: "Multi-view soft attention-based model for the classification of lung cancer-associated disabilities"
+  authors: "Jannatul Ferdous Esha, Tahmidul Islam, Md. Appel Mahmud Pranto, Abrar Siam Borno, Nuruzzaman Faruqui, Mohammad Abu Yousuf, AKM Azad, Asmaa Soliman Al-Moisheer, Naif Alotaibi, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "Diagnostics 14 (20), 2282"
+  year: 2024
+  date: 2024-10-14
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/diagnostics14202282"
+  pdf: "/files/papers/lung-msa-2024.pdf"
+  quartile: "Q2"
+  citations: 22
+  open_access: true
+  bibkey: Esha2024multiview
+
+- id: rxtalkviz-2024
+  title: "rXTalkViz: A R package to quantify, visualize, and report carcinogenic footprints of functional pathway cross-talks"
+  authors: "AKM Azad"
+  venue: "Software Impacts 22, 100708"
+  year: 2024
+  date: 2024-10-09
+  type: journal
+  role: sole
+  topics: [cancer, omics]
+  doi: "10.1016/j.simpa.2024.100708"
+  code: "https://github.com/Akmazad/rXTalkViz"
+  blog: "/blog/2024/rxtalkviz/"
+  quartile: "Q3"
+  citations: 1
+  open_access: true
+  bibkey: Azad2024rxtalkviz
+
+- id: faceengine-2024
+  title: "FaceEngine: a tracking-based framework for real-time face recognition in video surveillance system"
+  authors: "Ahsan Imran, Riad Ahmed, Md. Mehedi Hasan, M. Helal Uddin Ahmed, AKM Azad, Salem A. Alyami"
+  venue: "SN Computer Science 5 (5), 609"
+  year: 2024
+  date: 2024-05-31
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1007/s42979-024-02922-1"
+  quartile: "Q2"
+  citations: 21
+  bibkey: Imran2024faceengine
+
+- id: hypopharyngeal-2024
+  title: "Exploring gene regulatory interaction networks and predicting therapeutic molecules for hypopharyngeal cancer and EGFR-mutated lung adenocarcinoma"
+  authors: "Abanti Bhattacharjya, Md. Manowarul Islam, Md. Ashraf Uddin, Md. Alamin Talukder, AKM Azad, Sunil Aryal, Bikash Kumar Paul, Wahia Tasnim, Mohammad Ali Abdullah Almoyad, Mohammad Ali Moni"
+  venue: "FEBS Open Bio 14 (7), 1166-1191"
+  year: 2024
+  date: 2024-05-23
+  type: journal
+  role: co
+  topics: [cancer, drugs]
+  doi: "10.1002/2211-5463.13807"
+  quartile: "Q2"
+  citations: 10
+  open_access: true
+  bibkey: Bhattacharjya2024exploring
+
+- id: covid-cxr-2024
+  title: "An effective screening of COVID-19 pneumonia by employing chest X-ray segmentation and attention-based ensembled classification"
+  authors: "Abu Sayeed, Nasif Osman Khansur, Azmain Yakin Srizon, Md. Farukuzzaman Faruk, Salem A. Alyami, AKM Azad, Mohammad Ali Moni"
+  venue: "IET Image Processing 18 (9), 2400-2416"
+  year: 2024
+  date: 2024-04-23
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1049/ipr2.13106"
+  quartile: "Q2"
+  citations: 5
+  open_access: true
+  bibkey: Sayeed2024effective
+
+- id: cyclosporine-selinexor-2024
+  title: "Network Medicine-Based Approach Reveals Cyclosporine and Selinexor Drug Combination as an Effective Therapy against SARS-COV-2"
+  authors: "AKM Azad"
+  venue: "Preprints.org"
+  year: 2024
+  date: 2024-03-28
+  type: preprint
+  role: sole
+  topics: [drugs]
+  doi: "10.20944/preprints202403.1708.v1"
+  blog: "/blog/2024/cyclosporine-selinexor-network-medicine/"
+  citations: 0
+  open_access: true
+  bibkey: Azad2024network
+
+- id: hesc-scrna-2024
+  title: "Single-cell RNA-seq data analysis reveals functionally relevant biomarkers of early brain development and their regulatory footprints in human embryonic stem cells (hESCs)"
+  authors: "Md. Alamin, Most. Humaira Sultana, Isaac A. Babarinde, AKM Azad, Mohammad Ali Moni, Haiming Xu"
+  venue: "Briefings in Bioinformatics 25 (3), bbae230"
+  year: 2024
+  date: 2024-03-27
+  type: journal
+  role: co
+  topics: [omics]
+  doi: "10.1093/bib/bbae230"
+  quartile: "Q1"
+  citations: 12
+  open_access: true
+  featured: true
+  bibkey: Alamin2024singlecell
+
+- id: asdnet-2024
+  title: "ASDNet: A robust involution-based architecture for diagnosis of autism spectrum disorder utilising eye-tracking technology"
+  authors: "Nasirul Mumenin, Mohammad Abu Yousuf, Md Asif Nashiry, AKM Azad, Salem A. Alyami, Píetro Lió, Mohammad Ali Moni"
+  venue: "IET Computer Vision 18 (5), 666-681"
+  year: 2024
+  date: 2024-02-12
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1049/cvi2.12271"
+  pdf: "/files/papers/asdnet-2024.pdf"
+  quartile: "Q2"
+  citations: 22
+  open_access: true
+  bibkey: Mumenin2024asdnet
+
+- id: u-actionnet-2024
+  title: "U-ActionNet: Dual-pathway Fourier networks with region-of-interest module for efficient action recognition in UAV surveillance"
+  authors: "Abdul Monaf Chowdhury, Ahsan Imran, Md. Mehedi Hasan, Riad Ahmed, AKM Azad, Salem A. Alyami"
+  venue: "IEEE Access 12, 189547-189563"
+  year: 2024
+  date: 2024-01-01
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1109/access.2024.3516586"
+  pdf: "/files/papers/u-actionnet-2024.pdf"
+  quartile: "Q1"
+  citations: 11
+  open_access: true
+  bibkey: Chowdhury2024uactionnet
+
+- id: sleep-apnea-2024
+  title: "Deep and shallow learning model-based sleep apnea diagnosis systems: A comprehensive study"
+  authors: "Roksana Akter Raisa, Ayesha Siddika Rodela, Mohammad Abu Yousuf, AKM Azad, Salem A. Alyami, Píetro Lió, Md Zahidul Islam, Ganna Pogrebna, Mohammad Ali Moni"
+  venue: "IEEE Access 12, 122959-122987"
+  year: 2024
+  date: 2024-01-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1109/access.2024.3426928"
+  pdf: "/files/papers/sleep-apnea-2024.pdf"
+  quartile: "Q1"
+  citations: 10
+  open_access: true
+  bibkey: Raisa2024deep
+
+- id: boost-cbcec-2023
+  title: "BOO-ST and CBCEC: two novel hybrid machine learning methods aim to reduce the mortality of heart failure patients"
+  authors: "Ananda Sutradhar, Mustahsin Al Rafi, F. M. Javed Mehedi Shamrat, Pronab Ghosh, Subrata Das, MD ANAYTUL ISLAM, Kawsar Ahmed, Xujuan Zhou, AKM Azad, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "Scientific Reports 13 (1), 22874"
+  year: 2023
+  date: 2023-12-18
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1038/s41598-023-48486-7"
+  pdf: "/files/papers/boost-cbcec-2023.pdf"
+  quartile: "Q1"
+  citations: 13
+  open_access: true
+  bibkey: Sutradhar2023boost
+
+- id: respiratory-biomarkers-2023
+  title: "Identification of genetic biomarkers, drug targets and agents for respiratory diseases utilising integrated bioinformatics approaches"
+  authors: "Fee Faysal Ahmed, Arnob Dip Das, Mst. Joynab Sumi, Md. Zohurul Islam, Md. Shahedur Rahman, Md. Harun Rashid, Salem A. Alyami, Naif Alotaibi, AKM Azad, Mohammad Ali Moni"
+  venue: "Scientific Reports 13 (1), 19072"
+  year: 2023
+  date: 2023-11-04
+  type: journal
+  role: co
+  topics: [drugs, omics]
+  doi: "10.1038/s41598-023-46455-8"
+  pdf: "/files/papers/respiratory-biomarkers-2023.pdf"
+  quartile: "Q1"
+  citations: 14
+  open_access: true
+  bibkey: Ahmed2023identification
+
+- id: thyroid-2023
+  title: "An intelligent thyroid diagnosis system utilising multiple ensemble and explainable algorithms with medical supported attributes"
+  authors: "Ananda Sutradhar, Mustahsin Al Rafi, Pronab Ghosh, F. M. Javed Mehedi Shamrat, Md Moniruzzaman, Kawsar Ahmed, AKM Azad, Francis Minhthang Bui, Li Chen, Mohammad Ali Moni"
+  venue: "IEEE Transactions on Artificial Intelligence 5 (6), 2840-2855"
+  year: 2023
+  date: 2023-10-27
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1109/tai.2023.3327981"
+  quartile: "Q1"
+  citations: 32
+  bibkey: Sutradhar2023intelligent
+
+- id: cancer-voting-2023
+  title: "Cancer classification utilizing voting classifier with ensemble feature selection method and transcriptomic data"
+  authors: "Rabea Khatun, Maksuda Akter, Md. Manowarul Islam, Md. Ashraf Uddin, Md. Alamin Talukder, Joarder Kamruzzaman, AKM Azad, Bikash Kumar Paul, Mohammad Ali Abdullah Almoyad, Sunil Aryal, Mohammad Ali Moni"
+  venue: "Genes 14 (9), 1802"
+  year: 2023
+  date: 2023-09-14
+  type: journal
+  role: co
+  topics: [cancer, omics]
+  doi: "10.3390/genes14091802"
+  pdf: "/files/papers/cancer-voting-2023.pdf"
+  quartile: "Q2"
+  citations: 33
+  open_access: true
+  bibkey: Khatun2023cancer
+
+- id: fp-cnn-2023
+  title: "FP-CNN: Fuzzy pooling-based convolutional neural network for lung ultrasound image classification with explainable AI"
+  authors: "Md. Mahmodul Hasan, Muhammad Minoar Hossain, Mohammad Motiur Rahman, AKM Azad, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "Computers in Biology and Medicine 165, 107407"
+  year: 2023
+  date: 2023-09-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.compbiomed.2023.107407"
+  quartile: "Q1"
+  citations: 0
+  open_access: true
+  bibkey: Hasan2023fpcnn
+
+- id: eeg-har-lime-2023
+  title: "An explainable EEG-based human activity recognition model using machine-learning approach and LIME"
+  authors: "Iqram Hussain, Rafsan Jany, Richard B. Boyer, AKM Azad, Salem A. Alyami, Se Jin Park, Md. Mehedi Hasan, Md Azam Hossain"
+  venue: "Sensors 23 (17), 7452"
+  year: 2023
+  date: 2023-08-27
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/s23177452"
+  pdf: "/files/papers/eeg-har-lime-2023.pdf"
+  quartile: "Q1"
+  citations: 102
+  open_access: true
+  bibkey: Hussain2023explainable
+
+- id: wheatspikenet-2023
+  title: "WheatSpikeNet: An Improved Wheat Spike Segmentation Model for Accurate Estimation from Field Imaging"
+  authors: "Mikhail Batin, Muhaiminul Islam, Md. Mehedi Hasan, AKM Azad, Salem A. Alyami, Md Azam Hossain, Stanley J. Miklavcic"
+  venue: "Frontiers in Plant Science 14, 1226190"
+  year: 2023
+  date: 2023-08-25
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.3389/fpls.2023.1226190"
+  pdf: "/files/papers/wheatspikenet-2023.pdf"
+  quartile: "Q1"
+  citations: 20
+  open_access: true
+  bibkey: Batin2023wheatspikenet
+
+- id: safetymed-2023
+  title: "SafetyMed: A Novel IoMT Intrusion Detection System Using CNN-LSTM Hybridization"
+  authors: "Nuruzzaman Faruqui, Mohammad Abu Yousuf, Md Whaiduzzaman, AKM Azad, Salem A. Alyami, Píetro Lió, Muhammad Ashad Kabir, Mohammad Ali Moni"
+  venue: "Electronics 12 (17), 3541"
+  year: 2023
+  date: 2023-08-22
+  type: journal
+  role: co
+  topics: [medai, ai]
+  doi: "10.3390/electronics12173541"
+  pdf: "/files/papers/safetymed-2023.pdf"
+  quartile: "Q2"
+  citations: 131
+  open_access: true
+  bibkey: Faruqui2023safetymed
+
+- id: pdac-aacr-2023
+  title: "A proteomic-based prognostic signature of pancreatic adenocarcinoma"
+  authors: "AT Aref, AKM Azad, A Anees, M Pathan, J Grealey, DL Smith, et al."
+  venue: "Cancer Research 83 (7_Supplement), 2209 (AACR Annual Meeting abstract)"
+  year: 2023
+  date: 2023-04-04
+  type: abstract
+  role: co
+  topics: [cancer]
+  doi: "10.1158/1538-7445.am2023-2209"
+  citations: 1
+  bibkey: Aref2023proteomicbased
+
+- id: binocular-2023
+  title: "Binocular Rivalry Impact on Macroblock-Loss Error Concealment for Stereoscopic 3D Video Transmission"
+  authors: "Md. Mehedi Hasan, Md Azam Hossain, Naif Alotaibi, J.F. Arnold, AKM Azad"
+  venue: "Sensors 23 (7), 3604"
+  year: 2023
+  date: 2023-03-30
+  type: journal
+  role: senior
+  topics: [ai]
+  doi: "10.3390/s23073604"
+  pdf: "/files/papers/binocular-2023.pdf"
+  quartile: "Q1"
+  citations: 1
+  open_access: true
+  bibkey: Hasan2023binocular
+
+- id: covid-cnn-cxr-2022
+  title: "Convolutional neural network model to detect COVID-19 patients utilizing chest X-ray images"
+  authors: "Md. Shahriare Satu, Khair Ahammed, Mohammad Zoynul Abedin, Md. Auhidur Rahman, Sheikh Mohammed Shariful Islam, AKM Azad, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "International Conference on Machine Intelligence and Emerging Technologies (MIET), Springer, 152-166"
+  year: 2022
+  date: 2023-06-10
+  type: conference
+  role: co
+  topics: [medai]
+  doi: "10.1007/978-3-031-34619-4_13"
+  pdf: "/files/papers/covid-cnn-cxr-2022.pdf"
+  citations: 12
+  open_access: true
+  bibkey: Satu2022convolutional
+
+- id: covid-vaccine-ae-2022
+  title: "Adverse effects of COVID-19 vaccination: machine learning and statistical approach to identify and classify incidences of morbidity and post-vaccination reactogenicity"
+  authors: "Md. Martuza Ahamad, Sakifa Aktar, Md. Jamal Uddin, Md. Rashed-Al-Mahfuz, AKM Azad, Shahadat Uddin, Salem A. Alyami, Iqbal Hasan Sarker, Asaduzzaman Khan, Píetro Lió, Julian M.W. Quinn, Mohammad Ali Moni"
+  venue: "Healthcare 11 (1), 31"
+  year: 2022
+  date: 2022-12-22
+  type: journal
+  role: co
+  topics: [medai, health]
+  doi: "10.3390/healthcare11010031"
+  quartile: "Q2"
+  citations: 51
+  open_access: true
+  bibkey: Ahamad2022adverse
+
+- id: drnasb-2022
+  title: "dRNASb: a systems biology approach to decipher dynamics of host-pathogen interactions using temporal dual RNA-seq data"
+  authors: "Mojdeh Dinarvand, Forrest C. Koch, Daniel Al Mouiee, Kaylee Vuong, Abhishek Vijayan, Afia Fariha Tanzim, AKM Azad, Anahit Penesyan, Natalia Castaño‐Rodríguez, Fatemeh Vafaee"
+  venue: "Microbial Genomics 8 (9)"
+  year: 2022
+  date: 2022-09-22
+  type: journal
+  role: co
+  topics: [omics]
+  doi: "10.1099/mgen.0.000862"
+  pdf: "/files/papers/drnasb-2022.pdf"
+  quartile: "Q1"
+  citations: 7
+  open_access: true
+  bibkey: Dinarvand2022drnasb
+
+- id: ovarian-2022
+  title: "Early-stage detection of ovarian cancer based on clinical data using machine learning approaches"
+  authors: "Md. Martuza Ahamad, Sakifa Aktar, Md. Jamal Uddin, Tasnia Rahman, Salem A. Alyami, Samer Al-Ashhab, Hanan Akhdar, AKM Azad, Mohammad Ali Moni"
+  venue: "Journal of Personalized Medicine 12 (8), 1211"
+  year: 2022
+  date: 2022-07-25
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.3390/jpm12081211"
+  pdf: "/files/papers/ovarian-2022.pdf"
+  quartile: "Q1"
+  citations: 101
+  open_access: true
+  bibkey: Ahamad2022earlystage
+
+- id: non-newtonian-2022
+  title: "Mutual interdependence of the physical parameters governing the boundary-layer flow of non-Newtonian fluids"
+  authors: "Samer Al-Ashhab, Dongming Wei, Salem A. Alyami, AKM Azad, Mohammad Ali Moni"
+  venue: "Applied Sciences 12 (10), 5275"
+  year: 2022
+  date: 2022-05-23
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.3390/app12105275"
+  pdf: "/files/papers/non-newtonian-2022.pdf"
+  citations: 6
+  open_access: true
+  bibkey: AlAshhab2022mutual
+
+- id: brain-tumor-ensemble-2022
+  title: "A classification of MRI brain tumor based on two stage feature level ensemble of deep CNN models"
+  authors: "Nahid Ferdous Aurna, Mohammad Abu Yousuf, Kazi Abu Taher, AKM Azad, Mohammad Ali Moni"
+  venue: "Computers in Biology and Medicine 146, 105539"
+  year: 2022
+  date: 2022-04-22
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.compbiomed.2022.105539"
+  quartile: "Q1"
+  citations: 245
+  featured: true
+  bibkey: Aurna2022classification
+
+- id: ssc-cancer-2022
+  title: "Network based systems biology approach to identify diseasome and comorbidity associations of Systemic Sclerosis with cancers"
+  authors: "Md Khairul Islam, Md Habibur Rahman, Md Rakibul Islam, Md. Zahidul Islam, Md Mainul Islam Mamun, AKM Azad, Mohammad Ali Moni"
+  venue: "Heliyon 8 (2)"
+  year: 2022
+  date: 2022-02-01
+  type: journal
+  role: co
+  topics: [cancer]
+  doi: "10.1016/j.heliyon.2022.e08892"
+  quartile: "Q1"
+  citations: 17
+  open_access: true
+  bibkey: Islam2022network
+
+- id: pso-fuzzy-cnn-2022
+  title: "Particle swarm optimized fuzzy CNN with quantitative feature fusion for ultrasound image quality identification"
+  authors: "Muhammad Minoar Hossain, Md. Mahmodul Hasan, Md. Abdur Rahim, Mohammad Motiur Rahman, Mohammad Abu Yousuf, Samer Al-Ashhab, Hanan Akhdar, Salem A. Alyami, AKM Azad, Mohammad Ali Moni"
+  venue: "IEEE Journal of Translational Engineering in Health and Medicine 10, 1-12"
+  year: 2022
+  date: 2022-01-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1109/jtehm.2022.3197923"
+  pdf: "/files/papers/pso-fuzzy-cnn-2022.pdf"
+  quartile: "Q1"
+  citations: 52
+  open_access: true
+  bibkey: Hossain2022particle
+
+- id: har-cnn-lstm-2022
+  title: "Deep CNN-LSTM with self-attention model for human activity recognition using wearable sensor"
+  authors: "Mst. Alema Khatun, Mohammad Abu Yousuf, Sabbir Ahmed, Md. Zia Uddin, Salem A. Alyami, Samer Al-Ashhab, Hanan Akhdar, Asaduzzaman Khan, AKM Azad, Mohammad Ali Moni"
+  venue: "IEEE Journal of Translational Engineering in Health and Medicine 10, 1-16"
+  year: 2022
+  date: 2022-01-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1109/jtehm.2022.3177710"
+  pdf: "/files/papers/har-cnn-lstm-2022.pdf"
+  quartile: "Q1"
+  citations: 379
+  open_access: true
+  featured: true
+  bibkey: Khatun2022deep
+
+- id: bard-2022
+  title: "BARD: A structured technique for group elicitation of Bayesian networks to support analytic reasoning"
+  authors: "Erik P. Nyberg, Ann E. Nicholson, Kevin B. Korb, Michael Wybrow, Ingrid Zukerman, Steven Mascaro, Shreshth Thakur, Abraham Oshni Alvandi, Jeff Riley, Ross Pearson, Shane Morris, Matthieu Herrmann, AKM Azad, Fergus Bolger, Ulrike Hahn, David Albert Lagnado"
+  venue: "Risk Analysis 42 (6), 1155-1178"
+  year: 2022
+  date: 2021-06-19
+  type: journal
+  role: co
+  topics: [bayes, ai]
+  doi: "10.1111/risa.13759"
+  pdf: "/files/papers/bard-2022.pdf"
+  quartile: "Q1"
+  citations: 88
+  open_access: true
+  bibkey: Nyberg2022bard
+
+- id: covidspread-2021
+  title: "COVIDSpread: real-time prediction of COVID-19 spread based on time-series modelling"
+  authors: "Siroos Shahriari, Taha Hossein Rashidi, AKM Azad, Fatemeh Vafaee"
+  venue: "F1000Research 10, 1110"
+  year: 2021
+  date: 2021-11-03
+  type: journal
+  role: co
+  topics: [health]
+  doi: "10.12688/f1000research.73969.1"
+  pdf: "/files/papers/covidspread-2021.pdf"
+  preprint: "https://doi.org/10.1101/2020.04.24.20078923"
+  blog: "/blog/2021/covidspread-time-series/"
+  quartile: "Q1"
+  citations: 8
+  open_access: true
+  bibkey: Shahriari2021covidspread
+
+- id: lungnet-2021
+  title: "LungNet: A hybrid deep-CNN model for lung cancer diagnosis using CT and wearable sensor-based medical IoT data"
+  authors: "Nuruzzaman Faruqui, Mohammad Abu Yousuf, Md Whaiduzzaman, AKM Azad, Alistair Barros, Mohammad Ali Moni"
+  venue: "Computers in Biology and Medicine 139, 104961"
+  year: 2021
+  date: 2021-10-28
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1016/j.compbiomed.2021.104961"
+  quartile: "Q1"
+  citations: 217
+  bibkey: Faruqui2021lungnet
+
+- id: bcg-covid-2021
+  title: "Effects of Bacille Calmette Guerin (BCG) vaccination during COVID-19 infection"
+  authors: "Utpala Nanda Chowdhury, Md Omar Faruqe, Md. Mehedy, Shamim Ahmad, Md. Babul Islam, Watshara Shoombuatong, AKM Azad, Mohammad Ali Moni"
+  venue: "Computers in Biology and Medicine 138, 104891"
+  year: 2021
+  date: 2021-09-29
+  type: journal
+  role: co
+  topics: [health]
+  doi: "10.1016/j.compbiomed.2021.104891"
+  quartile: "Q1"
+  citations: 8
+  open_access: true
+  bibkey: Chowdhury2021effects
+
+- id: covid-mortality-2021
+  title: "Machine Learning Approaches to Identify Patient Comorbidities and Symptoms That Increased Risk of Mortality in COVID-19"
+  authors: "Sakifa Aktar, Ashis Talukder, Md. Martuza Ahamad, A. H. M. Kamal, Jahidur Rahman Khan, Md. Protikuzzaman, Nasif Hossain, AKM Azad, Julian M.W. Quinn, Mathew A. Summers, Siaw‐Teng Liaw, Valsamma Eapen, Mohammad Ali Moni"
+  venue: "Diagnostics 11 (8), 1383"
+  year: 2021
+  date: 2021-07-31
+  type: journal
+  role: co
+  topics: [medai, health]
+  doi: "10.3390/diagnostics11081383"
+  pdf: "/files/papers/covid-mortality-2021.pdf"
+  quartile: "Q2"
+  citations: 55
+  open_access: true
+  bibkey: Aktar2021machine
+
+- id: covid-cdr-2021
+  title: "An integrative resource for network-based investigation of COVID-19 combinatorial drug repositioning and mechanism of action"
+  authors: "AKM Azad, Shadma Fatima, Alexander Capraro, Shafagh A. Waters, Fatemeh Vafaee"
+  venue: "Patterns (Cell Press) 2 (9), 100325"
+  year: 2021
+  date: 2021-07-12
+  type: journal
+  role: first
+  topics: [drugs]
+  doi: "10.1016/j.patter.2021.100325"
+  preprint: "https://doi.org/10.33774/chemrxiv-2021-tk6rt-v2"
+  web: "https://unsw-data-analytics.shinyapps.io/COVID_CombTherap/"
+  data: "https://doi.org/10.5061/dryad.905qfttjm"
+  blog: "/blog/2021/covid-cdr-combination-therapy/"
+  quartile: "Q1"
+  citations: 7
+  open_access: true
+  featured: true
+  bibkey: Azad2021integrative
+
+- id: covid-severity-2021
+  title: "Machine Learning Approach to Predicting COVID-19 Disease Severity Based on Clinical Blood Test Data: Statistical Analysis and Model Development"
+  authors: "Sakifa Aktar, Md. Martuza Ahamad, Md. Rashed-Al-Mahfuz, AKM Azad, Shahadat Uddin, A. H. M. Kamal, Salem A. Alyami, Ping‐I Lin, Sheikh Mohammed Shariful Islam, Julian M.W. Quinn, Valsamma Eapen, Mohammad Ali Moni"
+  venue: "JMIR Medical Informatics 9 (4), e25884"
+  year: 2021
+  date: 2021-03-29
+  type: journal
+  role: co
+  topics: [medai, health]
+  doi: "10.2196/25884"
+  pdf: "/files/papers/covid-severity-2021.pdf"
+  quartile: "Q1"
+  citations: 104
+  open_access: true
+  bibkey: Aktar2021machineb
+
+- id: lapatinib-2021
+  title: "Discovering novel cancer bio-markers in acquired lapatinib resistance using Bayesian methods"
+  authors: "AKM Azad, Salem A. Alyami"
+  venue: "Briefings in Bioinformatics 22 (5), bbab137"
+  year: 2021
+  date: 2021-03-24
+  type: journal
+  role: first
+  topics: [bayes, cancer, omics]
+  doi: "10.1093/bib/bbab137"
+  pdf: "/files/papers/lapatinib-2021.pdf"
+  code: "https://github.com/Akmazad/PathTurbEr"
+  blog: "/blog/2021/pathturber-perturbation-drivers/"
+  quartile: "Q1"
+  citations: 5
+  open_access: true
+  featured: true
+  bibkey: Azad2021discovering
+
+- id: covid-digestive-2021
+  title: "Bioinformatics and system biology approaches to identify the diseasome and comorbidities complexities of SARS-CoV-2 infection with the digestive tract disorders"
+  authors: "Md Asif Nashiry, Shauli Sarmin Sumi, Mohammad Umer Sharif Shohan, Salem A. Alyami, AKM Azad, Mohammad Ali Moni"
+  venue: "Briefings in Bioinformatics 22 (6), bbab126"
+  year: 2021
+  date: 2021-03-17
+  type: journal
+  role: co
+  topics: [omics, health]
+  doi: "10.1093/bib/bbab126"
+  quartile: "Q1"
+  citations: 12
+  open_access: true
+  bibkey: Nashiry2021bioinformatics
+
+- id: eeg-emotion-2021
+  title: "Emotion Recognition from EEG Signal Focusing on Deep Learning and Shallow Learning Techniques"
+  authors: "Md. Rabiul Islam, Mohammad Ali Moni, Md. Milon Islam, Md. Rashed-Al-Mahfuz, Md. Saiful Islam, Md. Kamrul Hasan, Md. Sabir Hossain, Mohiuddin Ahmad, Shahadat Uddin, AKM Azad, Salem A. Alyami, Md Atiqur Rahman Ahad, Píetro Lió"
+  venue: "IEEE Access 9, 94601-94624"
+  year: 2021
+  date: 2021-01-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1109/access.2021.3091487"
+  pdf: "/files/papers/eeg-emotion-2021.pdf"
+  quartile: "Q1"
+  citations: 228
+  open_access: true
+  bibkey: Islam2021emotion
+
+- id: hri-attention-2021
+  title: "A Human-Robot Interaction System Calculating Visual Focus of Human's Attention Level"
+  authors: "Partha Chakraborty, Sabbir Ahmed, Mohammad Abu Yousuf, AKM Azad, Salem A. Alyami, Mohammad Ali Moni"
+  venue: "IEEE Access 9"
+  year: 2021
+  date: 2021-01-01
+  type: journal
+  role: co
+  topics: [ai]
+  doi: "10.1109/access.2021.3091642"
+  pdf: "/files/papers/hri-attention-2021.pdf"
+  quartile: "Q1"
+  citations: 60
+  open_access: true
+  bibkey: Chakraborty2021humanrobot
+
+- id: ckd-2021
+  title: "Clinically applicable machine learning approaches to identify attributes of Chronic Kidney Disease (CKD) for use in low-cost diagnostic screening"
+  authors: "Md. Rashed-Al-Mahfuz, Abedul Haque, AKM Azad, Salem A. Alyami, Julian M.W. Quinn, Mohammad Ali Moni"
+  venue: "IEEE Journal of Translational Engineering in Health and Medicine 9, 1-11"
+  year: 2021
+  date: 2021-01-01
+  type: journal
+  role: co
+  topics: [medai]
+  doi: "10.1109/jtehm.2021.3073629"
+  pdf: "/files/papers/ckd-2021.pdf"
+  quartile: "Q1"
+  citations: 133
+  open_access: true
+  bibkey: RashedAlMahfuz2021clinically
+
+- id: covid-cdr-data-2020
+  title: "COVID-CDR: An integrative resource for network-based investigation of COVID-19 combinatorial drug repositioning and mechanism of action (dataset)"
+  authors: "AKM Azad, Shadma Fatima, Alexander Capraro, Shafagh A. Waters, Fatemeh Vafaee"
+  venue: "Dryad"
+  year: 2020
+  date: 2021-07-12
+  type: dataset
+  role: first
+  topics: [drugs]
+  doi: "10.5061/dryad.905qfttjm"
+  blog: "/blog/2021/covid-cdr-combination-therapy/"
+  citations: 0
+  open_access: true
+  bibkey: Azad2020covidcdr
+
+- id: drugsimdb-2020
+  title: "A comprehensive integrated drug similarity resource for in-silico drug repositioning and beyond"
+  authors: "AKM Azad, Mojdeh Dinarvand, Alireza Nematollahi, Joshua Swift, Louise Helen Lutze-Mann, Fatemeh Vafaee"
+  venue: "Briefings in Bioinformatics 22 (3), bbaa126"
+  year: 2020
+  date: 2020-05-25
+  type: journal
+  role: first
+  topics: [drugs]
+  doi: "10.1093/bib/bbaa126"
+  preprint: "https://doi.org/10.26434/chemrxiv.12376505"
+  code: "https://github.com/Akmazad/DrugSimDB"
+  web: "https://unsw-data-analytics.shinyapps.io/DrugRepo/"
+  data: "https://figshare.com/articles/dataset/DrugSimDB/11948904"
+  blog: "/blog/2020/drugsimdb/"
+  quartile: "Q1"
+  citations: 29
+  featured: true
+  bibkey: Azad2020comprehensive
+
+- id: singlecell-dl-2019
+  title: "Single cell data explosion: deep learning to the rescue"
+  authors: "AKM Azad, Fatemeh Vafaee"
+  venue: "arXiv preprint arXiv:1901.06105"
+  year: 2019
+  date: 2019-01-18
+  type: preprint
+  role: first
+  topics: [omics]
+  doi: "10.48550/arxiv.1901.06105"
+  pdf: "/files/papers/singlecell-dl-2019.pdf"
+  citations: 2
+  open_access: true
+  bibkey: Azad2019single
+
+- id: xtalkiis-2018
+  title: "XTalkiiS: a tool for finding data-driven cross-talks between intra-/inter-species pathways"
+  authors: "AKM Azad"
+  venue: "bioRxiv 437541"
+  year: 2018
+  date: 2018-10-13
+  type: preprint
+  role: sole
+  topics: [cancer, omics]
+  doi: "10.1101/437541"
+  pdf: "/files/papers/xtalkiis-2018.pdf"
+  code: "https://github.com/Akmazad/XTalkiiS"
+  blog: "/blog/2018/xtalkiis-inter-species-cross-talk/"
+  citations: 0
+  open_access: true
+  bibkey: Azad2018xtalkiis
+
+- id: kpgminer-2018
+  title: "KPGminer: A tool for retrieving pathway genes from KEGG pathway database"
+  authors: "AKM Azad"
+  venue: "bioRxiv 416131"
+  year: 2018
+  date: 2018-09-13
+  type: preprint
+  role: sole
+  topics: [cancer, omics]
+  doi: "10.1101/416131"
+  pdf: "/files/papers/kpgminer-2018.pdf"
+  code: "https://github.com/Akmazad/KPGminer"
+  blog: "/blog/2018/kpgminer-kegg-pathway-genes/"
+  citations: 3
+  open_access: true
+  bibkey: Azad2018kpgminer
+
+- id: bnmcmc-2018
+  title: "BNMCMC: a software for inferring and visualizing Bayesian networks using MCMC methods"
+  authors: "AKM Azad, Salem A. Alyami, Jonathan Macgregor Keith"
+  venue: "bioRxiv 414953"
+  year: 2018
+  date: 2018-09-12
+  type: preprint
+  role: first
+  topics: [bayes]
+  doi: "10.1101/414953"
+  pdf: "/files/papers/bnmcmc-2018.pdf"
+  code: "https://github.com/Akmazad/BNMCMC-Server"
+  blog: "/blog/2018/bnmcmc-software/"
+  citations: 0
+  open_access: true
+  bibkey: Azad2018bnmcmc
+
+- id: xtalk-categorisation-2018
+  title: "Cross-talk categorisations in data-driven models of signalling networks: a system-level view"
+  authors: "AKM Azad, Alfons Lawen, Jonathan Macgregor Keith"
+  venue: "In: Gene Expression and Regulation in Mammalian Cells - Transcription From General Aspects, IntechOpen"
+  year: 2018
+  date: 2018-02-21
+  type: chapter
+  role: first
+  topics: [bayes, cancer]
+  doi: "10.5772/intechopen.72408"
+  pdf: "/files/papers/xtalk-categorisation-2018.pdf"
+  blog: "/blog/2018/xdamosin-cross-talk-categorisation/"
+  citations: 5
+  open_access: true
+  bibkey: Azad2018crosstalk
+
+- id: signal-rewiring-2017
+  title: "Bayesian model of signal rewiring reveals mechanisms of gene dysregulation in acquired drug resistance in breast cancer"
+  authors: "AKM Azad, Alfons Lawen, Jonathan Macgregor Keith"
+  venue: "PLOS ONE 12 (3), e0173331"
+  year: 2017
+  date: 2017-03-13
+  type: journal
+  role: first
+  topics: [bayes, cancer]
+  doi: "10.1371/journal.pone.0173331"
+  pdf: "/files/papers/signal-rewiring-2017.pdf"
+  blog: "/blog/2017/signal-rewiring-v-structures/"
+  quartile: "Q1"
+  citations: 20
+  open_access: true
+  featured: true
+  bibkey: Azad2017bayesian
+
+- id: phd-thesis-2017
+  title: "Computational modelling and characterisation of cell signalling cross-talks in acquired drug resistance"
+  authors: "AKM Azad"
+  venue: "PhD thesis, Monash University"
+  year: 2017
+  date: 2017-01-01
+  type: thesis
+  role: sole
+  topics: [bayes, cancer]
+  doi: "10.4225/03/5934e59062798"
+  blog: "/blog/2017/signal-rewiring-v-structures/"
+  citations: 0
+  open_access: true
+  bibkey: Azad2017computational
+
+- id: cancer-module-chapter-2017
+  title: "Integrating heterogeneous datasets for cancer module identification"
+  authors: "AKM Azad"
+  venue: "In: Bioinformatics: Volume II: Structure, Function, and Applications (Methods in Molecular Biology), Springer, 119-137"
+  year: 2017
+  date: 2016-11-28
+  type: chapter
+  role: sole
+  topics: [cancer]
+  doi: "10.1007/978-1-4939-6613-4_7"
+  blog: "/blog/2013/vtod-voting-based-cancer-modules/"
+  citations: 1
+  bibkey: Azad2017integrating
+
+- id: uniform-graph-sampling-2016
+  title: "Uniform Sampling of Directed and Undirected Graphs Conditional on Vertex Connectivity"
+  authors: "Salem A. Alyami, AKM Azad, Jonathan Macgregor Keith"
+  venue: "Electronic Notes in Discrete Mathematics 53, 43-55"
+  year: 2016
+  date: 2016-09-01
+  type: journal
+  role: co
+  topics: [bayes]
+  doi: "10.1016/j.endm.2016.05.005"
+  blog: "/blog/2016/neighbourhood-sampler-bayesian-networks/"
+  citations: 1
+  bibkey: Alyami2016uniform
+
+- id: nbhd-mcmc-2016
+  title: "The neighborhood MCMC sampler for learning Bayesian networks"
+  authors: "Salem A. Alyami, AKM Azad, Jonathan Macgregor Keith"
+  venue: "First International Workshop on Pattern Recognition (Proc. SPIE 10011), 100111K"
+  year: 2016
+  date: 2016-07-11
+  type: conference
+  role: co
+  topics: [bayes]
+  doi: "10.1117/12.2242708"
+  blog: "/blog/2016/neighbourhood-sampler-bayesian-networks/"
+  citations: 2
+  bibkey: Alyami2016neighborhood
+
+- id: xtalk-bmc-2015
+  title: "Prediction of signaling cross-talks contributing to acquired drug resistance in breast cancer cells by Bayesian statistical modeling"
+  authors: "AKM Azad, Alfons Lawen, Jonathan Macgregor Keith"
+  venue: "BMC Systems Biology 9 (1), 2"
+  year: 2015
+  date: 2015-01-19
+  type: journal
+  role: first
+  topics: [bayes, cancer]
+  doi: "10.1186/s12918-014-0135-x"
+  pdf: "/files/papers/xtalk-bmc-2015.pdf"
+  blog: "/blog/2015/bayesian-signalling-cross-talk-drug-resistance/"
+  note: "Editor's pick, BMC Systems Biology"
+  citations: 25
+  open_access: true
+  featured: true
+  bibkey: Azad2015prediction
+
+- id: voting-module-2013
+  title: "Voting-based cancer module identification by combining topological and data-driven properties"
+  authors: "AKM Azad, Hyunju Lee"
+  venue: "PLOS ONE 8 (8), e70498"
+  year: 2013
+  date: 2013-08-05
+  type: journal
+  role: first
+  topics: [cancer, omics]
+  doi: "10.1371/journal.pone.0070498"
+  pdf: "/files/papers/voting-module-2013.pdf"
+  blog: "/blog/2013/vtod-voting-based-cancer-modules/"
+  quartile: "Q1"
+  citations: 10
+  open_access: true
+  featured: true
+  bibkey: Azad2013votingbased
+
+- id: plant-promoter-2011
+  title: "Prediction of plant promoters based on hexamers and random triplet pair analysis"
+  authors: "AKM Azad, Saima Shahid, Nasimul Noman, Hyunju Lee"
+  venue: "Algorithms for Molecular Biology 6 (1), 19"
+  year: 2011
+  date: 2011-06-28
+  type: journal
+  role: first
+  topics: [omics]
+  doi: "10.1186/1748-7188-6-19"
+  pdf: "/files/papers/plant-promoter-2011.pdf"
+  blog: "/blog/2011/promobot-plant-promoter-prediction/"
+  quartile: "Q1"
+  citations: 27
+  open_access: true
+  bibkey: Azad2011prediction
+
+- id: netrecon-ms-2011
+  title: "Network Reconstruction Approach for Integrating Gene Expression & Copy Number Aberration Reveals Cancer Related Pathways"
+  authors: "AKM Azad"
+  venue: "MS thesis, Gwangju Institute of Science and Technology"
+  year: 2011
+  date: 2011-01-01
+  type: thesis
+  role: sole
+  topics: [cancer, omics]
+  citations: 0
+  bibkey: Azad2011network
+
+- id: netrecon-giw-2011
+  title: "Network Reconstruction Approach for Integrating Gene Expression & Copy Number Dataset"
+  authors: "AKM Azad, H Lee"
+  venue: "Poster, 22nd International Conference on Genome Informatics (GIW 2011), Busan, South Korea"
+  year: 2011
+  date: 2011-01-01
+  type: conference
+  role: first
+  topics: [cancer, omics]
+  blog: "/blog/2013/vtod-voting-based-cancer-modules/"
+  citations: 0
+  bibkey: Azad2011networkb
