@@ -1,7 +1,7 @@
 ---
 title: "First prize at the AI Hackathon for People with Disabilities"
 method: Oriental Braille
-description: "The Oriental Braille Project, led by Dr AKM Azad, won first place (Individuals track, SAR 45,000) at the AI Hackathon for People with Disabilities, held alongside the 7th International Conference on Disability and Rehabilitation and organised by the King Salman Center for Disability Research."
+description: "The Oriental Braille Project, led by Dr AKM Azad, won first place (Individuals track) at the AI Hackathon for People with Disabilities, held alongside the 7th International Conference on Disability and Rehabilitation and organised by the King Salman Center for Disability Research."
 theme: disability
 tags: [news, award, hackathon, accessibility, braille, 3D printing]
 math: false
@@ -10,12 +10,12 @@ math: false
 We are delighted to share that **The Oriental Braille Project** won **first place in the Individuals track** of
 the **AI Hackathon for People with Disabilities**. The hackathon was held alongside the
 **7th International Conference on Disability and Rehabilitation** and organised by the
-**King Salman Center for Disability Research (KSCDR)**. The prize was **SAR 45,000**.
+**King Salman Center for Disability Research (KSCDR)**.
 
 <!--more-->
 
 <figure>
-  <img src="{{ '/assets/img/news/hackathon-kscdr.jpg' | relative_url }}" alt="Dr AKM Azad on stage receiving the first-place cheque for SAR 45,000 under a screen reading '1st Winner, AI Hackathon for Disability Innovation, Individual Category'" width="2048" height="1365" loading="lazy">
+  <img src="{{ '/assets/img/news/hackathon-kscdr.jpg' | relative_url }}" alt="Dr AKM Azad on stage receiving the first-place award under a screen reading '1st Winner, AI Hackathon for Disability Innovation, Individual Category'" width="2048" height="1365" loading="lazy">
   <figcaption>Receiving the first-place award (Individual Category). Photo: King Salman Center for Disability Research (@kscdr).</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ their quality of life. It continues the lab's work with the King Salman Center f
 The award was covered by the organiser and by the university:
 
 - **King Salman Center for Disability Research (@kscdr)**, 13 October 2026: announcement of the first-place
-  winner of the Individuals track, naming the team and the SAR 45,000 prize (in Arabic).
+  winner of the Individuals track, naming the team (in Arabic).
   [View the post on X](https://x.com/kscdr/status/2110021522702180645)
 - **IMSIU Vice-Rectorate for Graduate Studies and Scientific Research (@GSSR_ImamU)**, 14 October 2026:
   congratulations to Dr AKM Azad, with an infographic describing the project (in Arabic).
