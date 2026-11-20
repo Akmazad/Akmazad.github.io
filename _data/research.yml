@@ -65,24 +65,28 @@
     We build AI systems that clinicians can trust and deploy: explainable models (SHAP, LIME, attention)
     for chronic kidney disease, thyroid, diabetes and heart failure; federated and graph-federated learning
     for privacy-preserving ECG diagnosis; and transformer and CNN architectures for MRI, CT, X-ray,
-    ultrasound, EEG and wearable-sensor data, often in support of people living with disability.
+    ultrasound, EEG and wearable-sensor data, often in support of people living with disability. During the
+    pandemic we also built real-time COVID-19 forecasting (COVIDSpread) and machine-learning analyses of
+    COVID-19 severity, mortality and vaccine reactogenicity.
   questions:
     - How do we keep accuracy while making models auditable, private and lightweight enough for the point of care?
-  tools: []
-
-- id: health
-  title: Global Health & Epidemiology
-  icon: fa-earth-asia
-  short: Population-scale burden estimation and real-time epidemic analytics.
-  body: >-
-    As a Senior Collaborator of the Global Burden of Disease (GBD) study at the Institute for Health
-    Metrics and Evaluation (IHME), we contribute to the analyses that underpin global health policy, from cancers and
-    cardiovascular disease to infections and maternal health. We also build real-time
-    forecasting tools (COVIDSpread) and machine-learning analyses of COVID-19 severity, mortality and
-    vaccine reactogenicity.
-  questions:
-    - How can forecasting and burden estimates be made transparent and actionable for policy makers?
   tools: [covidspread]
+
+- id: disability
+  title: AI-empowered Assistive Technology for Disability Research
+  icon: fa-universal-access
+  short: Assistive and diagnostic AI that helps people with disabilities learn, communicate, move and access care.
+  body: >-
+    Supported by two King Salman Center for Disability Research grants (KSRG-2023-253 and KSRG-2024-089),
+    we build AI for people living with disability. The Oriental Braille project uses AI and 3D printing to
+    turn Arabic text into tactile Braille cards, and won first prize at the AI Hackathon for People with
+    Disabilities (2026). We also develop attention-aware human-activity recognition for disability assistance,
+    AdaNet motion capture for assistive gesture-based interfaces, eye-tracking diagnosis of autism (ASDNet),
+    and deep-learning models for disabilities associated with Alzheimer's disease, lung cancer and liver cancer.
+  questions:
+    - How can low-cost AI and 3D printing put accessible learning material within reach of every blind reader?
+    - Which sensing and learning pipelines make assistive interfaces reliable enough for everyday use?
+  tools: [oriental-braille]
 
 - id: ai
   title: AI Foundations & Applied AI

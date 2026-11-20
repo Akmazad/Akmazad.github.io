@@ -6,11 +6,11 @@
 
 title: "ADNS Lab"
 long_title: "Advanced Data & Network Science Lab"
-tagline: "Bayesian, network and AI methods for biomedicine and global health"
+tagline: "Bayesian, network and AI methods for biomedicine and assistive technology"
 description: >-
   The Advanced Data & Network Science (ADNS) Lab, led by Dr AKM Azad at Imam Mohammad Ibn Saud
   Islamic University (IMSIU), Riyadh, develops Bayesian, network-science and AI methods for
-  cancer systems biology, drug repositioning, trustworthy medical AI and global health analytics.
+  cancer systems biology, drug repositioning, trustworthy medical AI and AI-empowered assistive technology for disability.
 url: "https://akmazad.github.io"
 baseurl: ""
 lang: en

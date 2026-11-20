@@ -11,11 +11,6 @@
   title: "Systematic review of AI-driven software for cardiovascular disease detection"
   text: "Published in Artificial Intelligence Review with collaborators at Charles Sturt University."
   link: /publications/?q=cardiovascular
-- date: 2026-11-01
-  kind: pub
-  title: "GBD 2023: cervical cancer burden and forecasts to 2050 in Nature Medicine"
-  text: "One of a series of Global Burden of Disease 2023 papers this year, alongside measles (Nature Medicine), heart failure (JAMA Cardiology) and elevated LDL-C (JAMA)."
-  link: /publications/?gbd=only
 - date: 2026-10-28
   kind: pub
   title: "Physics-informed deep learning surrogate for polymer composites"
@@ -41,10 +36,6 @@
   title: "VLM-Nav published in PLOS ONE"
   text: "Mapless UAV navigation from a single camera using depth estimation and vision-language models."
   link: /publications/?q=vlm-nav
-- date: 2026-03-01
-  kind: pub
-  title: "GBD 2023 breast cancer analysis in The Lancet Oncology"
-  link: /publications/?gbd=only
 - date: 2026-02-23
   kind: pub
   title: "Preprint: signalling cross-talk behind dasatinib resistance in pancreatic cancer"
@@ -64,11 +55,6 @@
   kind: pub
   title: "Proteomic landscape of pancreatic cancer in Cancer Research Communications"
   text: "With the ProCan team at Children's Medical Research Institute."
-- date: 2025-07-01
-  approx: true   # only the year is certain
-  kind: lab
-  title: "Senior Collaborator, Global Burden of Disease"
-  text: "Dr Azad joined the GBD collaborator network (Tier 2) at IHME, University of Washington."
 - date: 2025-06-15
   approx: true   # only the year is certain
   kind: grant

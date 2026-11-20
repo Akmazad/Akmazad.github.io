@@ -35,13 +35,13 @@
   role: Principal Investigator
   amount_sar: 150000
   status: completed
-  theme: medai
+  theme: disability
 - title: "Disability Research Grant (KSRG-2023-253)"
   funder: "King Salman Center for Disability Research"
   role: Principal Investigator
   amount_sar: 150000
   status: completed
-  theme: medai
+  theme: disability
 - title: "Research Partnership Program (IMSIU-RP23004)"
   funder: "Deanship of Scientific Research, IMSIU"
   role: Principal Investigator
@@ -71,7 +71,7 @@
   role: Co-Principal Investigator
   amount_sar: 30000
   status: completed
-  theme: health
+  theme: medai
 - title: "Improving health outcomes of people with cardiovascular diseases using artificial intelligence and digital health technologies"
   funder: "Deanship of Scientific Research, IMSIU"
   role: Co-Principal Investigator

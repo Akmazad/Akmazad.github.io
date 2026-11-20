@@ -40,7 +40,7 @@
   status: archived
   year: 2021
   lang: [R, Shiny]
-  theme: health
+  theme: medai
   summary: >-
     Real-time visualisation and short-term forecasting of COVID-19 spread with customisable
     time-series models (formerly "COVID-19 TS").
@@ -147,7 +147,7 @@
   status: in development
   year: 2026
   lang: [Python]
-  theme: ai
+  theme: disability
   summary: >-
     AI-empowered, multi-lingual generator of 3D-printable Braille tactile models, developed under
     the lab's disability-research programme.

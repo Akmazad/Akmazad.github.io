@@ -2,7 +2,7 @@
 title: "First prize at the AI Hackathon for People with Disabilities"
 method: Oriental Braille
 description: "The Oriental Braille Project, led by Dr AKM Azad, won first place (Individuals track, SAR 45,000) at the AI Hackathon for People with Disabilities, held alongside the 7th International Conference on Disability and Rehabilitation and organised by the King Salman Center for Disability Research."
-theme: ai
+theme: disability
 tags: [news, award, hackathon, accessibility, braille, 3D printing]
 math: false
 ---

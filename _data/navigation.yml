@@ -10,7 +10,6 @@
   children:
     - { title: "All publications", url: "/publications/" }
     - { title: "Selected papers", url: "/publications/#selected" }
-    - { title: "Global Burden of Disease", url: "/publications/?gbd=only" }
     - { title: "BibTeX (all)", url: "/files/adns-publications.bib" }
 - title: Blog
   url: /blog/

@@ -26,7 +26,7 @@
   date: 2026-11-01
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1038/s41591-026-04729-4"
   quartile: "Q1"
   citations: 0
@@ -42,7 +42,7 @@
   date: 2026-10-29
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1001/jamaoncol.2026.4274"
   quartile: "Q1"
   citations: 0
@@ -74,7 +74,7 @@
   date: 2026-10-21
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1038/s41591-026-04661-7"
   quartile: "Q1"
   citations: 2
@@ -105,7 +105,7 @@
   date: 2026-10-01
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/j.lanwpc.2026.101997"
   quartile: "Q1"
   citations: 0
@@ -121,7 +121,7 @@
   date: 2026-09-30
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1001/jamacardio.2026.4068"
   quartile: "Q1"
   citations: 5
@@ -137,7 +137,7 @@
   date: 2026-09-28
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/j.eclinm.2026.104202"
   quartile: "Q1"
   citations: 0
@@ -153,7 +153,7 @@
   date: 2026-09-01
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s2352-4642(26)00163-x"
   quartile: "Q1"
   citations: 2
@@ -169,7 +169,7 @@
   date: 2026-08-18
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s2468-2667(26)00145-3"
   quartile: "Q1"
   citations: 0
@@ -201,7 +201,7 @@
   date: 2026-07-29
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1001/jama.2026.8628"
   quartile: "Q1"
   citations: 10
@@ -217,7 +217,7 @@
   date: 2026-07-20
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s2468-2667(26)00141-6"
   quartile: "Q1"
   citations: 15
@@ -263,7 +263,7 @@
   date: 2026-07-01
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s1473-3099(26)00295-1"
   quartile: "Q1"
   citations: 13
@@ -311,7 +311,7 @@
   date: 2026-06-02
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s1473-3099(26)00194-5"
   quartile: "Q1"
   citations: 16
@@ -375,7 +375,7 @@
   date: 2026-03-27
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s3050-5038(26)00047-6"
   citations: 15
   gbd: true
@@ -390,7 +390,7 @@
   date: 2026-03-27
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/S1474-4422(26)00101-8"
   quartile: "Q1"
   citations: 0
@@ -406,7 +406,7 @@
   date: 2026-03-01
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s1470-2045(25)00730-2"
   quartile: "Q1"
   citations: 108
@@ -485,7 +485,7 @@
   date: 2026-01-01
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   preprint: "https://doi.org/10.2139/ssrn.5797088"
   quartile: "Q1"
   citations: 3
@@ -528,7 +528,7 @@
   date: 2025-12-16
   type: journal
   role: consortium
-  topics: [health]
+  topics: []
   doi: "10.1016/s1473-3099(25)00689-9"
   quartile: "Q1"
   citations: 93
@@ -638,7 +638,7 @@
   date: 2025-08-20
   type: journal
   role: co
-  topics: [medai]
+  topics: [medai, disability]
   doi: "10.3389/fbinf.2025.1567219"
   pdf: "/files/papers/alzheimer-mri-2025.pdf"
   quartile: "Q1"
@@ -732,7 +732,7 @@
   date: 2025-02-22
   type: journal
   role: co
-  topics: [medai]
+  topics: [medai, disability]
   doi: "10.3390/diagnostics15050537"
   pdf: "/files/papers/har-bilstm-2025.pdf"
   quartile: "Q2"
@@ -764,7 +764,7 @@
   date: 2025-01-01
   type: journal
   role: co
-  topics: [medai, ai]
+  topics: [medai, ai, disability]
   doi: "10.1109/access.2025.3592079"
   pdf: "/files/papers/adanet-2025.pdf"
   quartile: "Q1"
@@ -828,7 +828,7 @@
   date: 2024-11-24
   type: journal
   role: co
-  topics: [cancer, omics]
+  topics: [cancer, omics, disability]
   doi: "10.3390/biology13120966"
   pdf: "/files/papers/hcc-framework-2024.pdf"
   quartile: "Q1"
@@ -875,7 +875,7 @@
   date: 2024-10-14
   type: journal
   role: co
-  topics: [medai]
+  topics: [medai, disability]
   doi: "10.3390/diagnostics14202282"
   pdf: "/files/papers/lung-msa-2024.pdf"
   quartile: "Q2"
@@ -983,7 +983,7 @@
   date: 2024-02-12
   type: journal
   role: co
-  topics: [medai]
+  topics: [medai, disability]
   doi: "10.1049/cvi2.12271"
   pdf: "/files/papers/asdnet-2024.pdf"
   quartile: "Q2"
@@ -1200,7 +1200,7 @@
   date: 2022-12-22
   type: journal
   role: co
-  topics: [medai, health]
+  topics: [medai]
   doi: "10.3390/healthcare11010031"
   quartile: "Q2"
   citations: 51
@@ -1341,7 +1341,7 @@
   date: 2021-11-03
   type: journal
   role: co
-  topics: [health]
+  topics: [medai]
   doi: "10.12688/f1000research.73969.1"
   pdf: "/files/papers/covidspread-2021.pdf"
   preprint: "https://doi.org/10.1101/2020.04.24.20078923"
@@ -1373,7 +1373,7 @@
   date: 2021-09-29
   type: journal
   role: co
-  topics: [health]
+  topics: [medai]
   doi: "10.1016/j.compbiomed.2021.104891"
   quartile: "Q1"
   citations: 8
@@ -1388,7 +1388,7 @@
   date: 2021-07-31
   type: journal
   role: co
-  topics: [medai, health]
+  topics: [medai]
   doi: "10.3390/diagnostics11081383"
   pdf: "/files/papers/covid-mortality-2021.pdf"
   quartile: "Q2"
@@ -1424,7 +1424,7 @@
   date: 2021-03-29
   type: journal
   role: co
-  topics: [medai, health]
+  topics: [medai]
   doi: "10.2196/25884"
   pdf: "/files/papers/covid-severity-2021.pdf"
   quartile: "Q1"
@@ -1459,7 +1459,7 @@
   date: 2021-03-17
   type: journal
   role: co
-  topics: [omics, health]
+  topics: [omics]
   doi: "10.1093/bib/bbab126"
   quartile: "Q1"
   citations: 12

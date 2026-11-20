@@ -14,13 +14,13 @@ pi:
     and computational biology (MS, GIST, South Korea) and biostatistics and AI (PhD, Monash University),
     then held research and academic posts at Monash University, UNSW Sydney, the University of Sydney,
     the University of Technology Sydney, Children's Medical Research Institute (ProCan) and Swinburne
-    University of Technology before joining IMSIU in 2022. He is a Senior Collaborator of the Global
-    Burden of Disease study (IHME, University of Washington), Guest Editor for <em>Diagnostics</em> (MDPI),
+    University of Technology before joining IMSIU in 2022. He leads the lab's disability-research programme,
+    funded by the King Salman Center for Disability Research, and is Guest Editor for <em>Diagnostics</em> (MDPI),
     and a reviewer for <em>Briefings in Bioinformatics</em>, <em>PLOS ONE</em>, <em>Artificial Intelligence Review</em>
     and BMC journals.
   highlights:
     - "PhD (Biostatistics & AI), Monash University, 2017"
-    - "Senior Collaborator, Global Burden of Disease (IHME)"
+    - "1st prize, AI Hackathon for People with Disabilities, 2026"
     - "Recognition of Teaching Excellence, Swinburne, 2021"
     - "Australian Academy of Science COVID-19 expert"
     - "Australian citizen · Saudi Premium Residency"
@@ -61,9 +61,9 @@ alumni:
     topics: ["Systems-biology mechanisms of drug resistance in malaria"]
 
 collaborators:
-  - name: "Institute for Health Metrics and Evaluation (IHME)"
-    detail: "Global Burden of Disease study, University of Washington, USA"
-    url: "https://www.healthdata.org/research-analysis/gbd"
+  - name: "King Salman Center for Disability Research (KSCDR)"
+    detail: "Funding partner for the lab's assistive-technology and disability research, Riyadh, Saudi Arabia"
+    url: "https://www.kscdr.org.sa/"
   - name: "Mohammad Ali Moni"
     detail: "AI & Cyber Futures Institute, Charles Sturt University, Australia"
   - name: "Salem A. Alyami"

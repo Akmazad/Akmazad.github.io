@@ -2,7 +2,7 @@
 title: "COVIDSpread: real-time, customisable time-series forecasting of COVID-19 spread"
 method: COVIDSpread
 description: "A unified platform that couples live COVID-19 data visualisation with non-linear time-series models that users can fit to any window of the data, for short-term forecasts."
-theme: health
+theme: medai
 paper: covidspread-2021
 tags: [COVID-19, forecasting, time series, epidemiology, R Shiny]
 math: true
