@@ -20,6 +20,11 @@
   title: "Physics-informed deep learning surrogate for polymer composites"
   text: "A DBN-GJO-PI-RNN surrogate that cuts RMSE by 38% compared with the best data-driven baseline (Polymers)."
   link: /publications/?q=polymer
+- date: 2026-10-13
+  kind: award
+  title: "First prize at the AI Hackathon for People with Disabilities"
+  text: "The Oriental Braille Project (AI and 3D-printed Arabic Braille) won first place in the Individuals track (SAR 45,000) at the hackathon of the 7th International Conference on Disability and Rehabilitation, organised by KSCDR."
+  link: /blog/2026/oriental-braille-hackathon-first-prize/
 - date: 2026-10-06
   kind: pub
   title: "FedGNN for heterogeneous ECG classification in Expert Systems with Applications"
