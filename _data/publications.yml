@@ -1108,7 +1108,7 @@
   date: 2023-08-27
   type: journal
   role: co
-  topics: [medai]
+  topics: [medai, disability]
   doi: "10.3390/s23177452"
   pdf: "/files/papers/eeg-har-lime-2023.pdf"
   quartile: "Q1"
@@ -1308,7 +1308,7 @@
   date: 2022-01-01
   type: journal
   role: co
-  topics: [medai]
+  topics: [medai, disability]
   doi: "10.1109/jtehm.2022.3177710"
   pdf: "/files/papers/har-cnn-lstm-2022.pdf"
   quartile: "Q1"
@@ -1490,7 +1490,7 @@
   date: 2021-01-01
   type: journal
   role: co
-  topics: [ai]
+  topics: [ai, disability]
   doi: "10.1109/access.2021.3091642"
   pdf: "/files/papers/hri-attention-2021.pdf"
   quartile: "Q1"

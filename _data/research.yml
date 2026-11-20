@@ -83,6 +83,8 @@
     Disabilities (2026). We also develop attention-aware human-activity recognition for disability assistance,
     AdaNet motion capture for assistive gesture-based interfaces, eye-tracking diagnosis of autism (ASDNet),
     and deep-learning models for disabilities associated with Alzheimer's disease, lung cancer and liver cancer.
+    This builds on our earlier wearable-sensor and EEG activity recognition and human–robot attention
+    modelling.
   questions:
     - How can low-cost AI and 3D printing put accessible learning material within reach of every blind reader?
     - Which sensing and learning pipelines make assistive interfaces reliable enough for everyday use?
