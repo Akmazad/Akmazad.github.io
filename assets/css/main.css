@@ -358,6 +358,9 @@ a.card:hover, .card.hoverable:hover { transform: translateY(-3px); box-shadow: v
 .timeline li.k-pub::before { border-color: var(--accent-2); }
 .timeline time { display: block; font-family: var(--font-mono); font-size: .76rem; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
 .timeline .ntitle { font-weight: 600; }
+.timeline .ntitle a { color: inherit; text-decoration: none; background: linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition: background-size .2s; }
+.timeline .ntitle a:hover { color: var(--accent); background-size: 100% 1px; }
+.timeline li.pinned time { color: #e11d48; }
 .timeline p { margin: 2px 0 0; color: var(--text-2); font-size: .94rem; }
 .news-kind { font-size: .7rem; font-weight: 600; padding: 1px 7px; border-radius: 5px; background: var(--surface-2); color: var(--muted); margin-left: 6px; text-transform: uppercase; letter-spacing: .05em; }
 

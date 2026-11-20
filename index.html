@@ -95,9 +95,11 @@ redirect_from:
         <a class="link-arrow" href="{{ '/news/' | relative_url }}">All news →</a>
       </div>
       <ul class="timeline">
-        {% for n in site.data.news limit: 6 %}
-          <li class="k-{{ n.kind }}"><time datetime="{{ n.date }}">{% if n.approx %}{{ n.date | date: '%Y' }}{% else %}{{ n.date | date: '%b %Y' }}{% endif %}</time><span class="ntitle">{{ n.title }}</span>{% if n.text %}<p>{{ n.text }}</p>{% endif %}</li>
-        {% endfor %}
+        {%- assign pinned = site.data.news | where: "pinned", true -%}
+        {%- assign rest = site.data.news | where_exp: "n", "n.pinned != true" -%}
+        {%- assign n_rest = 6 | minus: pinned.size -%}
+        {% for n in pinned %}{% include news-item.html n=n %}{% endfor %}
+        {% for n in rest limit: n_rest %}{% include news-item.html n=n %}{% endfor %}
       </ul>
     </div>
   </div>
