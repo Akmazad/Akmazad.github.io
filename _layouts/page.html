@@ -9,7 +9,7 @@ layout: default
     {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
     {% if page.subnav %}
       <nav class="subnav" aria-label="On this page">
-        {% for s in page.subnav %}<a href="{{ s.url | relative_url }}">{{ s.title }}</a>{% endfor %}
+        {% for s in page.subnav %}{% assign c0 = s.url | slice: 0 %}<a href="{% if c0 == '#' or s.url contains '://' %}{{ s.url }}{% else %}{{ s.url | relative_url }}{% endif %}">{{ s.title }}</a>{% endfor %}
       </nav>
     {% endif %}
   </div>
