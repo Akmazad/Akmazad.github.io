@@ -1,8 +1,7 @@
-# Citation metrics, copied from Google Scholar. Update a few times a year.
+# Citation metrics from Google Scholar, refreshed weekly by .github/workflows/update-metrics.yml
+# (scripts/update_metrics.rb). Edit by hand only if the automatic update is failing.
 as_of: "November 2026"
 source: "Google Scholar"
-citations: 3002
-citations_since_2021: 2917
+citations: 3031
 h_index: 24
 i10_index: 51
-q1_share: 65   # % of journal papers in Q1 over the last 10 years (Scholar journal-ranking widget)

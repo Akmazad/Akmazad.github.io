@@ -95,6 +95,7 @@ exclude:
   - .vscode
   - node_modules
   - tools
+  - scripts
   - "*.py"
 
 include:

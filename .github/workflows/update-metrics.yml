@@ -1,0 +1,75 @@
+# Weekly refresh of citation metrics from Google Scholar.
+# Updates _data/metrics.yml (citations, h-index, i10-index, date) and per-paper citation counts in
+# _data/publications.yml, commits them, and rebuilds the GitHub Pages site.
+# If Scholar lists papers that are not on the website, it opens (or updates) an issue listing them.
+# Run it by hand any time from the Actions tab: "Update citation metrics" → "Run workflow".
+name: Update citation metrics
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"   # Mondays 03:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  issues: write
+
+concurrency:
+  group: update-metrics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch metrics from Google Scholar
+        id: fetch
+        run: |
+          ruby scripts/update_metrics.rb | tee metrics.log
+          {
+            echo '### Citation metrics update'
+            echo '```'
+            cat metrics.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit changes
+        id: commit
+        run: |
+          if git diff --quiet -- _data/metrics.yml _data/publications.yml; then
+            echo "No changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _data/metrics.yml _data/publications.yml
+            git commit -m "Update citation metrics from Google Scholar"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rebuild GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        # Pushes made with GITHUB_TOKEN may not trigger a Pages build on their own, so request one.
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" || echo "Pages build request failed; the next push will rebuild the site."
+
+      - name: Report papers missing from the website
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          grep '^  NEW: ' metrics.log | sed 's/^  NEW: /- /' > new.md || true
+          [ -s new.md ] || { echo "Every Scholar paper is on the website."; exit 0; }
+          echo "::warning::$(wc -l < new.md) paper(s) on Google Scholar are not on the website; see the run summary."
+          { echo '### On Google Scholar but not on the website'; cat new.md; } >> "$GITHUB_STEP_SUMMARY"
+          # Also keep an issue up to date, if Issues are enabled for this repository.
+          [ "$(gh api "repos/${{ github.repository }}" --jq .has_issues)" = "true" ] || exit 0
+          title="Papers on Google Scholar that are not on the website"
+          body=$(printf 'The weekly metrics update found these titles on Google Scholar that are not in `_data/publications.yml`:\n\n%s\n\nAdd them to the publication list (see README), or ignore them if they are duplicates. This issue is updated automatically.' "$(cat new.md)")
+          num=$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number')
+          if [ -n "$num" ]; then gh issue edit "$num" --body "$body"; else gh issue create --title "$title" --body "$body"; fi

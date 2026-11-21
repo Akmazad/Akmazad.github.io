@@ -33,13 +33,20 @@ subnav:
 <section class="page-section">
   <h2>Research summary</h2>
   {%- assign m = site.data.metrics -%}
+  {%- comment -%} Q1 share: journal articles from the last 10 years that sit in a Q1 journal, computed from _data/publications.yml at build time. {%- endcomment -%}
+  {%- assign cutoff = site.time | date: '%Y' | minus: 9 -%}
+  {%- assign nj = 0 -%}{%- assign nq1 = 0 -%}
+  {%- for p in site.data.publications -%}{%- if p.type == 'journal' and p.year >= cutoff -%}{%- assign nj = nj | plus: 1 -%}{%- if p.quartile == 'Q1' -%}{%- assign nq1 = nq1 | plus: 1 -%}{%- endif -%}{%- endif -%}{%- endfor -%}
+  {%- if nj > 0 -%}{%- assign q1_share = nq1 | times: 100 | divided_by: nj -%}{%- else -%}{%- assign q1_share = 0 -%}{%- endif -%}
   <div class="kpi-row">
     <div class="kpi"><b>{{ site.data.publications.size }}</b><span>Publications</span></div>
     <div class="kpi"><b>{{ m.citations }}</b><span>Citations ({{ m.source }})</span></div>
     <div class="kpi"><b>{{ m.h_index }}</b><span>h-index</span></div>
-    <div class="kpi"><b>{{ m.q1_share }}%</b><span>Q1 journals (10 y)</span></div>
+    <div class="kpi"><b>{{ q1_share }}%</b><span>Q1 journals ({{ nq1 }} of {{ nj }}, last 10 y)</span></div>
   </div>
-  <p>Funding: 565K SAR awarded and 6.5M SAR under review (<a href="{{ '/projects/' | relative_url }}">details</a>). Supervision: 2 PhD candidates (co-supervised, Charles Sturt University), 8 IMSIU postgraduate and undergraduate researchers, and earlier research associates, honours, SVRP and MS students at UNSW Sydney and Monash (<a href="{{ '/people/#team' | relative_url }}">details</a>).</p>
+  {%- assign awarded = 0 -%}{%- assign pending = 0 -%}
+  {%- for g in site.data.grants -%}{%- if g.status == 'completed' or g.status == 'awarded' -%}{%- assign awarded = awarded | plus: g.amount_sar -%}{%- else -%}{%- assign pending = pending | plus: g.amount_sar -%}{%- endif -%}{%- endfor -%}
+  <p>Funding: {{ awarded | divided_by: 1000 }}K SAR awarded and {{ pending | divided_by: 100000 | divided_by: 10.0 }}M SAR under review (<a href="{{ '/projects/' | relative_url }}">details</a>). Supervision: 2 PhD candidates (co-supervised, Charles Sturt University), 8 IMSIU postgraduate and undergraduate researchers, and earlier research associates, honours, SVRP and MS students at UNSW Sydney and Monash (<a href="{{ '/people/#team' | relative_url }}">details</a>).</p>
 </section>
 
 <section class="page-section" id="service">

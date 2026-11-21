@@ -11,7 +11,7 @@ no build step or GitHub Action is needed.
 | To change… | Edit |
 |---|---|
 | Publications (113 entries, PDFs, code/blog links) | `_data/publications.yml` |
-| Citation numbers on home/publications | `_data/metrics.yml` |
+| Citation numbers (updated automatically every Monday from Google Scholar) | `_data/metrics.yml`, see below |
 | Research themes | `_data/research.yml` |
 | News items (newest first) | `_data/news.yml` |
 | People, trainees, collaborators | `_data/people.yml` (photos in `images/people/`) |
@@ -53,3 +53,18 @@ Then set `blog: "/blog/2026/my-method/"` on the paper in `_data/publications.yml
 bundle install
 bundle exec jekyll serve   # http://localhost:4000
 ```
+
+## Automatic citation metrics
+`.github/workflows/update-metrics.yml` runs every Monday (and on demand from the **Actions** tab →
+*Update citation metrics* → *Run workflow*). It runs `scripts/update_metrics.rb`, which reads the
+[Google Scholar profile](https://scholar.google.com/citations?user=p-Rne_wAAAAJ) and updates:
+
+- total citations, h-index, i10-index and the "as of" date in `_data/metrics.yml`;
+- the citation count of each paper in `_data/publications.yml` (matched by title).
+
+If Scholar blocks the request, nothing is changed and the last values stay on the site. Papers that are on
+Scholar but not on the website are listed in the run summary. Other figures are computed when the site
+builds: publication counts, the Q1-journal share and funding totals come from `_data/publications.yml`
+and `_data/grants.yml`.
+
+To test locally: `ruby scripts/update_metrics.rb --dry-run`.
