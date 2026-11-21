@@ -25,6 +25,7 @@ service:
   - "Reviewer: Briefings in Bioinformatics, PLOS ONE, Artificial Intelligence Review, BMC Bioinformatics, BMC Supplements"
 
 awards:   # awards & recognition
+  - { year: 2026, title: "1st prize (Individuals track), AI Hackathon for People with Disabilities, 7th International Conference on Disability and Rehabilitation, King Salman Center for Disability Research, for <a href=\"/blog/2026/oriental-braille-hackathon-first-prize/\">The Oriental Braille Project</a>" }
   - { year: 2025, title: "Editor's Choice article, Diagnostics (Explainable federated learning for ECG diagnosis)" }
   - { year: 2021, title: "Recognition of Teaching Excellence, Swinburne University of Technology" }
   - { year: 2017, title: "Post Publication Award, Monash University" }
